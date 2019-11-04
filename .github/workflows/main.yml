@@ -1,9 +1,9 @@
-name: Check lint
+name: Checks
 
 on: [push]
 
 jobs:
-  build:
+  lint:
 
     runs-on: ubuntu-latest
 
