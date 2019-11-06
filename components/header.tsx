@@ -1,14 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Nav } from './nav';
 import { Center } from './center';
 import { PersonWithLaptop } from './person-with-laptop';
-import Vivus from 'vivus';
 
 export const Header: React.FC = () => {
-  useEffect(() => {
-    new Vivus('person', { duration: 325, animTimingFunction: Vivus.EASE_OUT });
-  }, []);
-
   return (
     <header className="hero">
       <Center>
