@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav } from './nav';
 import { Center } from './center';
+import { PersonWithLaptop } from './person-with-laptop';
 
 export const Header: React.FC = () => (
   <header className="hero">
@@ -33,10 +34,8 @@ export const Header: React.FC = () => (
           </section>
         </article>
         <aside className="hero__image">
-          <img
-            src="../static/person-with-laptop.svg"
-            alt="Kuvituskuva henkilöstä kannettavalla tietokoneella"
-          />
+          <PersonWithLaptop />
+          <div className="hero__blend"></div>
         </aside>
       </section>
     </Center>
