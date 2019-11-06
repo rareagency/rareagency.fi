@@ -31,6 +31,10 @@ export const Layout: React.FC = ({ children }) => (
         h2 {
           font-family: 'Nunito Sans', sans-serif;
         }
+
+        p {
+          line-height: 2rem;
+        }
       `}
     </style>
   </>
