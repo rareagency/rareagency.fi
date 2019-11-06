@@ -21,9 +21,15 @@ export const Layout: React.FC = ({ children }) => (
         html {
           padding: 0;
           margin: 0;
-          font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Avenir Next,
-            Avenir, Helvetica, sans-serif;
+          font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+            'Helvetica Neue', sans-serif;
           font-size: 18px;
+        }
+
+        h1,
+        h2 {
+          font-family: 'Nunito Sans', sans-serif;
         }
       `}
     </style>

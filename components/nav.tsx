@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Nav = () => (
+export const Nav = () => (
   <nav>
     <img src="../static/logo.png" alt="Rare Agency" className="logo" />
 
@@ -43,5 +43,3 @@ const Nav = () => (
     `}</style>
   </nav>
 );
-
-export default Nav;
