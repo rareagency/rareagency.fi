@@ -23,6 +23,7 @@ export const Layout: React.FC = ({ children }) => (
           margin: 0;
           font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont,
             Avenir Next, Avenir, Helvetica, sans-serif;
+          font-size: 18px;
         }
       `}
     </style>
