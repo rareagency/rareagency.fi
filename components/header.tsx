@@ -30,7 +30,7 @@ export const Header: React.FC = () => (
 
     <style jsx>{`
       .hero {
-        background: #000;
+        background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
       }
       .hero :global(.center) {
         background: url('../static/person-with-laptop.svg') no-repeat right
