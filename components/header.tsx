@@ -1,14 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { Nav } from './nav';
 import { Center } from './center';
 import { PersonWithLaptop } from './person-with-laptop';
 import Vivus from 'vivus';
 
 export const Header: React.FC = () => {
-  const svg = useRef<HTMLElement>();
-
   useEffect(() => {
-    new Vivus('person', { duration: 170, animTimingFunction: Vivus.EASE });
+    new Vivus('person', { duration: 325, animTimingFunction: Vivus.EASE_OUT });
   }, []);
 
   return (
