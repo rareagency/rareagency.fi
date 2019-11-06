@@ -42,6 +42,7 @@ export const Main: React.FC = () => (
       }
 
       .read-more {
+        display: inline-block;
         padding: 0.7rem 6rem;
         border: 5px solid #dedede;
         color: #919191;
