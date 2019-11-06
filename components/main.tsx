@@ -11,9 +11,9 @@ export const Main: React.FC = () => (
           vältä pahimmat sudenkuopat!
         </p>
         <p>
-          Päivän mittainen <b>Kickstart: moderni webbiprojekti</b>
-          -workshoppimme antaa selkeät konkreettiset suuntaviivat seuraavaan
-          React-projektiin
+          Päivän mittainen <b>Kickstart: moderni webbiprojekti</b>{' '}
+          &#8209;workshoppimme antaa selkeät konkreettiset suuntaviivat
+          seuraavaan React-projektiin
         </p>
 
         <a href="#read-more" className="read-more">

@@ -17,7 +17,7 @@ export function PersonWithLaptop() {
   }, []);
 
   return (
-    <div className="container">
+    <>
       <svg
         id="person"
         width="381"
@@ -280,15 +280,30 @@ export function PersonWithLaptop() {
             stroke: #ebb9f0;
           }
         }
-        .container {
-          position: relative;
-          display: inline-block;
-        }
+
         #person path {
           fill: none;
           animation: northern-lights 20s infinite;
         }
+
+        @media (max-width: 800px) {
+          svg {
+            width: 250px;
+          }
+        }
+
+        /* TODO: Figure out something more "responsive" for this; those absolute px values look gruesome */
+        @media (max-width: 650px) {
+          svg {
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            right: -200px;
+            bottom: -300px;
+            opacity: 0.2;
+          }
+        }
       `}</style>
-    </div>
+    </>
   );
 }
