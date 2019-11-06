@@ -41,7 +41,7 @@ export function PersonWithLaptop() {
           content: '';
           width: 100%;
           height: 100%;
-          animation: northern-lights 2s infinite;
+          animation: northern-lights 20s infinite;
           position: absolute;
           top: 0;
           left: 0;
