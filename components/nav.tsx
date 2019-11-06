@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Nav = () => (
   <nav>
     <img
-      src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_dark_color_74x24dp.png"
+      src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png"
       alt="Rare Agency"
       className="logo"
     />

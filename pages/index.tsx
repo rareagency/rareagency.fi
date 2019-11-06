@@ -18,12 +18,22 @@ const Home = () => (
           jäsentä - jokaisella takanaan konsulttiura Suomen tunnetuimmissa
           ohjelmistotaloissa.
         </p>
+
+        <section className="references">
+          <h3>Meihin luottaa</h3>
+
+          <div className="references__images">
+            <img src="../static/references/tieto.svg" alt="Tieto Oyj" />
+            <img src="../static/references/plan.svg" alt="Plan International" />
+          </div>
+        </section>
       </article>
     </header>
 
     <style jsx>{`
       .hero {
-        background: #000;
+        background: #000 url('../static/person-with-laptop.svg') no-repeat 80%
+          center;
         color: #fff;
         padding: 3rem 0;
       }
@@ -42,7 +52,28 @@ const Home = () => (
       }
 
       .description {
-        max-width: 60%;
+        max-width: 45%;
+        line-height: 2rem;
+      }
+
+      .references {
+        margin-top: 3rem;
+      }
+
+      .references h3 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.1rem;
+        letter-spacing: 0.05rem;
+      }
+
+      .references__images {
+        display: flex;
+        align-items: center;
+        margin: 0 -1rem;
+      }
+
+      .references__images img {
+        padding: 0 1rem;
       }
     `}</style>
   </Layout>
