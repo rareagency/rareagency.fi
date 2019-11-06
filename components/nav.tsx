@@ -1,50 +1,42 @@
 import React from 'react';
 import Link from 'next/link';
 
-const links = [
-  { href: 'https://zeit.co/now', label: 'ZEIT' },
-  { href: 'https://github.com/zeit/next.js', label: 'GitHub' }
-].map(link => ({ ...link, key: `nav-link-${link.href}-${link.label}` }));
-
 const Nav = () => (
   <nav>
-    <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
-        </li>
-      ))}
-    </ul>
+    <img
+      src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_dark_color_74x24dp.png"
+      alt="Rare Agency"
+    />
+
+    {/* Link uses the children element for styling and it doesn't get duplicated */}
+    {/* eslint-disable jsx-a11y/anchor-is-valid */}
+    <Link href="/">
+      <a>Me</a>
+    </Link>
+    <Link href="/contact-us">
+      <a>Ota yhteyttä</a>
+    </Link>
+    {/* eslint-enable jsx-a11y/anchor-is-valid */}
 
     <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
       nav {
-        text-align: center;
-      }
-      ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
+        width: 1200px;
+        margin: 0 auto;
       }
-      nav > ul {
-        padding: 4px 16px;
+
+      nav:first-child {
+        margin-right: auto;
       }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
+
       a {
-        color: #067df7;
+        color: #fff;
         text-decoration: none;
-        font-size: 13px;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
     `}</style>
   </nav>
