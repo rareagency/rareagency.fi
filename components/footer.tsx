@@ -4,11 +4,7 @@ import { Center } from './center';
 export const Footer: React.FC = () => (
   <footer className="footer">
     <Center>
-      <img
-        src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_dark_color_74x24dp.png"
-        alt="Rare Agency"
-        className="logo"
-      />
+      <img src="../static/logo-black.png" alt="Rare Agency" className="logo" />
 
       <section className="addresses">
         <address>
@@ -30,6 +26,9 @@ export const Footer: React.FC = () => (
     </Center>
 
     <style jsx>{`
+      .logo {
+        width: 100px;
+      }
       .footer {
         background: #f8f8f8;
         padding: 7rem 0;
