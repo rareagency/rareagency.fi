@@ -30,7 +30,10 @@ export const Header: React.FC = () => (
 
     <style jsx>{`
       .hero {
-        background: #000 url('../static/person-with-laptop.svg') no-repeat 80%
+        background: #000;
+      }
+      .hero :global(.center) {
+        background: url('../static/person-with-laptop.svg') no-repeat right
           center;
         color: #fff;
         padding: 3rem 0;
