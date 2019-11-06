@@ -21,19 +21,16 @@ export function PersonWithLaptop() {
       <style jsx>{`
         @keyframes northern-lights {
           from {
-            background: linear-gradient(
-              131.33deg,
-              #e2c5c5 25.24%,
-              #ffffff 76.09%
-            );
+            background-color: #ebb9f0;
           }
-
-          to {
-            background: linear-gradient(
-              131.33deg,
-              #19a3cf 25.24%,
-              #ffffff 76.09%
-            );
+          50% {
+            background-color: #b3ddf4;
+          }
+          75% {
+            background-color: #baf0b9;
+          }
+          100% {
+            background-color: #ebb9f0;
           }
         }
         .container {
@@ -44,7 +41,7 @@ export function PersonWithLaptop() {
           content: '';
           width: 100%;
           height: 100%;
-          animation: northern-lights 20s infinite;
+          animation: northern-lights 2s infinite;
           position: absolute;
           top: 0;
           left: 0;
