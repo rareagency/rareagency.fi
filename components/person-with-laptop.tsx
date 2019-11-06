@@ -18,12 +18,6 @@ export function PersonWithLaptop() {
         width="381"
         height="478"
         viewBox="0 0 381 478"
-      >
-        <svg
-          id="person"
-          width="381"
-          height="478"
-          viewBox="0 0 381 478"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -264,7 +258,6 @@ export function PersonWithLaptop() {
             />
           </mask>
         </svg>
-      </svg>
 
       <style jsx>{`
         @keyframes northern-lights {
