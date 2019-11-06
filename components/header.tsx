@@ -24,13 +24,13 @@ export const Header: React.FC = () => (
           <section className="references">
             <h3>Meihin luottaa</h3>
 
-            <div className="references__images">
+            <p className="references__images">
               <img src="../static/references/tieto.svg" alt="Tieto Oyj" />
               <img
                 src="../static/references/plan.svg"
                 alt="Plan International"
               />
-            </div>
+            </p>
           </section>
         </article>
         <aside className="hero__image">
