@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Nav = () => (
+export const Nav = () => (
   <nav>
     <img
       src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png"
@@ -45,5 +45,3 @@ const Nav = () => (
     `}</style>
   </nav>
 );
-
-export default Nav;
