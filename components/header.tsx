@@ -7,41 +7,55 @@ export const Header: React.FC = () => (
     <Center>
       <Nav />
 
-      <h1 className="title">
-        We help teams create, test and ship better software from start to
-        finish.
-      </h1>
-      <p className="description">
-        Rare on tamperelainen, Suomen kovimmista webbikehityksen ammattilaisista
-        koostuva tiimi. Tiimiimme kuuluu tällä hetkellä neljä jäsentä -
-        jokaisella takanaan konsulttiura Suomen tunnetuimmissa
-        ohjelmistotaloissa.
-      </p>
+      <section className="hero__content">
+        <article className="hero__article">
+          <h1 className="title">
+            We help teams create, test and ship better software from start to
+            finish.
+          </h1>
+          <p className="description">
+            Rare on tamperelainen, Suomen kovimmista webbikehityksen
+            ammattilaisista koostuva tiimi. Tiimiimme kuuluu tällä hetkellä
+            neljä jäsentä - jokaisella takanaan konsulttiura Suomen
+            tunnetuimmissa ohjelmistotaloissa.
+          </p>
 
-      <section className="references">
-        <h3>Meihin luottaa</h3>
+          <section className="references">
+            <h3>Meihin luottaa</h3>
 
-        <div className="references__images">
-          <img src="../static/references/tieto.svg" alt="Tieto Oyj" />
-          <img src="../static/references/plan.svg" alt="Plan International" />
-        </div>
+            <div className="references__images">
+              <img src="../static/references/tieto.svg" alt="Tieto Oyj" />
+              <img
+                src="../static/references/plan.svg"
+                alt="Plan International"
+              />
+            </div>
+          </section>
+        </article>
+        <aside className="hero__image">
+          <img
+            src="../static/person-with-laptop.svg"
+            alt="Kuvituskuva henkilöstä kannettavalla tietokoneella"
+          />
+        </aside>
       </section>
     </Center>
 
     <style jsx>{`
       .hero {
         background: #000;
-      }
-      .hero :global(.center) {
-        background: url('../static/person-with-laptop.svg') no-repeat right
-          center;
         color: #fff;
         padding: 3rem 0;
       }
 
-      .center {
-        margin: 0 auto;
-        width: 1200px;
+      .hero__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .hero__article {
+        width: 55%;
       }
 
       .title {
@@ -49,11 +63,9 @@ export const Header: React.FC = () => (
         font-family: 'Nunito Sans', sans-serif;
         font-size: 3.3rem;
         letter-spacing: 0.11rem;
-        max-width: 60%;
       }
 
       .description {
-        max-width: 45%;
         line-height: 2rem;
       }
 
