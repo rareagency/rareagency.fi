@@ -35,7 +35,6 @@ export const Header: React.FC = () => (
         </article>
         <aside className="hero__image">
           <PersonWithLaptop />
-          <div className="hero__blend"></div>
         </aside>
       </section>
     </Center>
