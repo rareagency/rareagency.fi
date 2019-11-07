@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav } from './nav';
 import { Center } from './center';
-import { PersonWithLaptop } from './person-with-laptop';
+import { PersonWithLaptop } from './illustrations/person-with-laptop';
 
 export const Header: React.FC = () => (
   <header className="hero">
