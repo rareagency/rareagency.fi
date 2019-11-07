@@ -11,6 +11,9 @@ export const Nav = () => (
       <a>Me</a>
     </Link>
     <Link href="/contact-us">
+      <a>Koulutukset</a>
+    </Link>
+    <Link href="/contact-us">
       <a>Ota yhteyttä</a>
     </Link>
     {/* eslint-enable jsx-a11y/anchor-is-valid */}
@@ -25,12 +28,13 @@ export const Nav = () => (
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        font-size: 16px;
       }
 
       a {
         color: #fff;
         text-decoration: none;
-        padding: 0 1rem;
+        padding: 0 0.5rem;
       }
 
       a:hover {
