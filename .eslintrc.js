@@ -8,7 +8,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:jsx-a11y/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
     // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier.
     'prettier/@typescript-eslint',
     // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
@@ -31,6 +32,15 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': 'error',
     'no-invalid-this': 'error',
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-    'react/prop-types': 0 // TS handles PropTypes
+    'import/no-default-export': 'error'
+  },
+  overrides: [
+    {
+      files: ['pages/**/*'],
+      rules: {
+        'import/no-default-export': 0,
+        'import/no-named-export': 'error'
+      }
   }
+  ]
 };
