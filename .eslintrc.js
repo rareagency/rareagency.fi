@@ -1,6 +1,5 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['react', 'react-hooks', 'sonarjs', 'jsx-a11y'],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
@@ -15,6 +14,8 @@ module.exports = {
     // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
     'plugin:prettier/recommended'
   ],
+  // most plugins append this array with their 'extends' -config
+  plugins: ['react-hooks', 'sonarjs'],
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
