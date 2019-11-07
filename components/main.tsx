@@ -56,6 +56,7 @@ export const Main: React.FC = () => (
         display: inline-block;
         padding: 0.7rem 6rem;
         border: 5px solid #dedede;
+        border-radius: 5px;
         color: #919191;
         text-decoration: none;
       }
