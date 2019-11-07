@@ -34,6 +34,7 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': 'error',
     'no-invalid-this': 'error',
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+    'react/prop-types': 0, // TS handles PropTypes
     'import/no-default-export': 'error'
   },
   overrides: [
@@ -43,6 +44,6 @@ module.exports = {
         'import/no-default-export': 0,
         'import/no-named-export': 'error'
       }
-  }
+    }
   ]
 };
