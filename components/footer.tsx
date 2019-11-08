@@ -43,6 +43,7 @@ export const Footer: React.FC = () => (
         margin-right: 3rem;
         color: #818181;
         font-style: normal;
+        line-height: 1.5em;
       }
 
       address:last-of-type {
