@@ -10,15 +10,16 @@ export const Header: React.FC = () => (
 
       <section className="hero__content">
         <article className="hero__article">
-          <h1 className="title">
-            We help teams create, test and ship better software from start to
-            finish.
-          </h1>
+          <h1 className="title">Kumppani, jota softatiimisi tarvitsee.</h1>
           <p className="description">
-            Rare on tamperelainen, Suomen kovimmista webbikehityksen
-            ammattilaisista koostuva tiimi. Tiimiimme kuuluu tällä hetkellä
-            neljä jäsentä - jokaisella takanaan konsulttiura Suomen
-            tunnetuimmissa ohjelmistotaloissa.
+            Rare on tamperelainen, uuden sukupolven konsulttitalo, joka koostuu
+            modernin webbikehityksen huippuosaajista.
+          </p>
+
+          <p className="description">
+            Web- ja mobiilikehitys. APIt. Pilvipalvelut. Moderni DevOps.
+            Softatiimien vetäminen. Mitä ikinä tarvitsetkin, me pystymme
+            auttamaan.
           </p>
 
           <section className="references">
