@@ -24,13 +24,13 @@ export const Header: React.FC = () => (
           <section className="references">
             <h3>Asiakkaitamme</h3>
 
-            <div className="references__images">
+            <p className="references__images">
               <img src="../static/references/tieto.svg" alt="Tieto Oyj" />
               <img
                 src="../static/references/plan.svg"
                 alt="Plan International"
               />
-            </div>
+            </p>
           </section>
         </article>
         <aside className="hero__image">
@@ -44,6 +44,10 @@ export const Header: React.FC = () => (
         background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
         color: #fff;
         padding: 3rem 0;
+
+        // For mobile background person-with-laptop:
+        position: relative;
+        overflow: hidden;
       }
 
       .hero__content {
@@ -54,6 +58,9 @@ export const Header: React.FC = () => (
 
       .hero__article {
         width: 55%;
+
+        // For mobile background person-with-laptop:
+        z-index: 2;
       }
 
       .title {
@@ -84,6 +91,57 @@ export const Header: React.FC = () => (
 
       .references__images img {
         padding: 0 1rem;
+      }
+
+      @media (max-width: 1200px) {
+        .title {
+          font-size: 2.8rem;
+          letter-spacing: 0.09rem;
+        }
+
+        .hero__image {
+          margin-left: 2rem;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        .title {
+          font-size: 2.2rem;
+          letter-spacing: 0.07rem;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .title {
+          font-size: 1.9rem;
+        }
+      }
+
+      @media (max-width: 800px) {
+        .hero__image {
+          margin-left: 1.25rem;
+        }
+
+        .hero__content {
+          align-items: flex-start;
+        }
+
+        .title {
+          font-size: 1.5rem;
+          letter-spacing: 0.05rem;
+        }
+
+        p.description {
+          font-size: 0.9rem;
+          line-height: 1.5rem;
+        }
+      }
+
+      @media (max-width: 650px) {
+        .hero__article {
+          overflow: visible;
+          min-width: 100%;
+        }
       }
     `}</style>
   </header>
