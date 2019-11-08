@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav } from './nav';
 import { Center } from './center';
-import { PersonWithLaptop } from './person-with-laptop';
+import { PersonWithLaptop } from './illustrations/person-with-laptop';
 
 export const Header: React.FC = () => (
   <header className="hero">
@@ -22,7 +22,7 @@ export const Header: React.FC = () => (
           </p>
 
           <section className="references">
-            <h3>Meihin luottaa</h3>
+            <h3>Asiakkaitamme</h3>
 
             <p className="references__images">
               <img src="../static/references/tieto.svg" alt="Tieto Oyj" />
@@ -66,7 +66,7 @@ export const Header: React.FC = () => (
       .title {
         margin-top: 4rem;
         font-family: 'Nunito Sans', sans-serif;
-        font-size: 3.3rem;
+        font-size: 3rem;
         letter-spacing: 0.11rem;
       }
 
@@ -79,7 +79,7 @@ export const Header: React.FC = () => (
       }
 
       .references h3 {
-        font-size: 1rem;
+        font-size: 18px;
         letter-spacing: 0.07rem;
       }
 

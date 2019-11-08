@@ -8,7 +8,7 @@ export const Layout: React.FC = ({ children }) => (
 
       <link rel="icon" href="/favicon.ico" />
       <link
-        href="https://fonts.googleapis.com/css?family=Nunito+Sans|Poppins&display=swap"
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans|Montserrat&display=swap"
         rel="stylesheet"
       ></link>
     </Head>
@@ -21,10 +21,10 @@ export const Layout: React.FC = ({ children }) => (
         html {
           padding: 0;
           margin: 0;
-          font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-            'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-            'Helvetica Neue', sans-serif;
-          font-size: 18px;
+          font-family: 'Montserrat', -apple-system, BlinkMacSystemFont,
+            'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+            'Droid Sans', 'Helvetica Neue', sans-serif;
+          font-size: 20px;
         }
 
         h1,

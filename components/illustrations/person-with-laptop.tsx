@@ -3,21 +3,59 @@ import Vivus from 'vivus';
 
 export function PersonWithLaptop() {
   useEffect(() => {
-    const person = document.getElementById('person');
-
-    if (person) {
-      person.style.visibility = 'visible';
-    }
-
     new Vivus('person', {
-      type: 'scenario', // allows adding data-start, data-duration to individual paths
       duration: 200,
-      animTimingFunction: Vivus.EASE_OUT
+      type: 'scenario', // allows adding data-start, data-duration to individual paths
+      start: 'autostart',
+      animTimingFunction: Vivus.EASE_OUT,
+      onReady: person => {
+        (person as Vivus & { el: HTMLElement }).el.style.visibility = 'visible';
+      }
     });
   }, []);
 
   return (
     <>
+      <style jsx>{`
+        @keyframes northern-lights {
+          from {
+            stroke: #ebb9f0;
+          }
+          50% {
+            stroke: #b3ddf4;
+          }
+          75% {
+            stroke: #baf0b9;
+          }
+          100% {
+            stroke: #ebb9f0;
+          }
+        }
+
+        #person path {
+          fill: none;
+          animation: northern-lights 20s infinite;
+        }
+
+        @media (max-width: 800px) {
+          svg {
+            width: 250px;
+          }
+        }
+
+        /* TODO: Figure out something more "responsive" for this; those absolute px values look gruesome */
+        @media (max-width: 650px) {
+          svg {
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            right: -200px;
+            bottom: -300px;
+            opacity: 0.2;
+          }
+        }
+      `}</style>
+
       <svg
         id="person"
         width="381"
@@ -264,46 +302,6 @@ export function PersonWithLaptop() {
           />
         </mask>
       </svg>
-
-      <style jsx>{`
-        @keyframes northern-lights {
-          from {
-            stroke: #ebb9f0;
-          }
-          50% {
-            stroke: #b3ddf4;
-          }
-          75% {
-            stroke: #baf0b9;
-          }
-          100% {
-            stroke: #ebb9f0;
-          }
-        }
-
-        #person path {
-          fill: none;
-          animation: northern-lights 20s infinite;
-        }
-
-        @media (max-width: 800px) {
-          svg {
-            width: 250px;
-          }
-        }
-
-        /* TODO: Figure out something more "responsive" for this; those absolute px values look gruesome */
-        @media (max-width: 650px) {
-          svg {
-            position: absolute;
-            width: 700px;
-            height: 700px;
-            right: -200px;
-            bottom: -300px;
-            opacity: 0.2;
-          }
-        }
-      `}</style>
     </>
   );
 }
