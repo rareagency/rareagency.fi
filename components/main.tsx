@@ -40,12 +40,22 @@ export const Main: React.FC = () => (
         letter-spacing: 0.09rem;
       }
 
+      .main {
+        transform: translateZ(0);
+        transition: opacity 0.4s ease-in-out;
+      }
+
       .main :global(.center) {
-        padding: 5rem 0;
+        padding-bottom: 5rem;
       }
 
       .webproject {
         max-width: 45%;
+        transition: opacity 0.4s ease-in-out;
+      }
+
+      :global(.background-dark) .webproject {
+        opacity: 0;
       }
 
       .webproject p:last-of-type {
