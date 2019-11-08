@@ -17,9 +17,8 @@ export const Header: React.FC = () => (
           </p>
 
           <p className="description">
-            Web- ja mobiilikehitys. APIt. Pilvipalvelut. Moderni DevOps.
-            Softatiimien vetäminen. Mitä ikinä tarvitsetkin, me pystymme
-            auttamaan.
+            Web- ja mobiilikehitys. APIt. Pilvipalvelut. Moderni DevOps. Mitä
+            ikinä tarvitsetkin, me pystymme auttamaan.
           </p>
 
           <section className="references">
