@@ -28,15 +28,16 @@ declare module '@mdx-js/react' {
   export type Components = {
     [key in ComponentType]?: React.ComponentType<{ children: React.ReactNode }>;
   };
-  export interface MDXProviderProps {
+  export type MDXProviderProps = {
     children: React.ReactNode;
     components: Components;
-  }
+  };
   export class MDXProvider extends React.Component<MDXProviderProps> {}
 }
 
 // types/mdx.d.ts
 declare module '*.mdx' {
   let MDXComponent: (props: any) => JSX.Element;
+  // eslint-disable-next-line import/no-default-export
   export default MDXComponent;
 }
