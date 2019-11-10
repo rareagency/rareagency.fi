@@ -10,7 +10,7 @@ export const Nav = () => (
     <Link href="/">
       <a>Me</a>
     </Link>
-    <Link href="/contact-us">
+    <Link href="/training">
       <a>Koulutukset</a>
     </Link>
     <Link href="/contact-us">
