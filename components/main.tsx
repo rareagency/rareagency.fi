@@ -9,13 +9,13 @@ export const Main: React.FC = () => (
         <article className="webproject">
           <h2>Suunnitteleeko tiimisi uutta webbiprojektia?</h2>
           <p>
-            Potkaise seuraava moderni webbiprojekti käyntiin oikealla jalalla ja
+            Potkaise seuraava webbiprojektinne käyntiin oikealla jalalla ja
             vältä pahimmat sudenkuopat!
           </p>
           <p>
-            Päivän mittainen <b>Kickstart: moderni webbiprojekti</b>{' '}
+            Päivän mittainen <b>Kickstart: Moderni webbiprojekti</b>{' '}
             &#8209;workshoppimme antaa selkeät konkreettiset suuntaviivat
-            seuraavaan React-projektiin
+            seuraavaan React-projektiinne
           </p>
 
           <a href="#read-more" className="read-more">
