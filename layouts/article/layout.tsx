@@ -8,7 +8,7 @@ export const Layout: React.FC = ({ children }) => (
 
       <link rel="icon" href="/favicon.ico" />
       <link
-        href="https://fonts.googleapis.com/css?family=Nunito+Sans|Montserrat&display=swap"
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans|Montserrat:400,500&display=swap"
         rel="stylesheet"
       ></link>
     </Head>
@@ -42,6 +42,9 @@ export const Layout: React.FC = ({ children }) => (
 
         h2 {
           margin: 2rem 0;
+        }
+        ul {
+          line-height: 2em;
         }
 
         @media (max-width: 1200px) {
