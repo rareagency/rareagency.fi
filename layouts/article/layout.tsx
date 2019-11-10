@@ -79,7 +79,13 @@ export const Layout: React.FC = ({ children }) => (
           margin-left: 4rem;
           margin-bottom: 2rem;
         }
-
+        article img {
+          width: 300px;
+          float: right;
+          margin-left: 2rem;
+          margin-bottom: 2rem;
+          margin-top: 2rem;
+        }
         p {
           line-height: 2rem;
         }
