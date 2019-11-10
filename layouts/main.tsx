@@ -13,7 +13,7 @@ export const Layout: React.FC = ({ children }) => {
 
         <link rel="icon" href="/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css?family=Nunito+Sans|Montserrat&display=swap"
+          href="https://fonts.googleapis.com/css?family=Nunito+Sans|Montserrat:400,500&display=swap"
           rel="stylesheet"
         ></link>
       </Head>

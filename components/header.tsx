@@ -25,9 +25,13 @@ export const Header: React.FC = () => (
             <h3>Asiakkaitamme</h3>
 
             <p className="references__images">
-              <img src="../static/references/tieto.svg" alt="Tieto Oyj" />
               <img
                 src="../static/references/plan.svg"
+                alt="Plan International"
+              />
+              <img src="../static/references/tieto.svg" alt="Tieto Oyj" />
+              <img
+                src="../static/references/veracell.svg"
                 alt="Plan International"
               />
             </p>
