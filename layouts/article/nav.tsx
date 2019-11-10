@@ -5,7 +5,9 @@ import { Center } from '../../components/center';
 export const Nav = () => (
   <Center>
     <nav>
-      <img src="../static/logo.png" alt="Rare Agency" className="logo" />
+      <Link href="/">
+        <img src="../static/logo.png" alt="Rare Agency" className="logo" />
+      </Link>
 
       {/* Link uses the children element for styling and it doesn't get duplicated */}
       {/* eslint-disable jsx-a11y/anchor-is-valid */}
@@ -22,6 +24,7 @@ export const Nav = () => (
 
       <style jsx>{`
         .logo {
+          cursor: pointer;
           margin-right: auto;
           width: 100px;
         }

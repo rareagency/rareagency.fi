@@ -26,7 +26,7 @@ export const Main: React.FC = ({ children }) => (
       }
 
       .main :global(.center) {
-        padding: 5rem 0;
+        padding: 3rem 0;
       }
     `}</style>
   </main>

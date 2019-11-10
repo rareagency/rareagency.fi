@@ -67,22 +67,38 @@ export const Layout: React.FC = ({ children }) => (
           }
         }
 
-        @media (max-width: 800px) {
-          h1 {
-            font-size: 1.5rem;
-            letter-spacing: 0.05rem;
-          }
-        }
-
         article svg {
           float: right;
           margin-left: 4rem;
           margin-bottom: 2rem;
         }
+
+        @media (max-width: 800px) {
+          h1 {
+            font-size: 1.5rem;
+            letter-spacing: 0.05rem;
+          }
+          article svg {
+            // float: none;
+            display: block;
+            margin: 0 1em;
+            max-width: 200px;
+          }
+        }
+        @media (max-width: 600px) {
+          article svg {
+            float: none;
+            display: block;
+            margin: 0 auto;
+            max-height: 300px;
+          }
+        }
+
         article img {
-          width: 300px;
+          width: 250px;
           float: right;
           margin-left: 2rem;
+          margin-right: 2rem;
           margin-bottom: 2rem;
           margin-top: 2rem;
         }
