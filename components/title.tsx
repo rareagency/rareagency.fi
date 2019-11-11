@@ -18,25 +18,6 @@ export const Title: React.FC = ({ children }) => (
           font-size: 2.8rem;
         }
       }
-
-      @media (max-width: 1000px) {
-        .title {
-          font-size: 2.2rem;
-        }
-      }
-
-      @media (max-width: 900px) {
-        .title {
-          font-size: 1.9rem;
-        }
-      }
-
-      @media (max-width: 800px) {
-        .title {
-          font-size: 1.5rem;
-          letter-spacing: 0.05rem;
-        }
-      }
     `}</style>
   </>
 );

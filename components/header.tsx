@@ -44,13 +44,12 @@ export const Header: React.FC = () => (
       .hero {
         color: #fff;
         padding-bottom: 3rem;
-        height: 100vh;
+        min-height: 100vh;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
         // For mobile background person-with-laptop:
         position: relative;
-        overflow: hidden;
       }
 
       :global(.hero__wrapper) {
@@ -75,6 +74,10 @@ export const Header: React.FC = () => (
         z-index: 2;
       }
 
+      .hero__image :global(svg) {
+        margin-top: 3rem;
+      }
+
       .description {
         line-height: 1.75rem;
       }
@@ -83,11 +86,19 @@ export const Header: React.FC = () => (
         font-size: 18px;
         letter-spacing: 0.07rem;
       }
+      .references {
+        margin-bottom: -1rem;
+      }
 
       .references__images {
         display: flex;
         align-items: center;
         margin: 0 -1rem;
+        flex-wrap: wrap;
+      }
+
+      .references__images img {
+        margin-bottom: 1rem;
       }
 
       .references__images img {
@@ -103,10 +114,6 @@ export const Header: React.FC = () => (
       @media (max-width: 800px) {
         .hero__image {
           margin-left: 1.25rem;
-        }
-
-        .hero__content {
-          align-items: flex-start;
         }
 
         p.description {

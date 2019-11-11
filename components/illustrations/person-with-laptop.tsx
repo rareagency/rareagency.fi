@@ -43,15 +43,9 @@ export function PersonWithLaptop() {
           }
         }
 
-        /* TODO: Figure out something more "responsive" for this; those absolute px values look gruesome */
         @media (max-width: 650px) {
           svg {
-            position: absolute;
-            width: 700px;
-            height: 700px;
-            right: -200px;
-            bottom: -300px;
-            opacity: 0.2;
+            display: none;
           }
         }
       `}</style>

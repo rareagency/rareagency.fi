@@ -24,10 +24,6 @@ export const Main: React.FC = ({ children }) => (
         font-size: 2.5rem;
         letter-spacing: 0.09rem;
       }
-
-      .main :global(.center) {
-        padding: 3rem 0;
-      }
     `}</style>
   </main>
 );

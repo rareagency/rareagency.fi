@@ -20,6 +20,11 @@ export const Center: React.FC<{ className?: string }> = ({
           box-sizing: border-box;
         }
       }
+      @media (max-width: 800px) {
+        .center {
+          padding: 0 2rem;
+        }
+      }
     `}</style>
   </div>
 );

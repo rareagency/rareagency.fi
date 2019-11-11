@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Vivus from 'vivus';
 
-export function Workspace() {
+export function Workspace({ className }: { className?: string }) {
   useEffect(() => {
     new Vivus('workspace', {
       duration: 200,
@@ -22,8 +22,7 @@ export function Workspace() {
       `}</style>
 
       <svg
-        width="467"
-        height="415"
+        className={className}
         viewBox="0 0 467 415"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

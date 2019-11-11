@@ -55,6 +55,7 @@ export const Layout: React.FC = ({ children }) => (
             max-width: 200px;
           }
         }
+
         @media (max-width: 600px) {
           article svg {
             float: none;
@@ -71,6 +72,13 @@ export const Layout: React.FC = ({ children }) => (
           margin-right: 2rem;
           margin-bottom: 2rem;
           margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+          article img {
+            float: none;
+            display: block;
+            margin: 2rem auto;
+          }
         }
         p {
           line-height: 1.75rem;

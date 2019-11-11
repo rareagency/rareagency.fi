@@ -51,18 +51,12 @@ export const Nav = () => (
           margin-right: 1rem;
         }
 
-        @media (max-width: 800px) {
-          font-size: 0.9rem;
-
-          a {
-            margin: 0;
+        @media (max-width: 600px) {
+          nav {
+            display: block;
           }
-        }
-
-        @media (max-width: 650px) {
           a {
-            margin: 0;
-            padding: 0.5rem;
+            display: none;
           }
         }
       `}</style>
