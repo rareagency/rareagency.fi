@@ -27,7 +27,7 @@ export const Header: React.FC = () => (
       </section>
 
       <section className="references">
-        <h3>Asiakkaitamme</h3>
+        <h3>Meihin luottaa</h3>
 
         <p className="references__images">
           <img src="../static/references/plan.svg" alt="Plan International" />
