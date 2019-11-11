@@ -1,7 +1,10 @@
 import React from 'react';
 
-export const Center: React.FC = ({ children }) => (
-  <div className="center">
+export const Center: React.FC<{ className?: string }> = ({
+  children,
+  className
+}) => (
+  <div className={['center', className].filter(Boolean).join(' ')}>
     {children}
 
     <style jsx>{`
@@ -12,8 +15,9 @@ export const Center: React.FC = ({ children }) => (
 
       @media (max-width: 1300px) {
         .center {
-          margin: 0 2rem;
-          width: calc(100% - 4rem);
+          padding: 0 4rem;
+          width: 100%;
+          box-sizing: border-box;
         }
       }
     `}</style>

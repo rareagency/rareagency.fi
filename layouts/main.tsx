@@ -4,7 +4,7 @@ import { useScrollYPosition } from 'react-use-scroll-position';
 
 export const Layout: React.FC = ({ children }) => {
   const scroll = useScrollYPosition();
-  const backgroundClass = scroll > 300 ? 'background-light' : 'background-dark';
+  const backgroundClass = scroll > 120 ? 'background-light' : 'background-dark';
 
   return (
     <>
@@ -13,7 +13,7 @@ export const Layout: React.FC = ({ children }) => {
 
         <link rel="icon" href="/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css?family=Nunito+Sans|Montserrat:400,500&display=swap"
+          href="https://fonts.googleapis.com/css?family=Nunito+Sans:700,800|Montserrat:400,500&display=swap"
           rel="stylesheet"
         ></link>
       </Head>
@@ -36,7 +36,6 @@ export const Layout: React.FC = ({ children }) => {
           }
           body {
             position: relative;
-            min-height: 100%;
           }
 
           .wrapper::before {
@@ -67,7 +66,7 @@ export const Layout: React.FC = ({ children }) => {
           }
 
           p {
-            line-height: 2rem;
+            line-height: 1.75rem;
           }
         `}
       </style>

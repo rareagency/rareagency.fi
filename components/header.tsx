@@ -2,61 +2,70 @@ import React from 'react';
 import { Nav } from './nav';
 import { Center } from './center';
 import { PersonWithLaptop } from './illustrations/person-with-laptop';
+import { Title } from './title';
 
 export const Header: React.FC = () => (
   <header className="hero">
-    <Center>
-      <Nav />
-
+    <Nav />
+    <Center className="hero__wrapper">
       <section className="hero__content">
         <article className="hero__article">
-          <h1 className="title">Kumppani, jota softatiimisi tarvitsee.</h1>
+          <Title>Kumppani, jota softatiimisi tarvitsee.</Title>
           <p className="description">
             Rare on tamperelainen, uuden sukupolven konsulttitalo, joka koostuu
             modernin webbikehityksen huippuosaajista.
           </p>
 
           <p className="description">
-            Web- ja mobiilikehitys. APIt. Pilvipalvelut. Moderni DevOps. Mitä
-            ikinä tarvitsetkin, me pystymme auttamaan.
+            Web- ja mobiilikehitys. APIt. Pilvipalvelut. Moderni DevOps. <br />
+            Mitä ikinä tarvitsetkin, me pystymme auttamaan.
           </p>
-
-          <section className="references">
-            <h3>Asiakkaitamme</h3>
-
-            <p className="references__images">
-              <img
-                src="../static/references/plan.svg"
-                alt="Plan International"
-              />
-              <img src="../static/references/tieto.svg" alt="Tieto Oyj" />
-              <img
-                src="../static/references/veracell.svg"
-                alt="Plan International"
-              />
-            </p>
-          </section>
         </article>
         <aside className="hero__image">
           <PersonWithLaptop />
         </aside>
+      </section>
+
+      <section className="references">
+        <h3>Asiakkaitamme</h3>
+
+        <p className="references__images">
+          <img src="../static/references/plan.svg" alt="Plan International" />
+          <img src="../static/references/tieto.svg" alt="Tieto Oyj" />
+          <img
+            src="../static/references/veracell.svg"
+            alt="Plan International"
+          />
+        </p>
       </section>
     </Center>
 
     <style jsx>{`
       .hero {
         color: #fff;
-        padding: 3rem 0;
-
+        padding-bottom: 3rem;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
         // For mobile background person-with-laptop:
         position: relative;
         overflow: hidden;
       }
 
+      :global(.hero__wrapper) {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        flex-grow: 1;
+      }
+
       .hero__content {
+        margin-top: 2rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-grow: 1;
       }
 
       .hero__article {
@@ -66,19 +75,8 @@ export const Header: React.FC = () => (
         z-index: 2;
       }
 
-      .title {
-        margin-top: 4rem;
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 3rem;
-        letter-spacing: 0.11rem;
-      }
-
       .description {
-        line-height: 2rem;
-      }
-
-      .references {
-        margin-top: 3rem;
+        line-height: 1.75rem;
       }
 
       .references h3 {
@@ -97,26 +95,8 @@ export const Header: React.FC = () => (
       }
 
       @media (max-width: 1200px) {
-        .title {
-          font-size: 2.8rem;
-          letter-spacing: 0.09rem;
-        }
-
         .hero__image {
           margin-left: 2rem;
-        }
-      }
-
-      @media (max-width: 1000px) {
-        .title {
-          font-size: 2.2rem;
-          letter-spacing: 0.07rem;
-        }
-      }
-
-      @media (max-width: 900px) {
-        .title {
-          font-size: 1.9rem;
         }
       }
 
@@ -129,14 +109,9 @@ export const Header: React.FC = () => (
           align-items: flex-start;
         }
 
-        .title {
-          font-size: 1.5rem;
-          letter-spacing: 0.05rem;
-        }
-
         p.description {
           font-size: 0.9rem;
-          line-height: 1.5rem;
+          line-height: 1.75rem;
         }
       }
 

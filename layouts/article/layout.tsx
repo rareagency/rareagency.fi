@@ -8,7 +8,7 @@ export const Layout: React.FC = ({ children }) => (
 
       <link rel="icon" href="/favicon.ico" />
       <link
-        href="https://fonts.googleapis.com/css?family=Nunito+Sans|Montserrat:400,500&display=swap"
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans:700,800|Montserrat:400,500&display=swap"
         rel="stylesheet"
       ></link>
     </Head>
@@ -34,37 +34,11 @@ export const Layout: React.FC = ({ children }) => (
           font-family: 'Nunito Sans', sans-serif;
         }
 
-        h1 {
-          margin-top: 1rem;
-          font-size: 3rem;
-          letter-spacing: 0.11rem;
-        }
-
         h2 {
           margin: 2rem 0;
         }
         ul {
-          line-height: 2em;
-        }
-
-        @media (max-width: 1200px) {
-          h1 {
-            font-size: 2.8rem;
-            letter-spacing: 0.09rem;
-          }
-        }
-
-        @media (max-width: 1000px) {
-          h1 {
-            font-size: 2.2rem;
-            letter-spacing: 0.07rem;
-          }
-        }
-
-        @media (max-width: 900px) {
-          h1 {
-            font-size: 1.9rem;
-          }
+          line-height: 1.75rem;
         }
 
         article svg {
@@ -74,10 +48,6 @@ export const Layout: React.FC = ({ children }) => (
         }
 
         @media (max-width: 800px) {
-          h1 {
-            font-size: 1.5rem;
-            letter-spacing: 0.05rem;
-          }
           article svg {
             // float: none;
             display: block;
@@ -103,7 +73,7 @@ export const Layout: React.FC = ({ children }) => (
           margin-top: 2rem;
         }
         p {
-          line-height: 2rem;
+          line-height: 1.75rem;
         }
       `}
     </style>
