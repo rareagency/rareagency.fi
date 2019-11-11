@@ -6,7 +6,7 @@ export const Title: React.FC = ({ children }) => (
 
     <style jsx>{`
       .title {
-        margin-top: 0;
+        margin: 0;
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 800;
         font-size: 3rem;

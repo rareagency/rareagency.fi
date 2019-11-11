@@ -4,21 +4,21 @@ import { Center } from '../../components/center';
 
 export const Header: React.FC = ({ children }) => (
   <header className="hero">
-    <Center>
-      <section className="hero__content">
+    <Nav />
+
+    <section className="hero__content">
+      <Center>
         <article className="hero__article">{children}</article>
-      </section>
-    </Center>
+      </Center>
+    </section>
 
     <style jsx>{`
       .hero {
         background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
         color: #fff;
+      }
+      .hero__content {
         padding: 3rem 0;
-
-        // For mobile background person-with-laptop:
-        position: relative;
-        overflow: hidden;
       }
     `}</style>
   </header>

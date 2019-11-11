@@ -38,28 +38,6 @@ export const Layout: React.FC = ({ children }) => {
             position: relative;
           }
 
-          .wrapper::before {
-            background-image: linear-gradient(
-              95.62deg,
-              #181113 40.28%,
-              #150b03 99.06%
-            );
-            content: '';
-            display: block;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 1;
-            width: 100%;
-            z-index: -100;
-            transition: opacity 0.4s;
-          }
-
-          .wrapper.background-light::before {
-            opacity: 0;
-          }
-
           h1,
           h2 {
             font-family: 'Nunito Sans', sans-serif;

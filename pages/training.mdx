@@ -1,17 +1,18 @@
 import { Questions } from '../components/illustrations/questions.tsx';
 import { Title } from '../components/title.tsx';
+import { Section } from '../components/section.tsx';
 import { Main } from '../layouts/article/main.tsx';
 import { Header } from '../layouts/article/header.tsx';
 
 <Header>
+  <Section title={<Title>Suomen tehokkain React-kurssi</Title>} image={<Questions />}>
 
-<Questions />
+  Ajan myötä jokaisen React-projektin kehitys hidastuu.
+  Useimmiten syynä on projektin alkuvaiheen teknologiavalinnat tai puuttuva tietämys parhaista käytännöistä.
 
-<Title>Suomen tehokkain<br /> React-kurssi</Title>
-
-Ajan myötä jokaisen React-projektin kehitys hidastuu. Useimmiten syynä on projektin alkuvaiheen teknologiavalinnat tai puuttuva tietämys parhaista käytännöistä. Kuinka siis varmistetaan, että projekti lähtee heti alusta asti oikeaan suuntaan?
-
-Ottamalla meidän päiväksi tiimiinne! Tulemme paikan päälle antamaan kurssin osallistujille selkeät suuntaviivat seuraavaan React-projektiinne.
+  Kuinka siis varmistetaan, että projekti lähtee heti alusta asti oikeaan suuntaan?
+  Ottamalla meidän päiväksi tiimiinne! Tulemme paikan päälle antamaan kurssin osallistujille selkeät suuntaviivat seuraavaan React-projektiinne.
+  </Section>
 </Header>
 
 <Main>

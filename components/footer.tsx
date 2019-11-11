@@ -27,7 +27,7 @@ export const Footer: React.FC = () => (
 
     <style jsx>{`
       .logo {
-        width: 100px;
+        width: 150px;
       }
       .footer {
         background: #f8f8f8;

@@ -11,18 +11,26 @@ export const Main: React.FC = ({ children }) => (
 
     <style jsx>{`
       .main {
-        background: #fff;
-        color: #160d07;
+        padding: 3rem 0;
       }
-      .main__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+      :global(ul) {
+        line-height: 1.75rem;
       }
 
-      .main h2 {
-        font-size: 2.5rem;
-        letter-spacing: 0.09rem;
+      article :global(img) {
+        width: 250px;
+        float: right;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+      @media (max-width: 600px) {
+        article :global(img) {
+          float: none;
+          display: block;
+          margin: 2rem auto;
+        }
       }
     `}</style>
   </main>

@@ -41,7 +41,12 @@ export const Header: React.FC = () => (
     </Center>
 
     <style jsx>{`
+      :global(.background-light) .hero {
+        opacity: 0;
+      }
+
       .hero {
+        transition: opacity 0.4s;
         color: #fff;
         padding-bottom: 3rem;
         min-height: 100vh;
@@ -50,6 +55,11 @@ export const Header: React.FC = () => (
         flex-direction: column;
         // For mobile background person-with-laptop:
         position: relative;
+        background-image: linear-gradient(
+          95.62deg,
+          #181113 40.28%,
+          #150b03 99.06%
+        );
       }
 
       :global(.hero__wrapper) {
@@ -79,7 +89,7 @@ export const Header: React.FC = () => (
       }
 
       .description {
-        line-height: 1.75rem;
+        font-size: 22px;
       }
 
       .references h3 {
@@ -118,7 +128,6 @@ export const Header: React.FC = () => (
 
         p.description {
           font-size: 0.9rem;
-          line-height: 1.75rem;
         }
       }
 
