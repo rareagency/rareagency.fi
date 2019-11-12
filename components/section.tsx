@@ -36,11 +36,6 @@ export const Section: React.FC<{
         grid-area: title;
       }
 
-      h2 {
-        font-size: 2.5rem;
-        letter-spacing: 0.09rem;
-      }
-
       .main {
         transition: opacity 0.4s ease-in-out;
       }
@@ -73,14 +68,18 @@ export const Section: React.FC<{
           grid-row-end: 3;
         }
       }
-      @media (max-width: 700px) {
+      @media (max-width: 500px) {
         .main__content {
           grid-template-columns: 100%;
           grid-template-areas:
-            'title'
             'image'
+            'title'
             'content'
             'button';
+        }
+        .illustration {
+          grid-row-start: 1;
+          grid-row-end: 2;
         }
         .illustration :global(svg) {
           padding: 2rem 0;

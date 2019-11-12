@@ -30,11 +30,20 @@ export const Header: React.FC = () => (
         <h3>Meihin luottaa</h3>
 
         <p className="references__images">
-          <img src="../static/references/plan.svg" alt="Plan International" />
-          <img src="../static/references/tieto.svg" alt="Tieto Oyj" />
+          <img
+            src="../static/references/plan.svg"
+            className="logo plan"
+            alt="Plan International"
+          />
+          <img
+            src="../static/references/tieto.svg"
+            className="logo tieto"
+            alt="Tieto Oyj"
+          />
           <img
             src="../static/references/veracell.svg"
-            alt="Plan International"
+            alt="Veracell"
+            className="logo veracell"
           />
         </p>
       </section>
@@ -46,20 +55,15 @@ export const Header: React.FC = () => (
       }
 
       .hero {
-        transition: opacity 0.4s;
         color: #fff;
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
         min-height: 100vh;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        transition: opacity 400ms;
         // For mobile background person-with-laptop:
         position: relative;
-        background-image: linear-gradient(
-          95.62deg,
-          #181113 40.28%,
-          #150b03 99.06%
-        );
       }
 
       :global(.hero__wrapper) {
@@ -89,7 +93,7 @@ export const Header: React.FC = () => (
       }
 
       .description {
-        font-size: 22px;
+        font-size: 1.35rem;
       }
 
       .references h3 {
@@ -98,21 +102,43 @@ export const Header: React.FC = () => (
       }
       .references {
         margin-bottom: -1rem;
+        padding-bottom: 1em;
       }
 
       .references__images {
         display: flex;
-        align-items: center;
-        margin: 0 -1rem;
+        align-items: flex-end;
         flex-wrap: wrap;
       }
 
-      .references__images img {
+      .logo {
         margin-bottom: 1rem;
+        margin-right: 1.4rem;
       }
 
-      .references__images img {
-        padding: 0 1rem;
+      .plan {
+        margin-bottom: 0.85rem;
+        margin-right: 1.75rem;
+      }
+
+      .tieto {
+      }
+
+      .veracell {
+        margin-bottom: 1.05rem;
+      }
+
+      @media (max-width: 800px) {
+        .plan {
+          width: 80px;
+        }
+        .tieto {
+          width: 60px;
+        }
+        .veracell {
+          width: 97px;
+          margin-bottom: 1rem;
+        }
       }
 
       @media (max-width: 1200px) {
@@ -124,10 +150,6 @@ export const Header: React.FC = () => (
       @media (max-width: 800px) {
         .hero__image {
           margin-left: 1.25rem;
-        }
-
-        p.description {
-          font-size: 0.9rem;
         }
       }
 

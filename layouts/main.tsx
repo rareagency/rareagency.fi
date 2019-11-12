@@ -25,22 +25,65 @@ export const Layout: React.FC = ({ children }) => {
             font-family: 'Montserrat', -apple-system, BlinkMacSystemFont,
               'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
               'Droid Sans', 'Helvetica Neue', sans-serif;
-            font-size: 20px;
+            font-size: 100%;
           }
+
           html {
             height: 100%;
           }
+
           body {
             position: relative;
           }
 
+          body::before {
+            background-image: linear-gradient(
+              95.62deg,
+              #181113 40.28%,
+              #150b03 99.06%
+            );
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: opacity 0.4s;
+            z-index: -1;
+            content: '';
+          }
+
+          .background-light::before {
+            opacity: 0;
+          }
           h1,
           h2 {
             font-family: 'Nunito Sans', sans-serif;
           }
 
+          h1 {
+            margin: 0;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 800;
+            font-size: 3.75em;
+            letter-spacing: 0.07rem;
+          }
+
+          h2 {
+            font-size: 2.5rem;
+            letter-spacing: 0.09rem;
+          }
+
+          @media (max-width: 800px) {
+            h1 {
+              font-size: 2.5rem;
+            }
+            h2 {
+              font-size: 1.75rem;
+            }
+          }
+
           p {
-            line-height: 1.75rem;
+            line-height: 2.2rem;
           }
         `}
       </style>

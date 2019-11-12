@@ -25,6 +25,11 @@ export const Center: React.FC<{ className?: string }> = ({
           padding: 0 2rem;
         }
       }
+      @media (max-width: 500px) {
+        .center {
+          padding: 0 1.5rem;
+        }
+      }
     `}</style>
   </div>
 );

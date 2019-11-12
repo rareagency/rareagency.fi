@@ -45,7 +45,7 @@ export const Main: React.FC = () => {
     <main className="main" ref={ref}>
       <Center>
         <Section
-          title="Suunnit&shy;teleeko tiimisi uutta webbi&shy;projektia?"
+          title="Suunnitteleeko tiimisi uutta webbiprojektia?"
           image={<Workspace />}
           action={{ title: 'Lue lisää', href: '#read-more' }}
         >
