@@ -9,7 +9,7 @@ export const Layout: React.FC = ({ children }) => {
 
         <link rel="icon" href="/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css?family=Nunito+Sans:700,800|Raleway:400,500&display=swap"
+          href="https://fonts.googleapis.com/css?family=Nunito+Sans:700,800|Mukta:200&display=swap"
           rel="stylesheet"
         ></link>
       </Head>
@@ -22,8 +22,8 @@ export const Layout: React.FC = ({ children }) => {
           html {
             padding: 0;
             margin: 0;
-            font-family: 'Raleway', -apple-system, BlinkMacSystemFont,
-              'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+            font-family: 'Mukta', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+              'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
               'Droid Sans', 'Helvetica Neue', sans-serif;
             font-size: 20px;
           }
@@ -41,6 +41,7 @@ export const Layout: React.FC = ({ children }) => {
 
           p {
             line-height: 1.75rem;
+            letter-spacing: 0.8px;
           }
         `}
       </style>
