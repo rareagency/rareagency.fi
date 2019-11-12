@@ -11,6 +11,7 @@ export const Main: React.FC = ({ children }) => (
 
     <style jsx>{`
       .main {
+        background: #fff;
         padding: 3rem 0;
       }
       :global(ul) {

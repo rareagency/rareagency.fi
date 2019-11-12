@@ -37,10 +37,10 @@ export const Layout: React.FC = ({ children }) => {
           }
 
           body::before {
-            background-image: linear-gradient(
-              95.62deg,
-              #181113 40.28%,
-              #150b03 99.06%
+            background: linear-gradient(
+              128.62deg,
+              #212121 28.28%,
+              #060606 100%
             );
             position: fixed;
             top: 0;

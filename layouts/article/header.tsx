@@ -14,7 +14,7 @@ export const Header: React.FC = ({ children }) => (
 
     <style jsx>{`
       .hero {
-        background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
+        background: linear-gradient(128.62deg, #212121 28.28%, #060606 100%);
         color: #fff;
       }
       .hero__content {
