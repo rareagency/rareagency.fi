@@ -18,7 +18,7 @@ export const Header: React.FC = ({ children }) => (
         color: #fff;
       }
       .hero__content {
-        padding: 3rem 0;
+        padding: 4rem 0;
       }
     `}</style>
   </header>

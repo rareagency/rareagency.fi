@@ -18,6 +18,10 @@ export const Layout: React.FC = ({ children }) => {
 
       <style jsx global>
         {`
+          * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
           body,
           html {
             padding: 0;
@@ -83,6 +87,7 @@ export const Layout: React.FC = ({ children }) => {
           }
 
           p {
+            font-size: 1.3rem;
             line-height: 2.2rem;
           }
         `}
