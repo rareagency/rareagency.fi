@@ -102,11 +102,12 @@ export const Section: React.FC<{
 
       .button {
         display: inline-block;
-        padding: 0.7rem 6rem;
-        border: 5px solid #dedede;
+        padding: 0.9rem 6rem;
+        border: 5px solid #e4e4e4;
         border-radius: 5px;
-        color: #919191;
+        color: #757575;
         text-decoration: none;
+        font-weight: bold;
       }
     `}</style>
   </main>
