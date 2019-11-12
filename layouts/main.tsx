@@ -1,11 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import { useScrollYPosition } from 'react-use-scroll-position';
 
 export const Layout: React.FC = ({ children }) => {
-  const scroll = useScrollYPosition();
-  const backgroundClass = scroll > 120 ? 'background-light' : 'background-dark';
-
   return (
     <>
       <Head>
@@ -18,7 +14,7 @@ export const Layout: React.FC = ({ children }) => {
         ></link>
       </Head>
 
-      <div className={`wrapper ${backgroundClass}`}>{children}</div>
+      <div className="wrapper">{children}</div>
 
       <style jsx global>
         {`

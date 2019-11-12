@@ -16,7 +16,6 @@
     "next": "9.1.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
-    "react-use-scroll-position": "^2.0.0",
     "typescript": "^3.7.2",
     "vivus": "^0.4.5"
   },
