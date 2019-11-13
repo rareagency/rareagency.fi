@@ -47,16 +47,17 @@ export const Main: React.FC = () => {
         <Section
           title="Suunnitteleeko tiimisi uutta webbiprojektia?"
           image={<Workspace />}
-          action={{ title: 'Lue lisää', href: '#read-more' }}
+          action={{ title: 'Lue lisää', href: '/training' }}
         >
           <p>
             Potkaise seuraava webbiprojektinne käyntiin oikealla jalalla ja
-            vältä pahimmat sudenkuopat!
+            <br />
+            vältä yleisimmät sudenkuopat.
           </p>
           <p>
-            Päivän mittainen <b>Kickstart: Moderni webbiprojekti</b>{' '}
-            &#8209;workshoppimme antaa selkeät konkreettiset suuntaviivat
-            seuraavaan React-projektiinne
+            Päivän mittainen <strong>Suomen tehokkain React-kurssi</strong>{' '}
+            &#8209;workshoppimme antaa selkeän suunnitelman seuraavaan
+            React-projektiinne
           </p>
         </Section>
       </Center>

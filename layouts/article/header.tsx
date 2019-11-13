@@ -20,6 +20,14 @@ export const Header: React.FC = ({ children }) => (
       .hero__content {
         padding: 4rem 0;
       }
+      article {
+        width: 70%;
+      }
+      @media (max-width: 800px) {
+        article {
+          width: auto;
+        }
+      }
     `}</style>
   </header>
 );

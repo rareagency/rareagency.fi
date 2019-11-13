@@ -14,23 +14,12 @@ export const Main: React.FC = ({ children }) => (
         background: #fff;
         padding: 3rem 0;
       }
-      :global(ul) {
-        line-height: 1.75rem;
+      .main__content {
+        width: 70%;
       }
-
-      article :global(img) {
-        width: 250px;
-        float: right;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-      }
-      @media (max-width: 600px) {
-        article :global(img) {
-          float: none;
-          display: block;
-          margin: 2rem auto;
+      @media (max-width: 800px) {
+        .main__content {
+          width: auto;
         }
       }
     `}</style>

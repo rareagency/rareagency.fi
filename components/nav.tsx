@@ -15,7 +15,7 @@ export const Nav = () => (
         <a>Me</a>
       </Link>
       <Link href="/training">
-        <a>Koulutukset</a>
+        <a>Workshopit</a>
       </Link>
       <Link href="/contact-us">
         <a>Ota yhteyttä</a>

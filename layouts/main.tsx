@@ -76,7 +76,9 @@ export const Layout: React.FC = ({ children }) => {
             font-size: 2.5rem;
             letter-spacing: 0.09rem;
           }
-
+          h3 {
+            font-size: 1.5rem;
+          }
           @media (max-width: 800px) {
             h1 {
               font-size: 2.5rem;
@@ -86,9 +88,13 @@ export const Layout: React.FC = ({ children }) => {
             }
           }
 
-          p {
-            font-size: 1.3rem;
-            line-height: 2.2rem;
+          p,
+          ul {
+            font-size: 1.1rem;
+            line-height: 2rem;
+          }
+          strong {
+            font-weight: 500;
           }
         `}
       </style>
