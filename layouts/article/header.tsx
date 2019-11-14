@@ -1,24 +1,32 @@
 import React from 'react';
-import { Nav } from './nav';
+import { Nav } from '../../components/nav';
 import { Center } from '../../components/center';
 
 export const Header: React.FC = ({ children }) => (
   <header className="hero">
-    <Center>
-      <section className="hero__content">
+    <Nav />
+
+    <section className="hero__content">
+      <Center>
         <article className="hero__article">{children}</article>
-      </section>
-    </Center>
+      </Center>
+    </section>
 
     <style jsx>{`
       .hero {
-        background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
+        background: linear-gradient(128.62deg, #212121 28.28%, #060606 100%);
         color: #fff;
-        padding: 3rem 0;
-
-        // For mobile background person-with-laptop:
-        position: relative;
-        overflow: hidden;
+      }
+      .hero__content {
+        padding: 4rem 0;
+      }
+      article {
+        width: 70%;
+      }
+      @media (max-width: 800px) {
+        article {
+          width: auto;
+        }
       }
     `}</style>
   </header>

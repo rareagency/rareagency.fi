@@ -1,75 +1,72 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Center } from './center';
 import { Workspace } from './illustrations/workspace';
+import { Section } from './section';
 
-export const Main: React.FC = () => (
-  <main className="main">
-    <Center>
-      <section className="main__content">
-        <article className="webproject">
-          <h2>Suunnitteleeko tiimisi uutta webbiprojektia?</h2>
+function useOnScreen(ref: React.RefObject<Element>, rootMargin = '0px') {
+  // State and setter for storing whether element is visible
+  const [isIntersecting, setIntersecting] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Update our state when observer callback fires
+        setIntersecting(entry.isIntersecting);
+      },
+      {
+        rootMargin
+      }
+    );
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []); // Empty array ensures that effect is only run on mount and unmount
+
+  return isIntersecting;
+}
+
+export const Main: React.FC = () => {
+  const ref = useRef<HTMLElement>(null);
+  const onScreen = useOnScreen(ref, '-100px');
+
+  useEffect(() => {
+    document.body.classList.remove('background-light', 'background-dark');
+    document.body.classList.add(
+      onScreen ? 'background-light' : 'background-dark'
+    );
+  }, [onScreen]);
+
+  return (
+    <main className="main" ref={ref}>
+      <Center>
+        <Section
+          title="Suunnitteleeko tiimisi uutta webbiprojektia?"
+          image={<Workspace />}
+          action={{ title: 'Lue lisää', href: '/training' }}
+        >
           <p>
             Potkaise seuraava webbiprojektinne käyntiin oikealla jalalla ja
-            vältä pahimmat sudenkuopat!
+            <br />
+            vältä yleisimmät sudenkuopat.
           </p>
           <p>
-            Päivän mittainen <b>Kickstart: Moderni webbiprojekti</b>{' '}
-            &#8209;workshoppimme antaa selkeät konkreettiset suuntaviivat
-            seuraavaan React-projektiinne
+            Päivän mittainen <strong>Suomen tehokkain React-kurssi</strong>{' '}
+            &#8209;workshoppimme antaa selkeän suunnitelman seuraavaan
+            React-projektiinne
           </p>
-
-          <a href="#read-more" className="read-more">
-            Lue lisää
-          </a>
-        </article>
-        <aside>
-          <Workspace />
-        </aside>
-      </section>
-    </Center>
-
-    <style jsx>{`
-      .main__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .main h2 {
-        font-size: 2.5rem;
-        letter-spacing: 0.09rem;
-      }
-
-      .main {
-        transform: translateZ(0);
-        transition: opacity 0.4s ease-in-out;
-      }
-
-      .main :global(.center) {
-        padding-bottom: 5rem;
-      }
-
-      .webproject {
-        max-width: 45%;
-        transition: opacity 0.4s ease-in-out;
-      }
-
-      :global(.background-dark) .webproject {
-        opacity: 0;
-      }
-
-      .webproject p:last-of-type {
-        margin-bottom: 3rem;
-      }
-
-      .read-more {
-        display: inline-block;
-        padding: 0.7rem 6rem;
-        border: 5px solid #dedede;
-        border-radius: 5px;
-        color: #919191;
-        text-decoration: none;
-      }
-    `}</style>
-  </main>
-);
+        </Section>
+      </Center>
+      <style jsx>{`
+        .main {
+          padding-top: 1rem;
+          padding-bottom: 6rem;
+        }
+      `}</style>
+    </main>
+  );
+};

@@ -12,21 +12,15 @@ export const Main: React.FC = ({ children }) => (
     <style jsx>{`
       .main {
         background: #fff;
-        color: #160d07;
+        padding: 3rem 0;
       }
       .main__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        width: 70%;
       }
-
-      .main h2 {
-        font-size: 2.5rem;
-        letter-spacing: 0.09rem;
-      }
-
-      .main :global(.center) {
-        padding: 5rem 0;
+      @media (max-width: 800px) {
+        .main__content {
+          width: auto;
+        }
       }
     `}</style>
   </main>

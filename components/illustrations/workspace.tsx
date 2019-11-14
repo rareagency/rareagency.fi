@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Vivus from 'vivus';
 
-export function Workspace() {
+export function Workspace({ className }: { className?: string }) {
   useEffect(() => {
     new Vivus('workspace', {
       duration: 200,
@@ -22,8 +22,7 @@ export function Workspace() {
       `}</style>
 
       <svg
-        width="467"
-        height="415"
+        className={className}
         viewBox="0 0 467 415"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -37,91 +36,91 @@ export function Workspace() {
         <path
           d="M94.4089 318.785C105.253 305.029 115.403 279.23 120.472 257.256C120.017 257.303 119.56 257.328 119.102 257.328C115.991 257.342 112.978 256.236 110.613 254.213C108.249 252.19 106.691 249.384 106.223 246.308C105.755 243.231 106.408 240.089 108.064 237.454C109.719 234.82 112.267 232.868 115.242 231.955"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M123.051 224.784C120.856 213.888 113.607 200.693 94.5542 200.693C81.66 200.693 73.2801 219.18 71.2046 235.053C69.4871 248.17 56.9924 269.782 56.9924 287.335C57.0125 298.618 60.5553 309.613 67.1262 318.785"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M366.193 224.784H93.3088V231.592H366.193V224.784Z"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M116.145 406.994V231.374"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M162.05 406.994V231.374"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M116.145 250.22H162.05"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M116.145 395.112H162.05"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M297.447 406.994V231.374"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M343.352 406.994V231.374"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M297.447 250.22H343.352"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M297.447 395.112H343.352"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M178.296 216.046H128.084V224.784H178.296V216.046Z"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M211.349 110.869V106.142C211.327 98.6323 208.334 91.4363 203.024 86.1261C197.714 80.8158 190.518 77.8228 183.008 77.8009H181.524C174.014 77.8228 166.818 80.8158 161.508 86.1261C156.197 91.4363 153.204 98.6323 153.182 106.142V216.046"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -132,35 +131,35 @@ export function Workspace() {
         <path
           d="M215.92 137.607C215.88 138.794 215.381 139.918 214.528 140.743C213.674 141.568 212.533 142.03 211.346 142.03C210.159 142.03 209.019 141.568 208.165 140.743C207.312 139.918 206.812 138.794 206.772 137.607"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M219.22 209.041H274.222C276.307 209.043 278.307 209.869 279.784 211.34C281.262 212.811 282.098 214.807 282.109 216.892V216.892C282.103 218.978 281.272 220.977 279.797 222.452C278.322 223.927 276.323 224.758 274.237 224.763H219.236"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M272.12 209.041V224.784"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M222.323 209.041V224.784"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M276.183 195.618H224.373V203.1H276.183V195.618Z"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -171,35 +170,35 @@ export function Workspace() {
         <path
           d="M326.898 205.051C328.678 205.1 330.367 205.841 331.608 207.117C332.849 208.393 333.544 210.102 333.544 211.882C333.544 213.662 332.849 215.372 331.608 216.647C330.367 217.923 328.678 218.664 326.898 218.713"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M431.251 404.576V103.325"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M431.251 179.144C422.892 179.116 414.883 175.784 408.973 169.873C403.063 163.963 399.73 155.954 399.703 147.596V135.34"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M462.757 103.325V116.867C462.73 125.226 459.397 133.234 453.487 139.145C447.576 145.055 439.568 148.388 431.209 148.415"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M371.429 160.495L415.477 121.304"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -227,91 +226,91 @@ export function Workspace() {
         <path
           d="M462.747 103.236C464.543 103.236 466 101.78 466 99.9831C466 98.1863 464.543 96.7297 462.747 96.7297C460.95 96.7297 459.493 98.1863 459.493 99.9831C459.493 101.78 460.95 103.236 462.747 103.236Z"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M305.515 114.896C323.343 114.896 337.795 100.444 337.795 82.6161C337.795 64.7886 323.343 50.3365 305.515 50.3365C287.688 50.3365 273.236 64.7886 273.236 82.6161C273.236 100.444 287.688 114.896 305.515 114.896Z"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M305.515 82.6161V59.5415"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M305.515 82.6161H320.428"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M116.383 59.9722H1V64.7822H116.383V59.9722Z"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M52.2031 7.47705H42.168V59.9774H52.2031V7.47705Z"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M78.3034 9.58492L69.8739 15.1042L98.7491 59.2045L107.179 53.6852L78.3034 9.58492Z"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M69.9644 16.4122H63.743V59.9722H69.9644V16.4122Z"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M21.7189 64.7822H15.7051V70.7961H21.7189V64.7822Z"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M101.684 64.7822H95.6697V70.7961H101.684V64.7822Z"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M77.2962 318.785C76.3571 305.761 76.3934 272.511 91.3942 246.479"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M30.7318 196.656C35.5574 199.769 50.5738 233.896 59.8929 270.28"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M71.7598 231.54C66.4132 223.454 61.8506 214.876 58.134 205.923C55.6693 199.961 49.7281 174.551 29.5644 174.551C20.043 174.551 4.9176 184.452 4.9176 200.693C4.9176 209.96 11.3413 221.578 17.3707 233.693C19.2011 232.11 21.3863 230.992 23.741 230.433C26.0957 229.874 28.5505 229.891 30.8971 230.484C33.2436 231.076 35.4127 232.225 37.2204 233.834C39.0281 235.443 40.4209 237.465 41.2809 239.727C42.1408 241.989 42.4424 244.425 42.1601 246.829C41.8778 249.233 41.0199 251.533 39.6592 253.534C38.2985 255.535 36.4752 257.179 34.3439 258.326C32.2126 259.472 29.8362 260.088 27.4163 260.12C34.006 297.479 46.9002 312.776 56.4009 318.785"
           stroke="black"
-          strokeWidth="2"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />

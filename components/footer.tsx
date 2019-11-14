@@ -27,7 +27,7 @@ export const Footer: React.FC = () => (
 
     <style jsx>{`
       .logo {
-        width: 100px;
+        width: 150px;
       }
       .footer {
         background: #f8f8f8;
@@ -43,7 +43,7 @@ export const Footer: React.FC = () => (
         margin-right: 3rem;
         color: #818181;
         font-style: normal;
-        line-height: 1.5em;
+        line-height: 1.75rem;
       }
 
       address:last-of-type {
