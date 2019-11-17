@@ -54,7 +54,7 @@ export const Main: React.FC = () => {
             vältä yleisimmät sudenkuopat.
           </p>
           <p>
-            <strong>Päivän mittainen React-workshoppimme</strong> antaa selkeän
+            <strong>Päivän mittainen React-kurssimme</strong> antaa selkeän
             suunnitelman seuraavaan React-projektiinne.
           </p>
         </Section>
