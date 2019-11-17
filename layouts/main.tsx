@@ -90,7 +90,7 @@ export const Layout: React.FC = ({ children }) => {
 
           p,
           ul {
-            font-size: 1.1rem;
+            font-size: 1rem;
             line-height: 2rem;
           }
           strong {

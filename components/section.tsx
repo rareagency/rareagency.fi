@@ -90,6 +90,7 @@ export const Section: React.FC<{
 
       .content {
         grid-area: content;
+        max-width: 34rem;
       }
 
       .content p:last-of-type {

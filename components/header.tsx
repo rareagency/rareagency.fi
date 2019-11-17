@@ -61,7 +61,7 @@ export const Header: React.FC = () => (
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        transition: opacity 400ms;
+        transition: opacity 1000ms;
         // For mobile background person-with-laptop:
         position: relative;
       }
