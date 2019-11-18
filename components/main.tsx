@@ -51,13 +51,11 @@ export const Main: React.FC = () => {
         >
           <p>
             Potkaise seuraava webbiprojektinne käyntiin oikealla jalalla ja
-            <br />
             vältä yleisimmät sudenkuopat.
           </p>
           <p>
-            Päivän mittainen <strong>Suomen tehokkain React-kurssi</strong>{' '}
-            &#8209;workshoppimme antaa selkeän suunnitelman seuraavaan
-            React-projektiinne
+            <strong>Päivän mittainen React-kurssimme</strong> antaa selkeän
+            suunnitelman seuraavaan React-projektiinne.
           </p>
         </Section>
       </Center>

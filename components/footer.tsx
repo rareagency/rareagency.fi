@@ -8,19 +8,15 @@ export const Footer: React.FC = () => (
 
       <section className="addresses">
         <address>
-          3092335-9
-          <br />
-          +358 50 470 0715
-          <br />
-          riku@rareagency.fi
+          <div>3092335-9</div>
+          <div>+358 50 470 0715</div>
+          <div>riku@rareagency.fi</div>
         </address>
 
         <address>
-          Kauppakatu 9B 38
-          <br />
-          33200 Tampere
-          <br />
-          Finland
+          <div>Kauppakatu 9B 38</div>
+          <div>33200 Tampere</div>
+          <div>Finland</div>
         </address>
       </section>
     </Center>
@@ -31,7 +27,7 @@ export const Footer: React.FC = () => (
       }
       .footer {
         background: #f8f8f8;
-        padding: 7rem 0;
+        padding: 6rem 0;
       }
 
       .addresses {
@@ -40,10 +36,20 @@ export const Footer: React.FC = () => (
       }
 
       address {
-        margin-right: 3rem;
+        margin-right: 4rem;
         color: #818181;
         font-style: normal;
         line-height: 1.75rem;
+      }
+
+      @media (max-width: 500px) {
+        .addresses {
+          flex-direction: column;
+        }
+
+        address:first-of-type {
+          margin-bottom: 1rem;
+        }
       }
 
       address:last-of-type {
