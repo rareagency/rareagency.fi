@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from '../../components/nav';
+import { Nav } from '../../components/navigation/nav';
 import { Center } from '../../components/center';
 
 export const Header: React.FC = ({ children }) => (
