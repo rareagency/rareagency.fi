@@ -14,7 +14,7 @@ export const Layout: React.FC = ({ children }) => {
         ></link>
       </Head>
 
-      <div className="wrapper">{children}</div>
+      {children}
 
       <style jsx global>
         {`
