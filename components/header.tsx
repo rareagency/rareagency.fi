@@ -1,17 +1,21 @@
 import React from 'react';
-import { Nav } from './nav';
+import { Nav } from './navigation/nav';
 import { Center } from './center';
-import { PersonWithLaptop } from './illustrations/person-with-laptop';
-import { Title } from './title';
+import { ColorLines } from './illustrations/color-lines';
 
 export const Header: React.FC = () => (
   <header className="hero">
     <Nav />
+
     <Center className="hero__wrapper">
       <section className="hero__content">
         <article className="hero__article">
-          <Title>Kumppani, jota softatiimisi tarvitsee.</Title>
-          <p className="description">
+          <h1 className="title">
+            Kumppani, jota
+            <br />
+            softatiimisi tarvitsee.
+          </h1>
+          {/* <p className="description">
             Rare on tamperelainen, uuden sukupolven konsulttitalo, joka koostuu
             modernin webbikehityksen huippuosaajista.
           </p>
@@ -19,11 +23,10 @@ export const Header: React.FC = () => (
           <p className="description">
             Web- ja mobiilikehitys. APIt. Pilvipalvelut. Moderni DevOps. <br />
             Mitä ikinä tarvitsetkin, me pystymme auttamaan.
-          </p>
+          </p> */}
         </article>
-        <aside className="hero__image">
-          <PersonWithLaptop />
-        </aside>
+
+        <ColorLines />
       </section>
 
       <section className="references">
@@ -50,20 +53,34 @@ export const Header: React.FC = () => (
     </Center>
 
     <style jsx>{`
-      :global(.background-light) .hero {
-        opacity: 0;
-      }
-
       .hero {
+        background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
         color: #fff;
         padding-bottom: 1rem;
         min-height: 100vh;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        transition: opacity 1000ms;
-        // For mobile background person-with-laptop:
         position: relative;
+        overflow: hidden; // For colorlines
+      }
+
+      section {
+        z-index: 2; // For colorlines
+      }
+
+      :global(#colorlines) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+      }
+
+      @media (max-width: 1200px) {
+        :global(#colorlines) {
+          max-width: 40vw;
+        }
       }
 
       :global(.hero__wrapper) {
@@ -82,10 +99,6 @@ export const Header: React.FC = () => (
       }
 
       .hero__article {
-        width: 55%;
-
-        // For mobile background person-with-laptop:
-        z-index: 2;
       }
 
       .hero__image :global(svg) {
@@ -93,7 +106,8 @@ export const Header: React.FC = () => (
       }
 
       .description {
-        font-size: 1.35rem;
+        font-size: 1.2rem;
+        width: 49%;
       }
 
       .references h3 {
@@ -157,6 +171,11 @@ export const Header: React.FC = () => (
         .hero__article {
           overflow: visible;
           min-width: 100%;
+        }
+
+        .description {
+          font-size: 1.1rem;
+          width: auto;
         }
       }
     `}</style>

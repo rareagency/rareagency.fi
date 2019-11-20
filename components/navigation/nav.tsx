@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import { Center } from './center';
+import { Center } from '../center';
+import { BurgerMenu } from './burger';
 
 export const Nav = () => (
-  <Center>
+  <Center className="nav">
     <nav>
       <Link href="/">
         <img src="../static/logo.png" alt="Rare Agency" className="logo" />
@@ -22,20 +23,30 @@ export const Nav = () => (
       </Link>
       {/* eslint-enable jsx-a11y/anchor-is-valid */}
 
-      <style jsx>{`
-        .logo {
-          cursor: pointer;
-          margin-right: auto;
-          width: 100px;
-        }
+      <BurgerMenu className="burger" />
 
+      <style jsx>{`
         nav {
-          padding-top: 3rem;
           display: flex;
-          justify-content: flex-end;
           align-items: center;
+          padding-top: 3rem;
           font-size: 16px;
           font-weight: 500;
+        }
+
+        .logo {
+          cursor: pointer;
+          width: 72px;
+          margin-right: 2rem;
+          padding: 0.5rem;
+          // width - margin - padding
+          margin-left: calc(-72px - 2rem - 0.5rem - 0.5rem);
+        }
+
+        @media (max-width: 1550px) {
+          .logo {
+            margin-left: 0;
+          }
         }
 
         a {
@@ -52,10 +63,21 @@ export const Nav = () => (
           margin-right: 1rem;
         }
 
-        @media (max-width: 600px) {
-          nav {
+        :global(.burger) {
+          display: none;
+        }
+
+        @media (max-width: 900px) {
+          :global(.burger) {
             display: block;
           }
+        }
+
+        @media (max-width: 900px) {
+          nav {
+            padding-top: 2rem;
+          }
+
           a {
             display: none;
           }
