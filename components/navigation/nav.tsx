@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Center } from '../center';
 import { BurgerMenu } from './burger';
+import { items } from './items';
 
 export const Nav = () => (
   <Center className="nav">
@@ -12,18 +13,14 @@ export const Nav = () => (
 
       {/* Link uses the children element for styling and it doesn't get duplicated */}
       {/* eslint-disable jsx-a11y/anchor-is-valid */}
-      <Link href="/">
-        <a>Me</a>
-      </Link>
-      <Link href="/training">
-        <a>Workshopit</a>
-      </Link>
-      <Link href="/contact-us">
-        <a>Ota yhteyttä</a>
-      </Link>
+      {items.map(item => (
+        <Link key={item.url} href={item.url}>
+          <a>{item.text}</a>
+        </Link>
+      ))}
       {/* eslint-enable jsx-a11y/anchor-is-valid */}
 
-      <BurgerMenu className="burger" />
+      <BurgerMenu items={items} className="burger" />
 
       <style jsx>{`
         nav {

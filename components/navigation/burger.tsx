@@ -1,8 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { Router } from 'next/router';
 import { Center } from '../center';
 
-export const BurgerMenu: React.FC<{ className: string }> = ({ className }) => {
+type NavItem = {
+  url: string;
+  text: string;
+};
+
+export const BurgerMenu: React.FC<{ items: NavItem[]; className: string }> = ({
+  items,
+  className
+}) => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -119,15 +128,15 @@ export const BurgerMenu: React.FC<{ className: string }> = ({ className }) => {
         </Link>
 
         <ul id="menu">
-          <li>
-            <a href="#e">Me</a>
-          </li>
-          <li>
-            <a href="#x">Workshopit</a>
-          </li>
-          <li>
-            <a href="#t">Ota yhteyttä</a>
-          </li>
+          {items.map(item => (
+            <li key={item.url}>
+              <Link href={item.url}>
+                {/* eslint-disable jsx-a11y/anchor-is-valid */}
+                <a>{item.text}</a>
+                {/* eslint-enable jsx-a11y/anchor-is-valid */}
+              </Link>
+            </li>
+          ))}
         </ul>
       </Center>
     </nav>
