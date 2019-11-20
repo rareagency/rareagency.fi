@@ -65,9 +65,15 @@ export const Header: React.FC = () => (
         overflow: hidden; // For colorlines
       }
 
+      // To stay on top of colorlines
+      .title,
       section {
-        z-index: 2; // For colorlines
+        z-index: 1;
       }
+      .title {
+        position: relative;
+      }
+      //
 
       :global(#colorlines) {
         position: absolute;
@@ -75,12 +81,6 @@ export const Header: React.FC = () => (
         right: 0;
         bottom: 0;
         height: 100%;
-      }
-
-      @media (max-width: 1200px) {
-        :global(#colorlines) {
-          max-width: 40vw;
-        }
       }
 
       :global(.hero__wrapper) {
@@ -142,6 +142,24 @@ export const Header: React.FC = () => (
         margin-bottom: 1.05rem;
       }
 
+      @media (max-width: 1150px) {
+        :global(#colorlines) {
+          opacity: 0.3;
+        }
+      }
+
+      @media (max-width: 900px) {
+        :global(#colorlines .upperside) {
+          display: none;
+        }
+
+        :global(#colorlines) {
+          left: 0;
+          right: auto;
+          width: 100%;
+        }
+      }
+
       @media (max-width: 800px) {
         .plan {
           width: 80px;
@@ -153,17 +171,14 @@ export const Header: React.FC = () => (
           width: 97px;
           margin-bottom: 1rem;
         }
+        .hero__image {
+          margin-left: 1.25rem;
+        }
       }
 
       @media (max-width: 1200px) {
         .hero__image {
           margin-left: 2rem;
-        }
-      }
-
-      @media (max-width: 800px) {
-        .hero__image {
-          margin-left: 1.25rem;
         }
       }
 

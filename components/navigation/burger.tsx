@@ -3,21 +3,25 @@ import Link from 'next/link';
 import { Router } from 'next/router';
 import { Center } from '../center';
 
+type BurgerMenuProps = {
+  items: NavItem[];
+  breakingPoint: string;
+  className: string;
+};
+
 type NavItem = {
   url: string;
   text: string;
 };
 
-export const BurgerMenu: React.FC<{ items: NavItem[]; className: string }> = ({
+export const BurgerMenu: React.FC<BurgerMenuProps> = ({
   items,
+  breakingPoint,
   className
 }) => {
   const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    document.body.style.overflowY = open ? 'hidden' : 'auto';
-  });
-
+  const openMenu = () => setOpen(true);
   const closeMenu = () => setOpen(false);
 
   useEffect(() => {
@@ -27,10 +31,52 @@ export const BurgerMenu: React.FC<{ items: NavItem[]; className: string }> = ({
 
   return (
     <nav className={className} role="navigation">
+      <button
+        className="toggle open"
+        onClick={openMenu}
+        aria-expanded={open}
+        aria-controls="menu"
+      >
+        Avaa
+      </button>
+
+      <Center className={open ? 'burger-wrapper is-active' : 'burger-wrapper'}>
+        <button
+          className="toggle close"
+          onClick={closeMenu}
+          aria-expanded={open}
+          aria-controls="menu"
+        >
+          Sulje
+        </button>
+
+        <Link href="/">
+          <img src="../static/logo.png" alt="Rare Agency" className="logo" />
+        </Link>
+
+        <ul id="menu">
+          {items.map(item => (
+            <li key={item.url}>
+              <Link href={item.url}>
+                {/* eslint-disable jsx-a11y/anchor-is-valid */}
+                <a>{item.text}</a>
+                {/* eslint-enable jsx-a11y/anchor-is-valid */}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Center>
+
       <style jsx>{`
+        @media (max-width: ${breakingPoint}) {
+          :global(body) {
+            overflow-y: ${open ? 'hidden' : 'auto'};
+          }
+        }
+
         .toggle {
           position: absolute;
-          right: 2rem;
+          right: 0;
           top: 2rem;
           border: 0;
           height: 32px;
@@ -52,14 +98,24 @@ export const BurgerMenu: React.FC<{ items: NavItem[]; className: string }> = ({
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M19 13H5v-2h14v2z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
           color: #000;
           z-index: 2;
+          right: 2rem;
         }
 
         :global(.burger-wrapper) {
-          display: none;
+          transition: opacity 350ms ease-in-out;
+          opacity: 0;
+          height: 0;
+
+          visibility: hidden;
+          display: flex;
+          position: relative;
         }
 
         :global(.burger-wrapper.is-active) {
-          display: flex;
+          visibility: visible;
+          opacity: 1;
+          height: auto;
+
           flex-direction: column;
           position: fixed;
           left: 0;
@@ -105,42 +161,6 @@ export const BurgerMenu: React.FC<{ items: NavItem[]; className: string }> = ({
           filter: invert(1);
         }
       `}</style>
-
-      <button
-        className="toggle open"
-        onClick={() => setOpen(!open)}
-        aria-expanded={open}
-        aria-controls="menu"
-      >
-        Avaa
-      </button>
-
-      <Center className={open ? 'burger-wrapper is-active' : 'burger-wrapper'}>
-        <button
-          className="toggle close"
-          onClick={() => setOpen(!open)}
-          aria-expanded={open}
-          aria-controls="menu"
-        >
-          Sulje
-        </button>
-
-        <Link href="/">
-          <img src="../static/logo.png" alt="Rare Agency" className="logo" />
-        </Link>
-
-        <ul id="menu">
-          {items.map(item => (
-            <li key={item.url}>
-              <Link href={item.url}>
-                {/* eslint-disable jsx-a11y/anchor-is-valid */}
-                <a>{item.text}</a>
-                {/* eslint-enable jsx-a11y/anchor-is-valid */}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </Center>
     </nav>
   );
 };

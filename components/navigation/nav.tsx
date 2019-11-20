@@ -20,7 +20,7 @@ export const Nav = () => (
       ))}
       {/* eslint-enable jsx-a11y/anchor-is-valid */}
 
-      <BurgerMenu items={items} className="burger" />
+      <BurgerMenu items={items} breakingPoint="900px" className="burger" />
 
       <style jsx>{`
         nav {
@@ -29,6 +29,10 @@ export const Nav = () => (
           padding-top: 3rem;
           font-size: 16px;
           font-weight: 500;
+
+          // To stay on top of colorlines
+          z-index: 2;
+          position: relative;
         }
 
         .logo {
@@ -71,9 +75,7 @@ export const Nav = () => (
           :global(.burger) {
             display: block;
           }
-        }
 
-        @media (max-width: 900px) {
           nav {
             padding-top: 2rem;
           }
