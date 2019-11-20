@@ -26,7 +26,7 @@ export const Footer: React.FC = () => (
         />
         <address>
           <strong>Riku&nbsp;Rouvila</strong>
-          <span>Lead Developer</span>
+          <span>Lead&nbsp;Developer</span>
           <span>040&nbsp;TODO&nbsp;1234</span>
           <span>riku@rareagency.fi</span>
         </address>
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => (
         />
         <address>
           <strong>Pyry&nbsp;Rouvila</strong>
-          <span>Frontend Creator</span>
+          <span>Frontend&nbsp;Creator</span>
           <span>040&nbsp;277&nbsp;7700</span>
           <span>pyry@rareagency.fi</span>
         </address>
@@ -54,7 +54,7 @@ export const Footer: React.FC = () => (
         />
         <address>
           <strong>Janne&nbsp;Kallunki</strong>
-          <span>Full-stack Designer</span>
+          <span>Full-stack&nbsp;Designer</span>
           <span>040&nbsp;TODO&nbsp;1234</span>
           <span>janne@rareagency.fi</span>
         </address>
@@ -68,7 +68,7 @@ export const Footer: React.FC = () => (
         />
         <address>
           <strong>Cihan&nbsp;Bebek</strong>
-          <span>Full-stack Engineer</span>
+          <span>Full-stack&nbsp;Engineer</span>
           <span>040&nbsp;TODO&nbsp;1234</span>
           <span>cihan@rareagency.fi</span>
         </address>
@@ -165,6 +165,38 @@ export const Footer: React.FC = () => (
         .details,
         .location {
           margin-top: 2rem;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        :global(.grid) {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+            'logo logo'
+            'riku pyry'
+            'janne cihan'
+            'location details';
+          justify-items: center;
+        }
+        .logo {
+          margin-bottom: 2rem;
+        }
+        .details,
+        .location {
+          margin-top: 2rem;
+        }
+      }
+
+      @media (max-width: 750px) {
+        :global(.grid) {
+          grid-template-areas:
+            'logo logo'
+            'riku riku'
+            'pyry pyry'
+            'janne janne'
+            'cihan cihan'
+            'location details';
         }
       }
     `}</style>
