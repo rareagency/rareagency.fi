@@ -98,7 +98,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M19 13H5v-2h14v2z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
           color: #000;
           z-index: 2;
-          right: 2rem;
+          right: 1.5rem;
         }
 
         :global(.burger-wrapper) {
