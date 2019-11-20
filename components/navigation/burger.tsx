@@ -58,9 +58,8 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
           {items.map(item => (
             <li key={item.url}>
               <Link href={item.url}>
-                {/* eslint-disable jsx-a11y/anchor-is-valid */}
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a>{item.text}</a>
-                {/* eslint-enable jsx-a11y/anchor-is-valid */}
               </Link>
             </li>
           ))}

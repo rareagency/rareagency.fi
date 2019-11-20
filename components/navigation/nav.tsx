@@ -8,17 +8,22 @@ export const Nav = () => (
   <Center className="nav">
     <nav>
       <Link href="/">
-        <img src="../static/logo.png" alt="Rare Agency" className="logo" />
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <a className="logo">
+          <img
+            src="../static/logo.png"
+            alt="Rare Agency"
+            className="logo__image"
+          />
+        </a>
       </Link>
 
-      {/* Link uses the children element for styling and it doesn't get duplicated */}
-      {/* eslint-disable jsx-a11y/anchor-is-valid */}
       {items.map(item => (
         <Link key={item.url} href={item.url}>
-          <a>{item.text}</a>
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          <a className="nav__link">{item.text}</a>
         </Link>
       ))}
-      {/* eslint-enable jsx-a11y/anchor-is-valid */}
 
       <BurgerMenu items={items} breakingPoint="900px" className="burger" />
 
@@ -36,16 +41,19 @@ export const Nav = () => (
         }
 
         .logo {
+          margin-right: 2rem;
+        }
+
+        .logo__image {
           cursor: pointer;
           width: 72px;
-          margin-right: 2rem;
           padding: 0.5rem;
           // width - margin - padding
           margin-left: calc(-72px - 2rem - 0.5rem - 0.5rem);
         }
 
         @media (max-width: 1550px) {
-          .logo {
+          .logo__image {
             margin-left: 0;
           }
         }
@@ -80,7 +88,7 @@ export const Nav = () => (
             padding-top: 2rem;
           }
 
-          a {
+          a.nav__link {
             display: none;
           }
         }
