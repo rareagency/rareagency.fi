@@ -27,13 +27,13 @@ export const BurgerMenu: React.FC<{ className: string }> = ({ className }) => {
         }
 
         .toggle.open {
-          background-image: url('./static/menu-24px.svg');
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none' /%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z' fill='%23fff'/%3E%3C/svg%3E");
           color: #fff;
           z-index: 3;
         }
 
         .toggle.close {
-          background-image: url('./static/remove-24px.svg');
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M19 13H5v-2h14v2z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
           color: #000;
           z-index: 2;
         }
