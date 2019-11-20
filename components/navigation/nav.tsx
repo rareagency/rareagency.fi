@@ -54,12 +54,15 @@ export const Nav = () => (
           text-decoration: none;
           padding: 0 0.5rem;
         }
+        a:first-of-type {
+          margin-left: -0.5rem;
+        }
 
         a:hover {
           text-decoration: underline;
         }
 
-        a:not(:last-child) {
+        a:not(:last-of-type) {
           margin-right: 1rem;
         }
 
