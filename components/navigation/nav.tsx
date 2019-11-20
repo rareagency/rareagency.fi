@@ -18,19 +18,20 @@ export const Nav = () => (
         </a>
       </Link>
 
-      {items.map(item => (
-        <Link key={item.url} href={item.url}>
-          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <a className="nav__link">{item.text}</a>
-        </Link>
-      ))}
+      <div className="nav__links">
+        {items.map(item => (
+          <Link key={item.url} href={item.url}>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a className="nav__link">{item.text}</a>
+          </Link>
+        ))}
+      </div>
 
       <BurgerMenu items={items} breakingPoint="900px" className="burger" />
 
       <style jsx>{`
         nav {
           display: flex;
-          align-items: center;
           padding-top: 3rem;
           font-size: 16px;
           font-weight: 500;
@@ -39,17 +40,13 @@ export const Nav = () => (
           z-index: 2;
           position: relative;
         }
-
-        .logo {
-          margin-right: 2rem;
-        }
-
         .logo__image {
           cursor: pointer;
           width: 72px;
-          padding: 0.5rem;
-          // width - margin - padding
-          margin-left: calc(-72px - 2rem - 0.5rem - 0.5rem);
+        }
+
+        .logo {
+          margin-right: 3rem;
         }
 
         @media (max-width: 1550px) {
@@ -63,7 +60,7 @@ export const Nav = () => (
           text-decoration: none;
           padding: 0 0.5rem;
         }
-        a:first-of-type {
+        a.nav__link:first-of-type {
           margin-left: -0.5rem;
         }
 
@@ -71,7 +68,7 @@ export const Nav = () => (
           text-decoration: underline;
         }
 
-        a:not(:last-of-type) {
+        .nav__link:not(:last-of-type) {
           margin-right: 1rem;
         }
 
@@ -79,17 +76,27 @@ export const Nav = () => (
           display: none;
         }
 
+        @media (max-width: 1150px) {
+          .nav__links {
+            margin-left: auto;
+          }
+        }
+
         @media (max-width: 900px) {
+          nav {
+            margin-left: auto;
+          }
+
+          .nav__links {
+            display: none;
+          }
+
           :global(.burger) {
             display: block;
           }
 
           nav {
             padding-top: 2rem;
-          }
-
-          a.nav__link {
-            display: none;
           }
         }
       `}</style>

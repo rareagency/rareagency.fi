@@ -41,18 +41,27 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
       </button>
 
       <Center className={open ? 'burger-wrapper is-active' : 'burger-wrapper'}>
-        <button
-          className="toggle close"
-          onClick={closeMenu}
-          aria-expanded={open}
-          aria-controls="menu"
-        >
-          Sulje
-        </button>
+        <nav className="burger-wrapper__nav" role="navigation">
+          <Link href="/">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a>
+              <img
+                src="../static/logo.png"
+                alt="Rare Agency"
+                className="logo"
+              />
+            </a>
+          </Link>
 
-        <Link href="/">
-          <img src="../static/logo.png" alt="Rare Agency" className="logo" />
-        </Link>
+          <button
+            className="toggle close"
+            onClick={closeMenu}
+            aria-expanded={open}
+            aria-controls="menu"
+          >
+            Sulje
+          </button>
+        </nav>
 
         <ul id="menu">
           {items.map(item => (
@@ -73,12 +82,16 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
           }
         }
 
+        .burger-wrapper__nav {
+          position: relative;
+        }
+
         .toggle {
           position: absolute;
           right: 0;
           top: 2rem;
           border: 0;
-          height: 32px;
+          height: auto;
           padding-right: calc(32px);
           background-color: transparent;
           background-repeat: no-repeat;
@@ -97,7 +110,6 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M19 13H5v-2h14v2z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
           color: #000;
           z-index: 2;
-          right: 1.5rem;
         }
 
         :global(.burger-wrapper) {
@@ -154,7 +166,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
         }
 
         .logo {
-          margin: 2rem 0;
+          margin: 1.5rem 0;
           padding: 0.5rem;
           width: 72px;
           filter: invert(1);
