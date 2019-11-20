@@ -68,6 +68,8 @@ export const BurgerMenu: React.FC<{ items: NavItem[]; className: string }> = ({
           bottom: 0;
           background: #fff;
           z-index: 3;
+          background-image: url('./static/color-lines.svg');
+          background-size: cover;
         }
 
         #menu {
