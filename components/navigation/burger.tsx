@@ -9,6 +9,13 @@ export const BurgerMenu: React.FC<{ className: string }> = ({ className }) => {
     document.body.style.overflowY = open ? 'hidden' : 'auto';
   });
 
+  const closeMenu = () => setOpen(false);
+
+  useEffect(() => {
+    Router.events.on('routeChangeStart', closeMenu);
+    return Router.events.off('routeChangeStart', closeMenu);
+  }, []);
+
   return (
     <nav className={className} role="navigation">
       <style jsx>{`
