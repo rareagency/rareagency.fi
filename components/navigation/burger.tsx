@@ -6,11 +6,7 @@ export const BurgerMenu: React.FC<{ className: string }> = ({ className }) => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    if (open) {
-      document.body.style.overflowY = 'hidden';
-    } else {
-      document.body.style.overflowY = 'auto';
-    }
+    document.body.style.overflowY = open ? 'hidden' : 'auto';
   });
 
   return (
