@@ -199,6 +199,17 @@ export const Footer: React.FC = () => (
             'location details';
         }
       }
+
+      @media (max-width: 350px) {
+        :global(.grid),
+        .face {
+          display: block;
+        }
+        .location,
+        .face {
+          margin-bottom: 3rem;
+        }
+      }
     `}</style>
   </footer>
 );

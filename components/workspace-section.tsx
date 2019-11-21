@@ -71,12 +71,6 @@ export const WorkspaceSection: React.FC = () => (
         text-align: center;
       }
 
-      @media (max-width: 500px) {
-        .button {
-          width: 100%;
-        }
-      }
-
       @media (max-width: 1000px) {
         .section {
           background-image: none;
@@ -85,6 +79,14 @@ export const WorkspaceSection: React.FC = () => (
         .section__article {
           width: 100%;
           text-align: left;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .button {
+          width: 100%;
+          padding-left: 0;
+          padding-right: 0;
         }
       }
     `}</style>

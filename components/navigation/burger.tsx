@@ -100,7 +100,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
         }
 
         :global(.burger-wrapper) {
-          transition: opacity 350ms ease-in-out;
+          transition: opacity 350ms ease-out;
           opacity: 0;
           height: 0;
 

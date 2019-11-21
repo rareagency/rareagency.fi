@@ -37,7 +37,7 @@ const Header = () => (
       }
       @keyframes animate {
         from {
-          transform: rotate(-60deg);
+          transform: rotate(-30deg);
         }
         to {
           transform: rotate(0deg);
@@ -45,7 +45,7 @@ const Header = () => (
       }
       .image img {
         width: 100%;
-        transform: rotate(-60deg);
+        transform: rotate(-30deg);
         animation: 1s ease-out 0s 1 animate forwards;
       }
 
@@ -64,13 +64,14 @@ const Header = () => (
 const Page: React.FC = () => (
   <Layout header={<Header />}>
     <h2>Kurssin aiheita — mistä lähteä liikkeelle?</h2>
+
+    <ul>
+      <li>Projektipohja, -rakenne ja tärkeimmät työkalut</li>
+      <li>Kirjastot — tilanhallinnasta lokalisointiin</li>
+      <li>Kehitysprosessi, työskentelytavat ja tiimin yhteispeli</li>
+      <li>Testaaminen luotettavasti ja tehokkaasti</li>
+    </ul>
     <p>
-      <ul>
-        <li>Projektipohja, -rakenne ja tärkeimmät työkalut</li>
-        <li>Kirjastot — tilanhallinnasta lokalisointiin</li>
-        <li>Kehitysprosessi, työskentelytavat ja tiimin yhteispeli</li>
-        <li>Testaaminen luotettavasti ja tehokkaasti</li>
-      </ul>
       Päivää ei istuta luentosalissa, vaan tarkoitus on koota hyvä porukka
       samaan huoneeseen keskustelemaan ja kyselemään aiheesta omien projektienne
       kontekstissa. Kurssin sisältöä voidaan muokata teidän tarpeidenne

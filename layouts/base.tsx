@@ -71,6 +71,11 @@ export const Base: React.FC = ({ children }) => {
             font-size: 1.5rem;
             font-weight: 400;
           }
+          @media (max-width: 1000px) {
+            h1 {
+              font-size: 3.4rem;
+            }
+          }
           @media (max-width: 800px) {
             h1 {
               font-size: 3rem;
