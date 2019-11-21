@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import { Router } from 'next/router';
 import { Center } from '../center';
+import { Logo } from '../logo';
 
 type BurgerMenuProps = {
   items: NavItem[];
@@ -24,11 +24,6 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
   const openMenu = () => setOpen(true);
   const closeMenu = () => setOpen(false);
 
-  useEffect(() => {
-    Router.events.on('routeChangeStart', closeMenu);
-    return Router.events.off('routeChangeStart', closeMenu);
-  }, []);
-
   return (
     <nav className={className} role="navigation">
       <button
@@ -42,16 +37,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
 
       <Center className={open ? 'burger-wrapper is-active' : 'burger-wrapper'}>
         <nav className="burger-wrapper__nav" role="navigation">
-          <Link href="/">
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <img
-                src="../static/logo.png"
-                alt="Rare Agency"
-                className="logo"
-              />
-            </a>
-          </Link>
+          <Logo secondary />
 
           <button
             className="toggle close"
@@ -67,8 +53,8 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
           {items.map(item => (
             <li key={item.url}>
               <Link href={item.url}>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a>{item.text}</a>
+                {/* eslint-disable-next-line */}
+                <a onClick={closeMenu}>{item.text}</a>
               </Link>
             </li>
           ))}
@@ -84,12 +70,13 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
 
         .burger-wrapper__nav {
           position: relative;
+          margin-top: 2rem;
         }
 
         .toggle {
           position: absolute;
           right: 0;
-          top: 2rem;
+          top: 0;
           border: 0;
           height: auto;
           padding-right: calc(32px);
@@ -166,7 +153,6 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
         }
 
         .logo {
-          margin: 1.5rem 0;
           padding: 0.5rem;
           width: 72px;
           filter: invert(1);
