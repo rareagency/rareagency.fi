@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-export const Layout: React.FC = ({ children }) => {
+export const Base: React.FC = ({ children }) => {
   return (
     <>
       <Head>

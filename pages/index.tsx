@@ -1,13 +1,10 @@
 import React from 'react';
-import { Layout } from '../layouts/main';
-import { Header } from '../components/header';
-import { Footer } from '../components/footer';
 import { AboutSection } from '../components/about-section';
 import { WorkspaceSection } from '../components/workspace-section';
+import { Layout } from '../layouts/index/layout';
 
 const Home = () => (
   <Layout>
-    <Header />
     <AboutSection>
       <h2>Mitä me myydään?</h2>
       <p>
@@ -51,7 +48,6 @@ const Home = () => (
         kanssa nii nopeesti ettette kerkee kissaa
       </p>
     </AboutSection>
-    <Footer />
   </Layout>
 );
 

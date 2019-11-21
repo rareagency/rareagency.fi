@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
 import { Center } from '../center';
 import { Logo } from '../logo';
+import Link from 'next/link';
 
 type BurgerMenuProps = {
   items: NavItem[];

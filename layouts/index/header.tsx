@@ -1,7 +1,7 @@
 import React from 'react';
-import { Nav } from './navigation/nav';
-import { Center } from './center';
-import { ColorLines } from './illustrations/color-lines';
+import { ColorLines } from '../../components/color-lines';
+import { Nav } from '../../components/navigation/nav';
+import { Center } from '../../components/center';
 
 export const Header: React.FC = () => (
   <header className="hero">
@@ -49,13 +49,13 @@ export const Header: React.FC = () => (
 
     <style jsx>{`
       .hero {
+        display: flex;
+        flex-direction: column;
         background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
         color: #fff;
         padding-bottom: 1rem;
         min-height: 100vh;
         box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
         position: relative;
         overflow: hidden; // For colorlines
       }
@@ -74,16 +74,16 @@ export const Header: React.FC = () => (
 
       :global(#colorlines) {
         position: absolute;
-        top: 0;
+
         right: 0;
         bottom: 0;
-        height: 100%;
+        width: 50%;
+        min-height: 100%;
       }
 
       :global(.hero__wrapper) {
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
         flex-grow: 1;
       }
 
