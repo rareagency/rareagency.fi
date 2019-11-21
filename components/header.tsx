@@ -15,22 +15,17 @@ export const Header: React.FC = () => (
             <br />
             softatiimisi tarvitsee.
           </h1>
-          {/* <p className="description">
+          <p className="description">
             Rare on tamperelainen, uuden sukupolven konsulttitalo, joka koostuu
             modernin webbikehityksen huippuosaajista.
           </p>
-
-          <p className="description">
-            Web- ja mobiilikehitys. APIt. Pilvipalvelut. Moderni DevOps. <br />
-            Mitä ikinä tarvitsetkin, me pystymme auttamaan.
-          </p> */}
         </article>
 
         <ColorLines />
       </section>
 
       <section className="references">
-        <h3>Meihin luottaa</h3>
+        <h3 className="description">Meihin luottaa</h3>
 
         <p className="references__images">
           <img
@@ -101,13 +96,9 @@ export const Header: React.FC = () => (
       .hero__article {
       }
 
-      .hero__image :global(svg) {
-        margin-top: 3rem;
-      }
-
       .description {
         font-size: 1.2rem;
-        width: 49%;
+        width: 55%;
       }
 
       .references h3 {
@@ -142,9 +133,18 @@ export const Header: React.FC = () => (
         margin-bottom: 1.05rem;
       }
 
+      @media (max-width: 1330px) {
+        .description {
+          width: 40%;
+        }
+      }
+
       @media (max-width: 1150px) {
         :global(#colorlines) {
           opacity: 0.3;
+        }
+        .description {
+          width: 55%;
         }
       }
 
@@ -157,6 +157,11 @@ export const Header: React.FC = () => (
           left: 0;
           right: auto;
           width: 100%;
+        }
+
+        .description {
+          font-size: 1.1rem;
+          width: 60%;
         }
       }
 
@@ -171,15 +176,6 @@ export const Header: React.FC = () => (
           width: 97px;
           margin-bottom: 1rem;
         }
-        .hero__image {
-          margin-left: 1.25rem;
-        }
-      }
-
-      @media (max-width: 1200px) {
-        .hero__image {
-          margin-left: 2rem;
-        }
       }
 
       @media (max-width: 650px) {
@@ -189,7 +185,7 @@ export const Header: React.FC = () => (
         }
 
         .description {
-          font-size: 1.1rem;
+          font-size: 1rem;
           width: auto;
         }
       }
