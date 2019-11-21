@@ -37,7 +37,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
         aria-expanded={open}
         aria-controls="menu"
       >
-        Avaa
+        Menu
       </button>
 
       <Center className={open ? 'burger-wrapper is-active' : 'burger-wrapper'}>
