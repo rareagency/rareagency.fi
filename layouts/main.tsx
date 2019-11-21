@@ -7,11 +7,26 @@ export const Layout: React.FC = ({ children }) => {
       <Head>
         <title>Rare Agency</title>
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/static/icons/rare-icon-192.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          type="image/png"
+          sizes="192x192"
+          href="/static/icons/rare-icon-192.png"
+        />
+        <meta name="theme-color" content="#181113" />
         <link
           href="https://fonts.googleapis.com/css?family=Poppins|Nunito+Sans:700,800|Montserrat:400,500&display=swap"
           rel="stylesheet"
-        ></link>
+        />
+        <link rel="manifest" href="manifest.json" />
       </Head>
 
       {children}
@@ -58,7 +73,7 @@ export const Layout: React.FC = ({ children }) => {
           }
           @media (max-width: 800px) {
             h1 {
-              font-size: 2.5rem;
+              font-size: 3rem;
             }
             h2 {
               font-size: 1.75rem;
@@ -67,7 +82,7 @@ export const Layout: React.FC = ({ children }) => {
 
           @media (max-width: 530px) {
             h1 {
-              font-size: 1.9rem;
+              font-size: 2.4rem;
             }
           }
 
