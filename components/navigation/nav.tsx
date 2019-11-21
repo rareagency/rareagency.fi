@@ -1,9 +1,9 @@
 import React from 'react';
-import Link from 'next/link';
 import { Center } from '../center';
 import { BurgerMenu } from './burger';
 import { items } from './items';
 import { Logo } from '../logo';
+import { ActiveLink } from '../active-link';
 
 export const Nav = () => (
   <Center className="nav">
@@ -12,10 +12,10 @@ export const Nav = () => (
 
       <div className="nav__links">
         {items.map(item => (
-          <Link key={item.url} href={item.url}>
+          <ActiveLink activeClassName="active" key={item.url} href={item.url}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="nav__link">{item.text}</a>
-          </Link>
+          </ActiveLink>
         ))}
       </div>
 
@@ -35,7 +35,6 @@ export const Nav = () => (
         }
 
         a {
-          color: #fff;
           text-decoration: none;
           padding: 0 0.5rem;
         }
@@ -54,6 +53,13 @@ export const Nav = () => (
 
         .nav__link:not(:last-of-type) {
           margin-right: 1rem;
+        }
+
+        .nav__link {
+          color: #cecece;
+        }
+        .nav__link.active {
+          color: #fff;
         }
 
         :global(.burger) {
