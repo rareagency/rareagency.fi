@@ -62,10 +62,12 @@ export const Header: React.FC = () => (
 
       // To stay on top of colorlines
       .title,
+      .description,
       section {
         z-index: 1;
       }
-      .title {
+      .title,
+      .description {
         position: relative;
       }
       //
