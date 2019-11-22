@@ -1,7 +1,7 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { Center } from '../center';
 import { Logo } from '../logo';
-import Link from 'next/link';
 
 type BurgerMenuProps = {
   items: NavItem[];
@@ -12,6 +12,7 @@ type BurgerMenuProps = {
 type NavItem = {
   url: string;
   text: string;
+  onClick?: (event?: React.MouseEvent) => void;
 };
 
 export const BurgerMenu: React.FC<BurgerMenuProps> = ({
@@ -22,7 +23,13 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
   const [open, setOpen] = useState(false);
 
   const openMenu = () => setOpen(true);
-  const closeMenu = () => setOpen(false);
+  const onClick = (event: React.MouseEvent, item: NavItem) => {
+    setOpen(false);
+
+    if (item.onClick) {
+      item.onClick(event);
+    }
+  };
 
   return (
     <nav className={className} role="navigation">
@@ -41,7 +48,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
 
           <button
             className="toggle close"
-            onClick={closeMenu}
+            onClick={() => setOpen(false)}
             aria-expanded={open}
             aria-controls="menu"
           >
@@ -54,7 +61,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
             <li key={item.url}>
               <Link href={item.url}>
                 {/* eslint-disable-next-line */}
-                <a onClick={closeMenu}>{item.text}</a>
+                <a onClick={event => onClick(event, item)}>{item.text}</a>
               </Link>
             </li>
           ))}
@@ -107,6 +114,12 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
           visibility: hidden;
           display: flex;
           position: relative;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          :global(.burger-wrapper) {
+            transition: none;
+          }
         }
 
         :global(.burger-wrapper.is-active) {

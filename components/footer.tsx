@@ -2,7 +2,7 @@ import React from 'react';
 import { Center } from './center';
 
 export const Footer: React.FC = () => (
-  <footer className="footer">
+  <footer className="footer" id="contact">
     <Center className="grid">
       <img src="../static/logo-black.png" alt="Rare Agency" className="logo" />
 

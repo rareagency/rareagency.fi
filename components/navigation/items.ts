@@ -8,7 +8,15 @@ export const items = [
     text: 'Workshopit'
   },
   {
-    url: '/contact',
-    text: 'Ota yhteyttä'
+    text: 'Ota yhteyttä',
+    url: '#contact',
+    onClick: (event?: React.MouseEvent) => {
+      const contact = document.getElementById('contact');
+
+      if (contact && event) {
+        event.preventDefault();
+        contact.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 ];

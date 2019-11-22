@@ -11,12 +11,23 @@ export const Nav = () => (
       <Logo />
 
       <div className="nav__links">
-        {items.map(item => (
-          <ActiveLink activeClassName="active" key={item.url} href={item.url}>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className="nav__link">{item.text}</a>
-          </ActiveLink>
-        ))}
+        {items.map(item =>
+          item.onClick ? (
+            <a
+              key={item.url}
+              href={item.url}
+              onClick={item.onClick}
+              className="nav__link"
+            >
+              {item.text}
+            </a>
+          ) : (
+            <ActiveLink activeClassName="active" key={item.url} href={item.url}>
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a className="nav__link">{item.text}</a>
+            </ActiveLink>
+          )
+        )}
       </div>
 
       <BurgerMenu items={items} breakingPoint="900px" className="burger" />
