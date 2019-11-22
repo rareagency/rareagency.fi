@@ -25,7 +25,7 @@ export const Header: React.FC = () => (
       </section>
 
       <section className="references">
-        <h3 className="description">Meihin luottaa</h3>
+        <h3 className="description">Meihin luottavat</h3>
 
         <p className="references__images">
           <img
