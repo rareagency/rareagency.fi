@@ -53,9 +53,9 @@ export const WorkspaceSection: React.FC = () => (
         bottom: 0;
         width: 50%;
 
-        background: url('static/workspace.svg') left top no-repeat;
-        background-size: 100% auto;
-        filter: hue-rotate(5deg) contrast(0.95);
+        // -2px to hide #e8e502 background color from left side
+        background: #e8e5e2 url('static/workspace.svg') -2px top no-repeat;
+        background-size: auto 105%;
       }
 
       .button {
