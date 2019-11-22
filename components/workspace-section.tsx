@@ -1,5 +1,6 @@
 import React from 'react';
 import { Center } from './center';
+import Link from 'next/link';
 
 export const WorkspaceSection: React.FC = () => (
   <>
@@ -18,10 +19,12 @@ export const WorkspaceSection: React.FC = () => (
             projektia jos ei muuta keikkaa löydetä.
           </p>
 
-          <a href="#x" className="button">
-            Lue lisää
-          </a>
+          <Link href="/training">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a className="button">Lue lisää</a>
+          </Link>
         </article>
+        <aside className="workspace"></aside>
       </Center>
     </section>
 
@@ -29,33 +32,30 @@ export const WorkspaceSection: React.FC = () => (
       .section {
         display: flex;
         position: relative;
-        background: #2e3439 url('static/workspace.svg') no-repeat;
-        background-position: left center;
-        background-size: contain;
-        min-height: 684px;
+        background: #2e3439;
       }
 
-      .vertical-center {
+      :global(.vertical-center) {
         display: flex;
         align-items: center;
       }
 
       .section__article {
         padding: 5rem 0;
-        margin-left: auto;
         width: 45%;
-        text-align: right;
         color: #fff;
       }
 
       aside {
         position: absolute;
-        left: 0;
         right: 0;
         top: 0;
         bottom: 0;
-        width: 60%;
-        overflow: hidden;
+        width: 50%;
+
+        background: url('static/workspace.svg') left top no-repeat;
+        background-size: 100% auto;
+        filter: hue-rotate(5deg) contrast(0.95);
       }
 
       .button {
@@ -69,6 +69,7 @@ export const WorkspaceSection: React.FC = () => (
         background: #e8e5e2;
         box-sizing: border-box;
         text-align: center;
+        margin-top: 1.5rem;
       }
 
       @media (max-width: 1000px) {
@@ -82,7 +83,13 @@ export const WorkspaceSection: React.FC = () => (
         }
       }
 
-      @media (max-width: 500px) {
+      @media (max-width: 1000px) {
+        aside {
+          background: none;
+        }
+      }
+
+      @media (max-width: 450px) {
         .button {
           width: 100%;
           padding-left: 0;
