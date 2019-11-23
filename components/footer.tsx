@@ -1,5 +1,8 @@
 import React from 'react';
 import { Center } from './center';
+import { Twitter } from './icons/twitter';
+import { Linkedin } from './icons/linkedin';
+import { Github } from './icons/github';
 
 export const Footer: React.FC = () => (
   <footer className="footer" id="contact">
@@ -27,8 +30,18 @@ export const Footer: React.FC = () => (
         <address>
           <strong>Riku&nbsp;Rouvila</strong>
           <span>Lead&nbsp;Developer</span>
-          <span>050&nbsp;470&nbsp;0715</span>
           <span>riku@rareagency.fi</span>
+          <span className="social">
+            <a href="https://www.linkedin.com/in/rikurouvila/">
+              <Linkedin />
+            </a>
+            <a href="https://twitter.com/rikurouvila">
+              <Twitter />
+            </a>
+            <a href="https://github.com/rikukissa">
+              <Github />
+            </a>
+          </span>
         </address>
       </section>
 
@@ -41,8 +54,15 @@ export const Footer: React.FC = () => (
         <address>
           <strong>Pyry&nbsp;Rouvila</strong>
           <span>Frontend&nbsp;Creator</span>
-          <span>040&nbsp;277&nbsp;7700</span>
           <span>pyry@rareagency.fi</span>
+          <span className="social">
+            <a href="https://www.linkedin.com/in/naf/">
+              <Linkedin />
+            </a>
+            <a href="https://github.com/naftis">
+              <Github />
+            </a>
+          </span>
         </address>
       </section>
 
@@ -55,8 +75,15 @@ export const Footer: React.FC = () => (
         <address>
           <strong>Janne&nbsp;Kallunki</strong>
           <span>Full-stack&nbsp;Designer</span>
-          <span>040&nbsp;777&nbsp;9620</span>
           <span>janne@rareagency.fi</span>
+          <span className="social">
+            <a href="https://www.linkedin.com/in/jkallunki/">
+              <Linkedin />
+            </a>
+            <a href="https://github.com/jkallunki">
+              <Github />
+            </a>
+          </span>
         </address>
       </section>
 
@@ -69,8 +96,15 @@ export const Footer: React.FC = () => (
         <address>
           <strong>Cihan&nbsp;Bebek</strong>
           <span>Lead&nbsp;Developer</span>
-          <span>050&nbsp;476&nbsp;9925</span>
           <span>cihan@rareagency.fi</span>
+          <span className="social">
+            <a href="https://www.linkedin.com/in/cihan-bebek/">
+              <Linkedin />
+            </a>
+            <a href="https://github.com/keksike">
+              <Github />
+            </a>
+          </span>
         </address>
       </section>
     </Center>
@@ -209,6 +243,15 @@ export const Footer: React.FC = () => (
         .face {
           margin-bottom: 3rem;
         }
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+      }
+      .social :global(svg) {
+        fill: #fff;
+        margin-right: 7px;
       }
     `}</style>
   </footer>
