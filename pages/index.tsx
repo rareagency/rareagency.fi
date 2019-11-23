@@ -7,9 +7,11 @@ const Home = () => (
   <Layout>
     <AboutSection imageUrl="./static/4259964432_57f6305823_k.jpg">
       <h2>Vain laadukkainta ohjelmistokonsultointia</h2>
+      <h3>Etsitkö luotettavaa teknistä partneria seuraavaan hankkeeseenne?</h3>
+
       <p>
-        Me emme ole asiakkaillemme ainoastaan käsipari lisää, vaan sulaudumme
-        osaksi tiimiänne ja jaamme teille taidot ja työkalut joilla menestytte
+        Me olemme asiakkaillemme enemmän kuin pelkkä käsipari. Sulaudumme osaksi
+        tiimiänne ja jaamme teille taidot ja työkalut joilla menestytte
         nykyaikaisen ohjelmistokehityksen kentällä – nyt ja tulevaisuudessa.
       </p>
 
