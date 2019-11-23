@@ -24,7 +24,7 @@ const Home = () => (
       </p>
       <p>
         Rakentaessamme ohjelmistoja Suomen ja Euroopan tunnetuimmille yhtiöille,
-        olemme oppineet ratkaisemaan ongelmat tehokkaasti ja aina loppukäyttäjä
+        olemme oppineet ratkaisemaan ongelmat tehokkaasti aina loppukäyttäjä
         sekä asiakkaamme bisnes edellä.
       </p>
 
