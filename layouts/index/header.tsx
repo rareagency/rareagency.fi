@@ -1,33 +1,31 @@
 import React from 'react';
-import { Nav } from './nav';
-import { Center } from './center';
-import { PersonWithLaptop } from './illustrations/person-with-laptop';
-import { Title } from './title';
+import { ColorLines } from '../../components/color-lines';
+import { Nav } from '../../components/navigation/nav';
+import { Center } from '../../components/center';
 
 export const Header: React.FC = () => (
   <header className="hero">
     <Nav />
+
     <Center className="hero__wrapper">
       <section className="hero__content">
         <article className="hero__article">
-          <Title>Kumppani, jota softatiimisi tarvitsee.</Title>
+          <h1 className="title">
+            Kumppani, jota
+            <br />
+            softatiimisi tarvitsee.
+          </h1>
           <p className="description">
             Rare on tamperelainen, uuden sukupolven konsulttitalo, joka koostuu
             modernin webbikehityksen huippuosaajista.
           </p>
-
-          <p className="description">
-            Web- ja mobiilikehitys. APIt. Pilvipalvelut. Moderni DevOps. <br />
-            Mitä ikinä tarvitsetkin, me pystymme auttamaan.
-          </p>
         </article>
-        <aside className="hero__image">
-          <PersonWithLaptop />
-        </aside>
+
+        <ColorLines />
       </section>
 
       <section className="references">
-        <h3>Meihin luottaa</h3>
+        <h3 className="description">Meihin luottavat</h3>
 
         <p className="references__images">
           <img
@@ -50,26 +48,42 @@ export const Header: React.FC = () => (
     </Center>
 
     <style jsx>{`
-      :global(.background-light) .hero {
-        opacity: 0;
-      }
-
       .hero {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
         color: #fff;
         padding-bottom: 1rem;
         min-height: 100vh;
         box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        transition: opacity 1000ms;
-        // For mobile background person-with-laptop:
         position: relative;
+        overflow: hidden; // For colorlines
+      }
+
+      // To stay on top of colorlines
+      .title,
+      .description,
+      section {
+        z-index: 1;
+      }
+      .title,
+      .description {
+        position: relative;
+      }
+      //
+
+      :global(#colorlines) {
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        min-height: 100%;
       }
 
       :global(.hero__wrapper) {
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
         flex-grow: 1;
       }
 
@@ -82,18 +96,11 @@ export const Header: React.FC = () => (
       }
 
       .hero__article {
-        width: 55%;
-
-        // For mobile background person-with-laptop:
-        z-index: 2;
-      }
-
-      .hero__image :global(svg) {
-        margin-top: 3rem;
       }
 
       .description {
-        font-size: 1.35rem;
+        font-size: 1.2rem;
+        width: 55%;
       }
 
       .references h3 {
@@ -128,6 +135,38 @@ export const Header: React.FC = () => (
         margin-bottom: 1.05rem;
       }
 
+      @media (max-width: 1330px) {
+        .description {
+          width: 40%;
+        }
+      }
+
+      @media (max-width: 1150px) {
+        :global(#colorlines) {
+          opacity: 0.3;
+        }
+        .description {
+          width: 55%;
+        }
+      }
+
+      @media (max-width: 900px) {
+        :global(#colorlines .upperside) {
+          display: none;
+        }
+
+        :global(#colorlines) {
+          left: 0;
+          right: auto;
+          width: 100%;
+        }
+
+        .description {
+          font-size: 1.1rem;
+          width: 60%;
+        }
+      }
+
       @media (max-width: 800px) {
         .plan {
           width: 80px;
@@ -141,22 +180,15 @@ export const Header: React.FC = () => (
         }
       }
 
-      @media (max-width: 1200px) {
-        .hero__image {
-          margin-left: 2rem;
-        }
-      }
-
-      @media (max-width: 800px) {
-        .hero__image {
-          margin-left: 1.25rem;
-        }
-      }
-
       @media (max-width: 650px) {
         .hero__article {
           overflow: visible;
           min-width: 100%;
+        }
+
+        .description {
+          font-size: 1rem;
+          width: auto;
         }
       }
     `}</style>
