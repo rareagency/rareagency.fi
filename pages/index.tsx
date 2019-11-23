@@ -42,7 +42,7 @@ const Home = () => (
       </p>
       <p>
         Käytämme Rarella modernien teknologioiden lisäksi myös uusimpia ketterän
-        ohjelmistokehityksen menetelmiä, ja opetamme niitä myös tiimillenne
+        ohjelmistokehityksen menetelmiä, ja opetamme niitä tiimillenne
         teknologisen taituruuden ohessa.
       </p>
       <p>
