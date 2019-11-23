@@ -6,46 +6,72 @@ import { Layout } from '../layouts/index/layout';
 const Home = () => (
   <Layout>
     <AboutSection>
-      <h2>Mitä me myydään?</h2>
+      <h2>Vain laadukkainta ohjelmistokonsultointia</h2>
       <p>
-        Me myydään ohjelmistokehitystä omalta toimistoltamme ja konsultointia
-        teidän toimistolla. Tullaan olemassa olevaan projektiin tiimin sekaan
-        peeloileen ja näyttään teille mite hyvää softaa tehdään.
-      </p>
-      <p>
-        Me myös jatkokehitetään ja ylläpidetään teidän tunkki angular projektia
-        jos ei muuta keikkaa löydetä.
+        Me emme ole asiakkaillemme ainoastaan käsipari lisää, vaan sulaudumme
+        osaksi tiimiänne ja jaamme teille taidot ja työkalut joilla menestytte
+        nykyaikaisen ohjelmistokehityksen kentällä – nyt ja tulevaisuudessa.
       </p>
 
-      <h3>Konsultointi</h3>
-      <p>Tullaan osaks tiimiä ja opetetaan kurkoja niistä</p>
-
-      <h3>Uudet projektit</h3>
+      <h3>Rautaista teknologista osaamista</h3>
       <p>
-        Jotain tähän siitä kuinka tehään nii hemmetin agilesti projektei teidän
-        kanssa nii nopeesti ettette kerkee kissaa
+        Web- ja mobiilikehitys. APIt. Pilvipalvelut. Moderni DevOps.
+        <br />
+        Mitä ikinä tarvitsettekin, me pystymme auttamaan.
+        <br />
+      </p>
+      <p>
+        Rakentaessamme ohjelmistoja joillekin Suomen ja Euroopan tunnetuimmille
+        yhtiöille, olemme oppineet ratkaisemaan ongelmat tehokkaasti ja aina
+        loppukäyttäjä sekä asiakkaamme bisnes edellä.
+      </p>
+
+      <h3>Prototyyppi, moderni webbipalvelu vai monoliittinen legacy?</h3>
+      <p>
+        Olipa projektinne millainen tahansa, me pystymme tuomaan siihen – ja
+        ennen kaikkea tiimiinne – henkäyksen uutta.
       </p>
     </AboutSection>
     <WorkspaceSection />
     <AboutSection>
-      <h2>Mitä me myydään?</h2>
+      <h2>Prosessimme</h2>
       <p>
-        Me myydään ohjelmistokehitystä omalta toimistoltamme ja konsultointia
-        teidän toimistolla. Tullaan olemassa olevaan projektiin tiimin sekaan
-        peeloileen ja näyttään teille mite hyvää softaa tehdään.
+        Lähestymme työtämme aina asiakkaan tarpeet ja tavoitteet edellä. Autamme
+        teitä luomaan laadukkaita ohjelmistoja, joihin käyttäjännä rakastuvat ja
+        jotka auttavat bisnestänne saavuttamaan tavoitteet.
       </p>
       <p>
-        Me myös jatkokehitetään ja ylläpidetään teidän tunkki angular projektia
-        jos ei muuta keikkaa löydetä.
+        Käytämme Rarella modernien teknologioiden lisäksi myös uusimpia ketterän
+        ohjelmistokehityksen menetelmiä, ja opetamme niitä myös tiimillenne
+        teknologisen taituruuden ohessa.
+      </p>
+      <p>
+        Parhaassa tilanteessa teemme itsestämme tarpeettomia, kun tiiminne on
+        omaksunut meiltä tarvittavat tiedot, taidot ja prosessit. Työmme
+        valmistuttua voitte tukeutua omaan tiimiinne, ja kulkea kohti
+        tulevaisuuden projekteja itsevarmoin askelin.
       </p>
 
-      <h3>Konsultointi</h3>
-      <p>Tullaan osaks tiimiä ja opetetaan kurkoja niistä</p>
-
-      <h3>Uudet projektit</h3>
+      <h3>Teknologiat</h3>
       <p>
-        Jotain tähän siitä kuinka tehään nii hemmetin agilesti projektei teidän
-        kanssa nii nopeesti ettette kerkee kissaa
+        Tykkäämme pysyä ajan tasalla uusimmista teknologioista, mutta tärkeintä
+        on oikean työkalun valitseminen kussakin tapauksessa olevan ongelman
+        ratkaisemiseen.
+      </p>
+      <p>
+        Viime aikoina olemme suosineet seuraavia teknologioita:
+        <br />
+        <b>
+          TypeScript, React, React Native, Node.js, GraphQL, AWS, Azure,
+          Terraform, Serverless Framework, Docker
+        </b>
+      </p>
+
+      <h3>Kiinnostuitko?</h3>
+      <p>
+        Ota yhteyttä sähköpostitse osoitteeseen riku@rareagency.fi tai
+        puhelimitse <strong>+358&nbsp;50&nbsp;470&nbsp;0715</strong>, niin
+        jutellaan lisää tarpeistanne!
       </p>
     </AboutSection>
   </Layout>

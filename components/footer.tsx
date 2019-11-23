@@ -27,7 +27,7 @@ export const Footer: React.FC = () => (
         <address>
           <strong>Riku&nbsp;Rouvila</strong>
           <span>Lead&nbsp;Developer</span>
-          <span>040&nbsp;TODO&nbsp;1234</span>
+          <span>050&nbsp;470&nbsp;0715</span>
           <span>riku@rareagency.fi</span>
         </address>
       </section>
@@ -55,7 +55,7 @@ export const Footer: React.FC = () => (
         <address>
           <strong>Janne&nbsp;Kallunki</strong>
           <span>Full-stack&nbsp;Designer</span>
-          <span>040&nbsp;TODO&nbsp;1234</span>
+          <span>040&nbsp;777&nbsp;9620</span>
           <span>janne@rareagency.fi</span>
         </address>
       </section>
@@ -68,8 +68,8 @@ export const Footer: React.FC = () => (
         />
         <address>
           <strong>Cihan&nbsp;Bebek</strong>
-          <span>Full-stack&nbsp;Engineer</span>
-          <span>040&nbsp;TODO&nbsp;1234</span>
+          <span>Lead&nbsp;Developer</span>
+          <span>050&nbsp;476&nbsp;9925</span>
           <span>cihan@rareagency.fi</span>
         </address>
       </section>
