@@ -23,9 +23,9 @@ const Home = () => (
         <br />
       </p>
       <p>
-        Rakentaessamme ohjelmistoja joillekin Suomen ja Euroopan tunnetuimmille
-        yhtiöille, olemme oppineet ratkaisemaan ongelmat tehokkaasti ja aina
-        loppukäyttäjä sekä asiakkaamme bisnes edellä.
+        Rakentaessamme ohjelmistoja Suomen ja Euroopan tunnetuimmille yhtiöille,
+        olemme oppineet ratkaisemaan ongelmat tehokkaasti ja aina loppukäyttäjä
+        sekä asiakkaamme bisnes edellä.
       </p>
 
       <h3>Prototyyppi, moderni webbipalvelu vai monoliittinen legacy?</h3>
