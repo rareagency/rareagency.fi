@@ -16,8 +16,8 @@ export const Header: React.FC = () => (
             softatiimisi tarvitsee.
           </h1>
           <p className="description">
-            Rare on tamperelainen, uuden sukupolven konsulttitalo, joka koostuu
-            modernin webbikehityksen huippuosaajista.
+            Rare on tamperelainen modernin webbikehityksen huippuosaajista
+            koostuva ohjelmistotalo.
           </p>
         </article>
 

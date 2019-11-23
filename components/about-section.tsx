@@ -1,57 +1,55 @@
 import React from 'react';
 import { Center } from './center';
 
-type Props = {
-  imageUrl: string;
-};
+type Props = {};
 
-export const AboutSection: React.FC<Props> = ({ imageUrl, children }) => (
+export const AboutSection: React.FC<Props> = ({ children }) => (
   <>
     <section className="section">
       <Center>
-        <aside className="section__picture"></aside>
         <article className="section__article">{children}</article>
       </Center>
     </section>
 
     <style jsx>{`
       .section {
-        display: flex;
         position: relative;
-        background: #1d2124;
-        min-height: 100vh;
-      }
-
-      .section__article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        box-sizing: border-box;
-        height: 100%;
         padding: 5rem 0;
-        margin-left: auto;
-        width: 45%;
-        color: #fff;
       }
-
-      aside {
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 50%;
-
-        background: url('${imageUrl}') center no-repeat;
-        background-size: cover;
-        filter: hue-rotate(5deg) contrast(0.95);
+      .section__article {
+        display: grid;
+        grid-template-columns: 35% calc(50% - 1rem);
+      }
+      .section :global(h2) {
+        grid-column: 1 / span 2;
+        margin-bottom: 1rem;
+      }
+      .section :global(h2 + p) {
+        padding: 0;
+        grid-column: 1 / span 2;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .section :global(h3) {
+        grid-column: 1;
+        margin-top: 1rem;
+        font-weight: 500;
+      }
+      .section :global(p) {
+        margin-top: 1rem;
+        grid-column: 2;
+        padding-left: 1rem;
       }
 
       @media (max-width: 1000px) {
         .section__article {
-          width: 100%;
+          display: block;
         }
-        aside {
-          display: none;
+        .section :global(p) {
+          padding-left: 0rem;
+        }
+        .section :global(h3) {
+          margin-top: 2rem;
         }
       }
     `}</style>

@@ -10,7 +10,7 @@ const Header = () => (
         React-kurssi
       </h1>
       <p className="description">
-        React, ja Reactin ympärillä oleva ekosysteemi, elää jatkuvassa
+        React ja Reactin ympärillä oleva ekosysteemi, elää jatkuvassa
         muutoksessa. Uutta React-projektia aloittaessa teknologioiden ja
         työskentelytapojen valitseminen voi olla vaikeaa. Kokemuksemme kertoo,
         että hyvien ja selkeiden käytäntöjen ja ohjenuorien vakiinnuttaminen
