@@ -83,6 +83,9 @@ export const Footer: React.FC = () => (
             <a href="https://github.com/jkallunki">
               <Github />
             </a>
+            <a href="https://twitter.com/kallunkj">
+              <Twitter />
+            </a>
           </span>
         </address>
       </section>
@@ -103,6 +106,9 @@ export const Footer: React.FC = () => (
             </a>
             <a href="https://github.com/keksike">
               <Github />
+            </a>
+            <a href="https://twitter.com/keksike">
+              <Twitter />
             </a>
           </span>
         </address>
