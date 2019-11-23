@@ -16,7 +16,7 @@ export const Header: React.FC = ({ children }) => (
       .hero {
         display: flex;
         flex-direction: column;
-        background: linear-gradient(128.62deg, #212121 28.28%, #060606 100%);
+        background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
         color: #fff;
       }
       .hero__content {
