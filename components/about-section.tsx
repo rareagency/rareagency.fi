@@ -1,7 +1,11 @@
 import React from 'react';
 import { Center } from './center';
 
-export const AboutSection: React.FC = ({ children }) => (
+type Props = {
+  imageUrl: string;
+};
+
+export const AboutSection: React.FC<Props> = ({ imageUrl, children }) => (
   <>
     <section className="section">
       <Center>
@@ -37,7 +41,7 @@ export const AboutSection: React.FC = ({ children }) => (
         bottom: 0;
         width: 50%;
 
-        background: url('./static/4259964432_57f6305823_k.jpg') center no-repeat;
+        background: url('${imageUrl}') center no-repeat;
         background-size: cover;
         filter: hue-rotate(5deg) contrast(0.95);
       }

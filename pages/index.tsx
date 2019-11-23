@@ -5,7 +5,7 @@ import { Layout } from '../layouts/index/layout';
 
 const Home = () => (
   <Layout>
-    <AboutSection>
+    <AboutSection imageUrl="./static/4259964432_57f6305823_k.jpg">
       <h2>Vain laadukkainta ohjelmistokonsultointia</h2>
       <p>
         Me emme ole asiakkaillemme ainoastaan käsipari lisää, vaan sulaudumme
@@ -33,7 +33,7 @@ const Home = () => (
       </p>
     </AboutSection>
     <WorkspaceSection />
-    <AboutSection>
+    <AboutSection imageUrl="./static/riccardo-annandale-7e2pe9wjL9M-unsplash.jpg">
       <h2>Prosessimme</h2>
       <p>
         Lähestymme työtämme aina asiakkaan tarpeet ja tavoitteet edellä. Autamme
