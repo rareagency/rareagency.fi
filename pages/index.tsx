@@ -10,15 +10,15 @@ const Home = () => {
         <AboutSection>
           <h2>
             Luotettu teknologiakumppani
-            <br /> seuraavaan projektiinne?
+            <br /> seuraavaan projektiisi?
           </h2>
 
           <p>
             Rare toimii kumppanina ohjelmistohankkeissa niin startupeille kuin
             suurillekkin yrityksille. Olemme asiakkaillemme enemmän kuin pelkkä
             käsipari – jaamme oman tietotaitomme digitaalisten tuotteiden
-            kehittämisestä osana tiimiänne ja autamme projektin ohjaamisessa
-            aina ideasta tuotantoon.
+            kehittämisestä ja autamme projektin ohjaamisessa aina ideasta
+            tuotantoon.
           </p>
 
           <h3>Teemme konsepteista käsinkosketeltavia</h3>
@@ -39,11 +39,10 @@ const Home = () => {
 
         <WorkspaceSection />
         <AboutSection>
-          <h2>Prosessimme</h2>
+          <h2>Ohjelmistokehittäjien luottama</h2>
           <p>
-            Lähestymme työtämme aina asiakkaan tarpeet ja tavoitteet edellä.
-            Autamme teitä luomaan laadukkaita ohjelmistoja, joihin asiakkaanne
-            rakastuvat ja jotka auttavat teitä saavuttamaan tavoitteet.
+            Autamme asiakkaitamme luomaan odotukset ylittäviä ohjelmistoja
+            joihin käyttäjät rakastuvat.
           </p>
           <h3>Ketterä kehitys</h3>
           <p>
