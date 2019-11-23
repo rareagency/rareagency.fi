@@ -9,14 +9,12 @@ export const WorkspaceSection: React.FC = () => (
         <article className="section__article">
           <h2>Suunnitteleeko tiimisi uutta webbiprojektia?</h2>
           <p>
-            Me myydään ohjelmistokehitystä omalta toimistoltamme ja
-            konsultointia teidän toimistolla. Tullaan olemassa olevaan
-            projektiin tiimin sekaan peeloileen ja näyttään teille mite hyvää
-            softaa tehdään.
+            Potkaise seuraava webbiprojektinne käyntiin oikealla jalalla ja
+            vältä yleisimmät sudenkuopat.
           </p>
           <p>
-            Me myös jatkokehitetään ja ylläpidetään teidän tunkki angular
-            projektia jos ei muuta keikkaa löydetä.
+            <strong>Päivän mittainen React-kurssimme</strong> antaa selkeän
+            suunnitelman seuraavaan React-projektiinne.
           </p>
 
           <Link href="/training">

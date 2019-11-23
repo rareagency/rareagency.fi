@@ -109,13 +109,15 @@ const Page: React.FC = () => (
         <h2>Kiinnostuitko?</h2>
         <p>
           Laita sähköpostia suoraan osoitteeseen{' '}
-          <strong>riku@rareagency.fi</strong> tai soita
-          <strong>+358&nbsp;50&nbsp;470&nbsp;0715</strong> ja sovi Rikun kanssa
-          ajankohdasta ja sisällöstä tarkemmin. Järjestämme koulutuksia ympäri
-          Suomen pääsääntöisesti 5-15 hengen ryhmille. Kurssia voidaan järjestää
-          sovittaessa myös muun kokoisille ryhmille. Tarjoamme kurssin lisäksi
-          myös käytännön konsultointia uuden projektin pystyttämiseen ja
-          ylläpitoon.
+          <strong>riku@rareagency.fi</strong> tai soita{' '}
+          <a href="tel:+358504700715">
+            <strong>+358&nbsp;50&nbsp;470&nbsp;0715</strong>
+          </a>{' '}
+          ja sovi Rikun kanssa ajankohdasta ja sisällöstä tarkemmin. Järjestämme
+          koulutuksia ympäri Suomen pääsääntöisesti 5-15 hengen ryhmille.
+          Kurssia voidaan järjestää sovittaessa myös muun kokoisille ryhmille.
+          Tarjoamme kurssin lisäksi myös käytännön konsultointia uuden projektin
+          pystyttämiseen ja ylläpitoon.
         </p>
       </article>
       <aside className="colorlines" aria-hidden={true}></aside>
