@@ -35,11 +35,11 @@ export const Footer: React.FC = () => (
             <a href="https://www.linkedin.com/in/rikurouvila/">
               <Linkedin />
             </a>
-            <a href="https://twitter.com/rikurouvila">
-              <Twitter />
-            </a>
             <a href="https://github.com/rikukissa">
               <Github />
+            </a>
+            <a href="https://twitter.com/rikurouvila">
+              <Twitter />
             </a>
           </span>
         </address>

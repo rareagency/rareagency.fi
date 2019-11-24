@@ -7,7 +7,7 @@ export const WorkspaceSection: React.FC = () => (
     <section className="section">
       <Center className="vertical-center">
         <article className="section__article">
-          <h2>Devaaja, suunnitteleeko tiimisi uutta webbiprojektia?</h2>
+          <h2>Kehittäjä, suunnitteleeko tiimisi uutta webbiprojektia?</h2>
           <p>
             React ja ekosysteemi sen ympärillä kehittyy hurjaa vauhtia. Mitkä
             työkalut ovat relevantteja nyt ja kahden vuoden kuluttua? Millä

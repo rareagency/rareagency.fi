@@ -70,7 +70,7 @@ const Home = () => {
             <br />
             <b>
               TypeScript, React, React Native, Node.js, GraphQL, AWS, Azure,
-              Terraform, Serverless Framework, Docker
+              Terraform, Serverless Framework, Docker.
             </b>
           </p>
 

@@ -90,7 +90,7 @@ const Page: React.FC = () => (
           Kurssin valmentajana toimii{' '}
           <a href="https://webbidevaus.fi/">webbidevaus.fi</a> -podcastin
           juontaja ja viimeiset 10 vuotta frontend-kehityksen parissa
-          työskennellyt <strong>Riku Rouvila</strong>
+          työskennellyt <strong>Riku Rouvila</strong>.
         </p>
         <p>
           Riku on ollut mukana kehittämässä ja ylläpitämässä React-projekteja
