@@ -164,21 +164,19 @@ export const Footer: React.FC = () => (
         filter: invert(1);
       }
       .footer {
-        background: #2e3439;
+        background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
         padding: 6rem 0;
+        color: #fff;
       }
 
       .addresses {
         display: flex;
         margin-top: 2rem;
       }
-      strong {
-        color: #d4d4d4;
-      }
+
       address {
         display: flex;
         flex-direction: column;
-        color: #9c9c9c;
         font-style: normal;
         line-height: 1.75rem;
       }

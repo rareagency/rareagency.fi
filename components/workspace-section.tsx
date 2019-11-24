@@ -7,14 +7,16 @@ export const WorkspaceSection: React.FC = () => (
     <section className="section">
       <Center className="vertical-center">
         <article className="section__article">
-          <h2>Suunnitteleeko tiimisi uutta webbiprojektia?</h2>
+          <h2>Devaaja, suunnitteleeko tiimisi uutta webbiprojektia?</h2>
           <p>
-            Potkaise seuraava webbiprojektinne käyntiin oikealla jalalla ja
-            vältä yleisimmät sudenkuopat.
+            React ja ekosysteemi sen ympärillä kehittyy hurjaa vauhtia. Mitkä
+            työkalut ovat relevantteja nyt ja kahden vuoden kuluttua? Millä
+            kattauksella maaliin päästään varmasti?
           </p>
+
           <p>
-            <strong>Päivän mittainen React-kurssimme</strong> antaa selkeän
-            suunnitelman seuraavaan React-projektiinne.
+            Vältä yleisimmät sudenkuopat ja ota meidät mukaan
+            suunnitteluvaiheeseen.
           </p>
 
           <Link href="/training">
