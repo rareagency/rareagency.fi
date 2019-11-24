@@ -1,0 +1,20 @@
+{
+  "name": "Rare Agency",
+  "short_name": "Rare Agency",
+  "theme_color": "#181113",
+  "background_color": "#000000",
+  "display": "browser",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/static/icons/rare-icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/icons/rare-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

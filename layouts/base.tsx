@@ -1,20 +1,35 @@
 import React from 'react';
 import Head from 'next/head';
 
-export const Layout: React.FC = ({ children }) => {
+export const Base: React.FC = ({ children }) => {
   return (
     <>
       <Head>
         <title>Rare Agency</title>
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css?family=Nunito+Sans:700,800|Montserrat:400,500&display=swap"
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/static/icons/rare-icon-192.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          type="image/png"
+          sizes="192x192"
+          href="/static/icons/rare-icon-192.png"
+        />
+        <meta name="theme-color" content="#181113" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Poppins|Nunito+Sans:700,800|Montserrat:400,500&display=swap"
           rel="stylesheet"
-        ></link>
+        />
+        <link rel="manifest" href="manifest.json" />
       </Head>
 
-      <div className="wrapper">{children}</div>
+      {children}
 
       <style jsx global>
         {`
@@ -36,39 +51,15 @@ export const Layout: React.FC = ({ children }) => {
             height: 100%;
           }
 
-          body {
-            position: relative;
-          }
-
-          body::before {
-            background: linear-gradient(
-              128.62deg,
-              #212121 28.28%,
-              #060606 100%
-            );
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            transition: opacity 0.4s;
-            z-index: -1;
-            content: '';
-          }
-
-          .background-light::before {
-            opacity: 0;
-          }
           h1,
           h2 {
             font-family: 'Nunito Sans', sans-serif;
+            font-weight: 800;
           }
 
           h1 {
             margin: 0;
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: 800;
-            font-size: 3.75em;
+            font-size: 4.3em;
             letter-spacing: 0.07rem;
           }
 
@@ -78,19 +69,31 @@ export const Layout: React.FC = ({ children }) => {
           }
           h3 {
             font-size: 1.5rem;
+            font-weight: 400;
+          }
+          @media (max-width: 1000px) {
+            h1 {
+              font-size: 3.4rem;
+            }
           }
           @media (max-width: 800px) {
             h1 {
-              font-size: 2.5rem;
+              font-size: 3rem;
             }
             h2 {
               font-size: 1.75rem;
             }
           }
 
+          @media (max-width: 530px) {
+            h1 {
+              font-size: 2.4rem;
+            }
+          }
+
           p,
           ul {
-            font-size: 1.1rem;
+            font-size: 1rem;
             line-height: 2rem;
           }
           strong {
