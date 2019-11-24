@@ -4,18 +4,14 @@ import { Layout } from '../layouts/article/layout';
 const Header = () => (
   <section className="header-main">
     <article className="content">
-      <h1>
-        Suomen tehokkain
-        <br />
-        React-kurssi
-      </h1>
+      <h1>Suomen tehokkain React-kurssi</h1>
       <p className="description">
         React ja Reactin ympärillä oleva ekosysteemi, elää jatkuvassa
         muutoksessa. Uutta React-projektia aloittaessa teknologioiden ja
         työskentelytapojen valitseminen voi olla vaikeaa. Kokemuksemme kertoo,
         että hyvien ja selkeiden käytäntöjen ja ohjenuorien vakiinnuttaminen
         projektin alkuvaiheilla on elintärkeää projektin jatkuuvuden kannalta.
-        Tällä kurssilla tutustutaan työkaluihuin ja työskentelytapoihin, joiden
+        Tällä kurssilla tutustutaan työkaluihin ja työskentelytapoihin, joiden
         avulla tiimisi voi luoda timanttisen React-projektin vuonna 2020.
       </p>
     </article>
@@ -65,7 +61,7 @@ const Page: React.FC = () => (
   <Layout header={<Header />}>
     <section className="content">
       <article className="article">
-        <h2>Kurssin aiheita — mistä lähteä liikkeelle?</h2>
+        <h2>Päivän aiheita — lähdetään liikkeelle yhdessä</h2>
 
         <ul>
           <li>Projektipohja, -rakenne ja tärkeimmät työkalut</li>
@@ -76,7 +72,7 @@ const Page: React.FC = () => (
         <p>
           Päivää ei istuta luentosalissa, vaan tarkoitus on koota hyvä porukka
           samaan huoneeseen keskustelemaan ja kyselemään aiheesta omien
-          projektienne kontekstissa. Kurssin sisältöä voidaan muokata teidän
+          projektienne kontekstissa. Päivän sisältöä voidaan muokata teidän
           tarpeidenne mukaiseksi, jotta päivästä saataisiin kaikki tehot irti.
           Tarpeen vaatiessa voimme myös syventyä yhteen tai muutamaan aiheeseen
           koko päivän ajaksi.
@@ -104,7 +100,7 @@ const Page: React.FC = () => (
           käyntiin vuonna 2020. Lisätietoa Rikusta löytyy{' '}
           <a href="https://www.linkedin.com/in/rikurouvila/">LinkedInistä</a>,{' '}
           <a href="https://github.com/rikukissa">Githubista</a> ja tietysti
-          podcastia kuuntelemalla.
+          podcastia kuuntelemalla!
         </p>
         <h2>Kiinnostuitko?</h2>
         <p>

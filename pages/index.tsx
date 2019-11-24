@@ -41,7 +41,7 @@ const Home = () => {
         <AboutSection>
           <h2>Ohjelmistokehittäjien luottama</h2>
           <p>
-            Autamme asiakkaitamme luomaan odotukset ylittäviä ohjelmistoja
+            Autamme asiakkaitamme luomaan odotukset ylittäviä ohjelmistoja,
             joihin käyttäjät rakastuvat.
           </p>
           <h3>Ketterä kehitys</h3>
