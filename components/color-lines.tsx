@@ -1,8 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Vivus from 'vivus';
 
 export function ColorLines() {
+  const colorlines = useRef<SVGSVGElement>(null);
+
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion)')) {
+      if (colorlines.current) {
+        colorlines.current.style.visibility = 'visible';
+      }
+
+      return;
+    }
+
     new Vivus('colorlines', {
       duration: 500,
       type: 'scenario', // allows adding data-start, data-duration to individual paths
@@ -24,6 +34,7 @@ export function ColorLines() {
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin slice"
       id="colorlines"
+      ref={colorlines}
       style={{ visibility: 'hidden' }}
       aria-hidden={true}
     >
