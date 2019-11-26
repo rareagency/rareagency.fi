@@ -31,11 +31,6 @@ export const Header: React.FC = () => (
 
         <p className="references__images">
           <img
-            src="../static/references/plan.svg"
-            className="logo plan"
-            alt="Plan International"
-          />
-          <img
             src="../static/references/tieto.svg"
             className="logo tieto"
             alt="Tieto Oyj"
@@ -44,6 +39,11 @@ export const Header: React.FC = () => (
             src="../static/references/veracell.svg"
             alt="Veracell"
             className="logo veracell"
+          />
+          <img
+            src="../static/references/plan.svg"
+            className="logo plan"
+            alt="Plan International"
           />
         </p>
       </section>
