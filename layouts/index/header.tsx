@@ -45,6 +45,11 @@ export const Header: React.FC = () => (
             className="logo plan"
             alt="Plan International"
           />
+          <img
+            src="../static/references/sharper-shape.svg"
+            className="logo sharper"
+            alt="Sharper Shape"
+          />
         </p>
       </section>
     </Center>
@@ -128,6 +133,11 @@ export const Header: React.FC = () => (
       .plan {
         margin-bottom: 0.85rem;
         margin-right: 1.75rem;
+      }
+
+      .sharper {
+        width: 200px;
+        margin-bottom: 1.25rem;
       }
 
       .tieto {
