@@ -28,7 +28,7 @@ export const Footer: React.FC = () => (
           alt="Riku Rouvila"
         />
         <address>
-          <strong>Riku&nbsp;Rouvila</strong>
+          <strong className="name">Riku&nbsp;Rouvila</strong>
           <span>Lead&nbsp;Developer</span>
           <span>riku@rareagency.fi</span>
           <span className="social">
@@ -52,7 +52,7 @@ export const Footer: React.FC = () => (
           alt="Pyry Rouvila"
         />
         <address>
-          <strong>Pyry&nbsp;Rouvila</strong>
+          <strong className="name">Pyry&nbsp;Rouvila</strong>
           <span>Frontend&nbsp;Creator</span>
           <span>pyry@rareagency.fi</span>
           <span className="social">
@@ -73,7 +73,7 @@ export const Footer: React.FC = () => (
           alt="Janne Kallunki"
         />
         <address>
-          <strong>Janne&nbsp;Kallunki</strong>
+          <strong className="name">Janne&nbsp;Kallunki</strong>
           <span>Full-stack&nbsp;Designer</span>
           <span>janne@rareagency.fi</span>
           <span className="social">
@@ -97,7 +97,7 @@ export const Footer: React.FC = () => (
           alt="Cihan Bebek"
         />
         <address>
-          <strong>Cihan&nbsp;Bebek</strong>
+          <strong className="name">Cihan&nbsp;Bebek</strong>
           <span>Lead&nbsp;Developer</span>
           <span>cihan@rareagency.fi</span>
           <span className="social">
@@ -116,6 +116,9 @@ export const Footer: React.FC = () => (
     </Center>
 
     <style jsx>{`
+      .name {
+        font-weight: bold;
+      }
       :global(.grid) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
