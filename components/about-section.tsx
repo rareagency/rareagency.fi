@@ -1,28 +1,72 @@
 import React from 'react';
 import { Center } from './center';
 
-type Props = {};
+type Props = { image?: string; reverse?: boolean };
 
-export const AboutSection: React.FC<Props> = ({ children }) => (
+export const AboutSection: React.FC<Props> = ({
+  children,
+  image,
+  reverse = false
+}) => (
   <>
     <section className="section">
       <Center>
-        <article className="section__article">{children}</article>
+        <div className="container">
+          {image && (
+            <div
+              className="image-container"
+              style={{ backgroundImage: `url(${image})` }}
+            ></div>
+          )}
+          <article className="section__article">{children}</article>
+        </div>
       </Center>
     </section>
 
     <style jsx>{`
+      .container {
+        ${image ? 'display: grid;' : ''}
+        grid-gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+      }
+      .image-container {
+        display: flex;
+        align-items: flex-start;
+        grid-row: 1;
+        background-size: cover;
+        background-position: 0em 1.5rem;
+        background-repeat: no-repeat;
+        ${reverse ? 'grid-column: 1;' : ''}
+        ${reverse
+          ? 'justify-content: flex-start;'
+          : 'justify-content: flex-end;'}
+      }
+
       .section {
         position: relative;
-        padding: 5rem 0;
+      }
+      .section:not(:first-child) {
+        margin-top: 2rem;
+      }
+      .section:first-child {
+        padding-top: 5rem;
+      }
+      .section:last-child {
+        padding-bottom: 5rem;
       }
       .section__article {
         display: grid;
-        grid-template-columns: 35% calc(50% - 1rem);
+        grid-row: 1;
+        ${reverse ? 'grid-column: 2;' : 'grid-column: 1;'}
+        ${!image
+          ? 'margin-right: 20%;'
+          : ''}
+        grid-template-columns: 1fr 2fr;
       }
       .section :global(h2) {
         grid-column: 1 / span 2;
         margin-bottom: 1rem;
+        margin-top: 0;
       }
       .section :global(h2 + p) {
         padding: 0;
@@ -30,26 +74,52 @@ export const AboutSection: React.FC<Props> = ({ children }) => (
         font-size: 1.5rem;
         margin-bottom: 2rem;
       }
+      .section :global(h2 + p:last-child) {
+        margin-bottom: 0;
+      }
       .section :global(h3) {
-        grid-column: 1;
         margin-top: 1rem;
         font-weight: 500;
+        grid-column: 1;
+        position: relative;
+        align-self: flex-start;
+      }
+      .section :global(h3::after) {
+        content: '';
+        width: 2rem;
+        height: 3px;
+        background: #fdc9b4;
+        position: absolute;
+        bottom: -0.5em;
+        left: 0;
       }
       .section :global(p) {
         margin-top: 1rem;
+        padding-left: 2rem;
         grid-column: 2;
-        padding-left: 1rem;
+      }
+      .section :global(p:last-child) {
+        margin-bottom: 0;
       }
 
       @media (max-width: 1000px) {
         .section__article {
           display: block;
+          margin-right: 0;
+        }
+        .section:not(:first-child) {
+          margin-top: 1rem;
         }
         .section :global(p) {
           padding-left: 0rem;
         }
         .section :global(h3) {
           margin-top: 2rem;
+        }
+      }
+      @media (max-width: 800px) {
+        .container {
+          display: block;
         }
       }
     `}</style>

@@ -41,6 +41,7 @@ export const Base: React.FC = ({ children }) => {
           html {
             padding: 0;
             margin: 0;
+            color: #222;
             font-family: 'Montserrat', -apple-system, BlinkMacSystemFont,
               'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
               'Droid Sans', 'Helvetica Neue', sans-serif;
