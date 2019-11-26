@@ -25,6 +25,7 @@ export function ColorLines() {
       preserveAspectRatio="xMinYMin slice"
       id="colorlines"
       style={{ visibility: 'hidden' }}
+      aria-hidden={true}
     >
       <g clipPath="url(#clip0)">
         <path
