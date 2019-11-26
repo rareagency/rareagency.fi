@@ -27,6 +27,7 @@ export const Base: React.FC = ({ children }) => {
           rel="stylesheet"
         />
         <link rel="manifest" href="manifest.json" />
+        {publicRuntimeConfig.NODE_ENV !== 'development' && <GoogleTagManager />}
       </Head>
 
       {children}
