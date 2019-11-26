@@ -13,14 +13,13 @@ export function ColorLines() {
       return;
     }
 
-    new Vivus('colorlines', {
+    new Vivus(colorlines.current as any, {
       duration: 500,
       type: 'scenario', // allows adding data-start, data-duration to individual paths
       start: 'autostart',
       animTimingFunction: Vivus.EASE_OUT,
-      onReady: colorlines => {
-        (colorlines as Vivus & { el: HTMLElement }).el.style.visibility =
-          'visible';
+      onReady: vivus => {
+        (vivus as Vivus & { el: HTMLElement }).el.style.visibility = 'visible';
       }
     });
   }, []);
