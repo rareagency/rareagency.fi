@@ -16,10 +16,12 @@ const Home = () => {
 
             <p>
               Rare toimii kumppanina ohjelmistohankkeissa niin startupeille kuin
-              suurillekkin yrityksille. Olemme asiakkaillemme enemmän kuin
-              pelkkä käsipari – jaamme oman tietotaitomme digitaalisten
-              tuotteiden kehittämisestä ja autamme projektin ohjaamisessa aina
-              ideasta tuotantoon.
+              suurillekkin yrityksille.{' '}
+              <span className="gray">
+                Jaamme oman tietotaitomme digitaalisten tuotteiden
+                kehittämisestä ja autamme projektin ohjaamisessa aina ideasta
+                tuotantoon.
+              </span>
             </p>
           </AboutSection>
           <AboutSection
@@ -99,6 +101,11 @@ const Home = () => {
           </AboutSection>
         </div>
       </Layout>
+      <style jsx>{`
+        .gray {
+          color: #666;
+        }
+      `}</style>
     </>
   );
 };

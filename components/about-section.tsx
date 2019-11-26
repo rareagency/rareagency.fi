@@ -12,12 +12,12 @@ export const AboutSection: React.FC<Props> = ({
     <section className="section">
       <Center>
         <div className="container">
-          <article className="section__article">{children}</article>
           {image && (
             <div className="image-container">
               <img alt="kuvituskuva" className="image" src={image} />
             </div>
           )}
+          <article className="section__article">{children}</article>
         </div>
       </Center>
     </section>
@@ -102,6 +102,10 @@ export const AboutSection: React.FC<Props> = ({
       @media (max-width: 1000px) {
         .section__article {
           display: block;
+          margin-right: 0;
+        }
+        .section:not(:first-child) {
+          margin-top: 1rem;
         }
         .section :global(p) {
           padding-left: 0rem;
