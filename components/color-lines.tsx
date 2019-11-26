@@ -5,15 +5,17 @@ export function ColorLines() {
   const colorlines = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion)').matches) {
-      if (colorlines.current) {
-        colorlines.current.style.visibility = 'visible';
-      }
-
+    if (!colorlines.current) {
       return;
     }
 
-    new Vivus(colorlines.current as any, {
+    if (window.matchMedia('(prefers-reduced-motion)').matches) {
+      colorlines.current.style.visibility = 'visible';
+      return;
+    }
+
+    // Ref is actually SVGSVGElement but Vivus only accepts HTMLElement
+    new Vivus((colorlines.current as unknown) as HTMLElement, {
       duration: 500,
       type: 'scenario', // allows adding data-start, data-duration to individual paths
       start: 'autostart',
