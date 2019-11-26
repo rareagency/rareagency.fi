@@ -5,7 +5,7 @@ export function ColorLines() {
   const colorlines = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion)')) {
+    if (window.matchMedia('(prefers-reduced-motion)').matches) {
       if (colorlines.current) {
         colorlines.current.style.visibility = 'visible';
       }
