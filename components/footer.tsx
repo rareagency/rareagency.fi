@@ -164,7 +164,11 @@ export const Footer: React.FC = () => (
         filter: invert(1);
       }
       .footer {
-        background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
+        background: linear-gradient(
+          95.62deg,
+          #000d1a 40.28%,
+          hsla(210, 100%, 3%, 1) 99.06%
+        );
         padding: 6rem 0;
         color: #fff;
       }

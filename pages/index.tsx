@@ -30,14 +30,16 @@ const Home = () => {
           >
             <h3>Teemme konsepteista käsinkosketeltavia</h3>
             <p>
-              Oli kyseessä sitten prototyyppi, MVP tai uusi projekti projekti
-              kokeneemmalta tiimiltä, me takaamme odotustenne ylittyvän.
+              Rakennamme nopeita prototyyppejä ideoiden validointiin,
+              ensimmäisiä käytettäviä versiota kun idea on validoitu ja
+              jatkokehitämme valmiita tuotteita.
             </p>
 
             <h3>Rare osana tiimiänne</h3>
             <p>
               Web- ja mobiilikehitys, APIt, Pilvipalvelut, Moderni DevOps.
               <br />
+              Tulemme myös mielellämme osaksi valmista ohjelmistokehitystiimiä.
               Toimimme aktiivisena osana tiimiänne tukien, haastaen ja jakaen
               osaamistamme teille.
             </p>
@@ -59,9 +61,9 @@ const Home = () => {
           >
             <h3>Ketterä kehitys</h3>
             <p>
-              Käytämme modernien teknologioiden lisäksi myös uusimpia ketterän
-              ohjelmistokehityksen menetelmiä, ja opetamme niitä tiimillenne
-              teknologisen taituruuden ohessa.
+              Pyrimme tehokkuuteen, laatuun ja läpinäkyvyyteen myös
+              toimintatavoissamme. Luotamme ketteriin ohjelmistokehityksen
+              menetelmiin ja tuomme ne mukanamme myös asiakkaidemme luo.
             </p>
             <p>
               Parhaassa tilanteessa teemme itsestämme tarpeettomia, kun tiiminne
@@ -74,7 +76,7 @@ const Home = () => {
             reverse={true}
             image="https://images.unsplash.com/photo-1517191434949-5e90cd67d2b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
           >
-            <h3>Teknologiat</h3>
+            <h3>Teknologia</h3>
             <p>
               Tykkäämme pysyä ajan tasalla uusimmista teknologioista, mutta
               tärkeintä on oikean työkalun valitseminen kussakin tapauksessa
@@ -83,7 +85,7 @@ const Home = () => {
               <br />
               Käytämme jatkuvasti avoimen lähdekoodin ratkaisuja, ja seuraamme
               alan kehitystä aktiivisena osana yhteisöä. Viime aikoina olemme
-              suosineet seuraavia teknologioita:
+              suosineet projekteissamme muun muassa seuraavia teknologioita:
               <br />
               <b>
                 TypeScript, React, React Native, Node.js, GraphQL, AWS, Azure,

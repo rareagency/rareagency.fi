@@ -32,7 +32,7 @@ export const WorkspaceSection: React.FC = () => (
       .section {
         display: flex;
         position: relative;
-        background: #2e3439;
+        background: #000d1a;
       }
 
       :global(.vertical-center) {
@@ -54,19 +54,18 @@ export const WorkspaceSection: React.FC = () => (
         width: 50%;
 
         // -2px to hide #e8e502 background color from left side
-        background: #fee2d7 url('static/workspace.svg') -2px top no-repeat;
+        background: #fff6e2 url('static/workspace.svg') -2px top no-repeat;
         background-size: auto 105%;
       }
 
       .button {
         display: inline-block;
-        padding: 0.9rem 6rem;
-        border: 5px solid #fee2d7;
+        padding: 1.5rem 7rem;
         border-radius: 5px;
         color: #2e3439;
         text-decoration: none;
         font-weight: bold;
-        background: #fee2d7;
+        background: #fff;
         box-sizing: border-box;
         text-align: center;
         margin-top: 1.5rem;

@@ -13,9 +13,10 @@ export const AboutSection: React.FC<Props> = ({
       <Center>
         <div className="container">
           {image && (
-            <div className="image-container">
-              <img alt="kuvituskuva" className="image" src={image} />
-            </div>
+            <div
+              className="image-container"
+              style={{ backgroundImage: `url(${image})` }}
+            ></div>
           )}
           <article className="section__article">{children}</article>
         </div>
@@ -32,16 +33,15 @@ export const AboutSection: React.FC<Props> = ({
         display: flex;
         align-items: flex-start;
         grid-row: 1;
-        padding-top: 1.5rem;
+        background-size: cover;
+        background-position: 0em 1.5rem;
+        background-repeat: no-repeat;
         ${reverse ? 'grid-column: 1;' : ''}
         ${reverse
           ? 'justify-content: flex-start;'
           : 'justify-content: flex-end;'}
       }
-      .image {
-        max-width: 100%;
-        flex-grow: 1;
-      }
+
       .section {
         position: relative;
       }
@@ -97,6 +97,9 @@ export const AboutSection: React.FC<Props> = ({
         margin-top: 1rem;
         padding-left: 2rem;
         grid-column: 2;
+      }
+      .section :global(p:last-child) {
+        margin-bottom: 0;
       }
 
       @media (max-width: 1000px) {

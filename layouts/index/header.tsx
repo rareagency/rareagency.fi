@@ -17,9 +17,8 @@ export const Header: React.FC = () => (
           </h1>
           <p className="description">
             Rare on tamperelainen alan huippuosaajista koostuva
-            ohjelmistoyritys. Autamme asiakkaitamme webbipalvelujen,
-            mobiiliapplikaatioiden ja prototyyppien rakentamisessa osana
-            asiakkaan omaa tiimiä.
+            ohjelmistoyritys. Rakennamme webbipalveluja, mobiiliapplikaatioita
+            ja prototyyppejä yhdessä asiakkaidemme kanssa.
           </p>
         </article>
 
@@ -58,7 +57,11 @@ export const Header: React.FC = () => (
       .hero {
         display: flex;
         flex-direction: column;
-        background: linear-gradient(95.62deg, #181113 40.28%, #150b03 99.06%);
+        background: linear-gradient(
+          95.62deg,
+          #000d1a 40.28%,
+          hsla(210, 100%, 3%, 1) 99.06%
+        );
         color: #fff;
         padding-bottom: 1rem;
         min-height: 100vh;
