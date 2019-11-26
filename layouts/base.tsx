@@ -1,11 +1,16 @@
 import React from 'react';
 import Head from 'next/head';
+import { GoogleTagManager } from '../components/google-tag-manager';
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
 
 export const Base: React.FC = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Rare Agency</title>
+        <title>
+          Rare Agency - Luotettu teknologiakumppani seuraavaan projektiisi
+        </title>
 
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico" />
@@ -23,10 +28,16 @@ export const Base: React.FC = ({ children }) => {
         />
         <meta name="theme-color" content="#181113" />
         <link
-          href="https://fonts.googleapis.com/css?family=Poppins|Nunito+Sans:700,800|Montserrat:400,500&display=swap"
+          href="https://fonts.googleapis.com/css?family=Nunito+Sans:800|Montserrat:400,500&display=swap"
           rel="stylesheet"
         />
         <link rel="manifest" href="manifest.json" />
+
+        <meta
+          name="description"
+          content="Rare toimii kumppanina ohjelmistohankkeissa niin startupeille kuin suurillekkin yrityksille."
+        />
+
         {publicRuntimeConfig.NODE_ENV !== 'development' && <GoogleTagManager />}
       </Head>
 
