@@ -15,7 +15,7 @@ export const AboutSection: React.FC<Props> = ({
           <article className="section__article">{children}</article>
           {image && (
             <div className="image-container">
-              <img className="image" src={image} />
+              <img alt="kuvituskuva" className="image" src={image} />
             </div>
           )}
         </div>
