@@ -185,13 +185,12 @@ export const Header: React.FC = () => (
         .tieto {
           width: 60px;
         }
-        .sharper {
-          width: 120px;
-          margin-bottom: 0;
-          margin-top: 5px;
-        }
         .veracell {
           width: 97px;
+          margin-bottom: 1rem;
+        }
+        .sharper {
+          width: 180px;
           margin-bottom: 1rem;
         }
       }
