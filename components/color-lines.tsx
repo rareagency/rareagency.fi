@@ -1,16 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Vivus from 'vivus';
 
 export function ColorLines() {
+  const colorlines = useRef<SVGSVGElement>(null);
+
   useEffect(() => {
-    new Vivus('colorlines', {
+    if (!colorlines.current) {
+      return;
+    }
+
+    if (window.matchMedia('(prefers-reduced-motion)').matches) {
+      colorlines.current.style.visibility = 'visible';
+      return;
+    }
+
+    // Ref is actually SVGSVGElement but Vivus only accepts HTMLElement
+    new Vivus((colorlines.current as unknown) as HTMLElement, {
       duration: 500,
       type: 'scenario', // allows adding data-start, data-duration to individual paths
       start: 'autostart',
       animTimingFunction: Vivus.EASE_OUT,
-      onReady: colorlines => {
-        (colorlines as Vivus & { el: HTMLElement }).el.style.visibility =
-          'visible';
+      onReady: vivus => {
+        (vivus as Vivus & { el: HTMLElement }).el.style.visibility = 'visible';
       }
     });
   }, []);
@@ -24,7 +35,9 @@ export function ColorLines() {
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin slice"
       id="colorlines"
+      ref={colorlines}
       style={{ visibility: 'hidden' }}
+      aria-hidden={true}
     >
       <g clipPath="url(#clip0)">
         <path
