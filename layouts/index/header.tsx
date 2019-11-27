@@ -64,7 +64,7 @@ export const Header: React.FC = () => (
         );
         color: #fff;
         padding-bottom: 1rem;
-        min-height: 100vh;
+        min-height: 100%;
         box-sizing: border-box;
         position: relative;
         overflow: hidden; // For colorlines
@@ -166,10 +166,6 @@ export const Header: React.FC = () => (
       }
 
       @media (max-width: 900px) {
-        :global(#colorlines .upperside) {
-          display: none;
-        }
-
         :global(#colorlines) {
           left: 0;
           right: auto;
@@ -188,6 +184,11 @@ export const Header: React.FC = () => (
         }
         .tieto {
           width: 60px;
+        }
+        .sharper {
+          width: 120px;
+          margin-bottom: 0;
+          margin-top: 5px;
         }
         .veracell {
           width: 97px;

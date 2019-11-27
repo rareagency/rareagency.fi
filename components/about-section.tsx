@@ -121,6 +121,10 @@ export const AboutSection: React.FC<Props> = ({
         .container {
           display: block;
         }
+        .image-container {
+          height: 300px;
+          width: 100%;
+        }
       }
     `}</style>
   </>

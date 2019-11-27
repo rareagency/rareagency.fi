@@ -76,6 +76,10 @@ export const Base: React.FC = ({ children }) => {
               'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
               'Droid Sans', 'Helvetica Neue', sans-serif;
             font-size: 100%;
+            height: 100%;
+          }
+          #__next {
+            height: 100%;
           }
 
           html {
