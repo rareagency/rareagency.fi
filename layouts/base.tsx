@@ -33,6 +33,10 @@ export const Base: React.FC = ({ children }) => {
           href="https://fonts.googleapis.com/css?family=Nunito+Sans:800|Montserrat:400,500&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css?family=Aleo:300,300italic,regular,italic,700,700italic"
+          rel="stylesheet"
+        />
         <link rel="manifest" href="manifest.json" />
 
         <meta name="title" content={TITLE} />
@@ -88,14 +92,16 @@ export const Base: React.FC = ({ children }) => {
 
           h1,
           h2 {
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: 800;
+            font-family: 'Aleo', serif;
+            font-weight: 600;
+          }
+          h3 {
+            font-family: 'Aleo', serif;
           }
 
           h1 {
             margin: 0;
             font-size: 4.3em;
-            letter-spacing: 0.07rem;
           }
 
           h2 {
