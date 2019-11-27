@@ -4,13 +4,15 @@ import { GoogleTagManager } from '../components/google-tag-manager';
 import getConfig from 'next/config';
 const { publicRuntimeConfig } = getConfig();
 
+const DESCRIPTION =
+  'Rare on luotettu teknologiakumppani ohjelmistoprojektiisi. Rakennamme webbipalveluita, mobiiliapplikaatioita sekä prototyyppejä yhdessä asiakkaidemme kanssa.';
+const TITLE =
+  'Rare Agency | Laadukas teknologiakumppani seuraavaan projektiisi';
 export const Base: React.FC = ({ children }) => {
   return (
     <>
       <Head>
-        <title>
-          Rare Agency - Luotettu teknologiakumppani seuraavaan projektiisi
-        </title>
+        <title>{TITLE}</title>
 
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico" />
@@ -33,12 +35,28 @@ export const Base: React.FC = ({ children }) => {
         />
         <link rel="manifest" href="manifest.json" />
 
-        <meta
-          name="description"
-          content="Rare toimii kumppanina ohjelmistohankkeissa niin startupeille kuin suurillekkin yrityksille."
-        />
+        <meta name="title" content={TITLE} />
+        <meta name="description" content={DESCRIPTION} />
 
         {publicRuntimeConfig.NODE_ENV !== 'development' && <GoogleTagManager />}
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://rareagency.fi" />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESCRIPTION} />
+        <meta
+          property="og:image"
+          content="https://rareagency.fi/static/meta.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://rareagency.fi" />
+        <meta property="twitter:title" content={TITLE} />
+        <meta property="twitter:description" content={DESCRIPTION} />
+        <meta
+          property="twitter:image"
+          content="https://rareagency.fi/static/meta.png"
+        />
       </Head>
 
       {children}
