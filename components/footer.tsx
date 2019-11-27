@@ -188,7 +188,8 @@ export const Footer: React.FC = () => (
         line-height: 1.75rem;
       }
       .rounded-face {
-        border-radius: 4px;
+        width: 130px;
+        border-radius: 130px;
       }
 
       @media (max-width: 1000px) {

@@ -45,6 +45,12 @@ const Header = () => (
         animation: 2s ease-out 0s 1 animate forwards;
       }
 
+      @media (prefers-reduced-motion) {
+        .image img {
+          animation: none;
+        }
+      }
+
       @media (max-width: 1150px) {
         .image {
           display: none;
