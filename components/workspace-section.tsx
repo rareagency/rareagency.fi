@@ -63,12 +63,12 @@ export const WorkspaceSection: React.FC = () => (
 
       .button {
         display: inline-block;
-        padding: 1.5rem 7rem;
-        border-radius: 5px;
-        color: #2e3439;
+        padding: 15px 50px;
+        border-radius: 25px;
+        color: #fff;
         text-decoration: none;
         font-weight: bold;
-        background: #fff;
+        background: #ff584d;
         box-sizing: border-box;
         text-align: center;
         margin-top: 1.5rem;
