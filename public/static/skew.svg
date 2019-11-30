@@ -10,5 +10,5 @@
   viewBox="0 0 100 100"
   preserveAspectRatio="none"
 >
-  <polygon fill="#fff" points="0,0 100,0 100,50" />
+  <polygon fill="#fff" points="0,0 0,50 100,0" />
 </svg>
