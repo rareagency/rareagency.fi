@@ -15,8 +15,8 @@ const Home = () => {
             </h2>
 
             <p>
-              Rare toimii kumppanina ohjelmistohankkeissa niin startupeille kuin
-              suurillekkin yrityksille.{' '}
+              Rare toimii kumppanina applikaatiokehityksessä niin startupeille
+              kuin suurillekkin yrityksille.{' '}
               <span className="gray">
                 Jaamme oman tietotaitomme digitaalisten tuotteiden
                 kehittämisestä ja autamme projektin ohjaamisessa aina ideasta
@@ -25,23 +25,24 @@ const Home = () => {
             </p>
           </AboutSection>
           <AboutSection
+            image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
             reverse={true}
-            image="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
           >
             <h3>Teemme konsepteista käsinkosketeltavia</h3>
             <p>
-              Rakennamme nopeita prototyyppejä ideoiden validointiin,
-              ensimmäisiä käytettäviä versiota kun idea on validoitu ja
-              jatkokehitämme valmiita tuotteita.
+              Rakennamme nopeita prototyyppejä, MVP toteutuksia ja kokonaisia
+              sovelluksia aina ideasta tuotantoon saakka. Teemme tiiviisti
+              yhteistyötä asiakkaidemme kanssa niin konseptoinnissa kuin
+              toteutuksessakin.
             </p>
 
             <h3>Rare osana tiimiänne</h3>
             <p>
-              Web- ja mobiilikehitys, APIt, Pilvipalvelut, Moderni DevOps.
+              Datan visualisointi, Web- ja mobiilikehitys, APIt, Pilvipalvelut,
+              Moderni DevOps.
               <br />
-              Tulemme myös mielellämme osaksi valmista ohjelmistokehitystiimiä.
-              Toimimme aktiivisena osana tiimiänne tukien, haastaen ja jakaen
-              osaamistamme teille.
+              Tulemme myös mielellämme osaksi valmista tiimiä tuoden osaamisemme
+              ja ohjelmistokehityksen parhaat käytännöt mukanamme.
             </p>
           </AboutSection>
         </div>
@@ -55,27 +56,22 @@ const Home = () => {
               joihin käyttäjät rakastuvat.
             </p>
           </AboutSection>
-          <AboutSection
-            reverse={false}
-            image="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-          >
+          <AboutSection reverse={false}>
             <h3>Ketterä kehitys</h3>
             <p>
+              <img src="/static/kanban.svg" alt="Kanban" />
               Pyrimme tehokkuuteen, laatuun ja läpinäkyvyyteen myös
-              toimintatavoissamme. Luotamme ketteriin ohjelmistokehityksen
-              menetelmiin ja tuomme ne mukanamme myös asiakkaidemme luo.
-            </p>
-            <p>
+              toimintatavoissamme. <br />
+              Luotamme ketteriin ohjelmistokehityksen menetelmiin ja tuomme ne
+              mukanamme myös asiakkaidemme luo.
+              <br />
+              <br />
               Parhaassa tilanteessa teemme itsestämme tarpeettomia, kun tiiminne
               on omaksunut meiltä tarvittavat tiedot, taidot ja prosessit.
               Työmme valmistuttua voitte tukeutua omaan tiimiinne, ja kulkea
               kohti tulevaisuuden projekteja itsevarmoin askelin.
             </p>
-          </AboutSection>
-          <AboutSection
-            reverse={true}
-            image="https://images.unsplash.com/photo-1517191434949-5e90cd67d2b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
-          >
+
             <h3>Teknologia</h3>
             <p>
               Tykkäämme pysyä ajan tasalla uusimmista teknologioista, mutta
@@ -91,14 +87,6 @@ const Home = () => {
                 TypeScript, React, React Native, Node.js, GraphQL, AWS, Azure,
                 Terraform, Serverless Framework, Docker.
               </b>
-            </p>
-            <h3>Kiinnostuitko?</h3>
-            <p>
-              Lisätietoa meistä, referenssiprojekteistamme ja siitä miten
-              voisimme auttaa teidän tiimiänne saat ottamalla yhteyttä
-              sähköpostitse osoitteeseen riku@rareagency.fi tai puhelimitse{' '}
-              <strong>+358&nbsp;50&nbsp;470&nbsp;0715</strong>. <br />
-              Kerromme mielellämme lisää!
             </p>
           </AboutSection>
         </div>

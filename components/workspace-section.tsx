@@ -37,6 +37,25 @@ export const WorkspaceSection: React.FC = () => (
         position: relative;
         background: #000d1a;
       }
+      .section::before,
+      .section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 52px;
+        background: red;
+        width: 100%;
+        z-index: 1;
+        background: url('static/skew.svg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+
+      .section::after {
+        top: auto;
+        bottom: 0;
+        transform: rotate(180deg);
+      }
 
       :global(.vertical-center) {
         display: flex;
