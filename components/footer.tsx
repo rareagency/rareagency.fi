@@ -6,6 +6,16 @@ import { Github } from './icons/github';
 
 export const Footer: React.FC = () => (
   <footer className="footer" id="contact">
+    <Center className="interested">
+      <h3>Kiinnostuitko?</h3>
+      <p>
+        Lisätietoa meistä, referenssiprojekteistamme ja siitä miten voisimme
+        auttaa teidän tiimiänne saat ottamalla yhteyttä <br />
+        sähköpostitse osoitteeseen riku@rareagency.fi tai puhelimitse{' '}
+        <strong>+358&nbsp;50&nbsp;470&nbsp;0715</strong>. <br />
+        Kerromme mielellämme lisää!
+      </p>
+    </Center>
     <Center className="grid">
       <img src="../static/logo-black.png" alt="Rare Agency" className="logo" />
 
@@ -16,8 +26,8 @@ export const Footer: React.FC = () => (
       </address>
 
       <address className="location">
-        <div>Kauppakatu&nbsp;9B&nbsp;38</div>
-        <div>33200&nbsp;Tampere</div>
+        <div>Polttimonkatu 4</div>
+        <div>33210&nbsp;Tampere</div>
         <div>Finland</div>
       </address>
 
@@ -116,6 +126,12 @@ export const Footer: React.FC = () => (
     </Center>
 
     <style jsx>{`
+      :global(.interested) {
+        text-align: center;
+        border-bottom: 1px solid #8a8a8a;
+        padding-bottom: 3rem;
+        margin-bottom: 5rem !important;
+      }
       .name {
         font-weight: bold;
       }
@@ -172,7 +188,7 @@ export const Footer: React.FC = () => (
           #000d1a 40.28%,
           hsla(210, 100%, 3%, 1) 99.06%
         );
-        padding: 6rem 0;
+        padding: 3rem 0;
         color: #fff;
       }
 

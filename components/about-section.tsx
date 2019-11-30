@@ -27,19 +27,23 @@ export const AboutSection: React.FC<Props> = ({
       .container {
         ${image ? 'display: grid;' : ''}
         grid-gap: 3rem;
-        grid-template-columns: 1fr 1fr;
+
+        ${reverse
+          ? 'grid-template-columns: 1fr 2fr;'
+          : 'grid-template-columns: 2fr 0.5fr;'}
       }
       .image-container {
         display: flex;
         align-items: flex-start;
+        height: 400px;
         grid-row: 1;
-        background-size: cover;
-        background-position: 0em 1.5rem;
-        background-repeat: no-repeat;
         ${reverse ? 'grid-column: 1;' : ''}
         ${reverse
           ? 'justify-content: flex-start;'
           : 'justify-content: flex-end;'}
+        background-size: cover;
+        background-position: 0em 1.5rem;
+        background-repeat: no-repeat;
       }
 
       .section {
@@ -58,10 +62,16 @@ export const AboutSection: React.FC<Props> = ({
         display: grid;
         grid-row: 1;
         ${reverse ? 'grid-column: 2;' : 'grid-column: 1;'}
-        ${!image
-          ? 'margin-right: 20%;'
-          : ''}
-        grid-template-columns: 1fr 2fr;
+        margin-right: 20%;
+        grid-template-columns: 240px auto;
+      }
+      .section__article :global(img) {
+        margin-left: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        float: right;
+        max-width: 400px;
+        margin-right: -20%;
       }
       .section :global(h2) {
         grid-column: 1 / span 2;
@@ -115,6 +125,12 @@ export const AboutSection: React.FC<Props> = ({
         }
         .section :global(h3) {
           margin-top: 2rem;
+        }
+        .section__article :global(img) {
+          margin-right: 0;
+          margin-left: 0;
+          float: none;
+          max-width: 100%;
         }
       }
       @media (max-width: 800px) {
