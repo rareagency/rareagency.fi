@@ -122,7 +122,7 @@ export const Footer: React.FC = () => (
               <a href="https://github.com/keksike">
                 <Github />
               </a>
-              <a href="https://twitter.com/keksike">
+              <a href="https://twitter.com/cihanbebek">
                 <Twitter />
               </a>
             </span>
