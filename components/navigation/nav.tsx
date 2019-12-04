@@ -39,7 +39,6 @@ export const Nav = () => (
           margin-top: 3rem;
           font-size: 16px;
           font-weight: 500;
-
           // To stay on top of colorlines
           z-index: 2;
           position: relative;
@@ -67,6 +66,7 @@ export const Nav = () => (
         }
 
         .nav__link {
+          vertical-align: middle;
           color: #cecece;
         }
         .nav__link.active {

@@ -24,7 +24,6 @@ export const Logo: React.FC<{ secondary?: boolean }> = ({ secondary }) => {
       <style jsx>{`
         .logo {
           padding: 0.5rem;
-          margin-bottom: 0.15rem;
         }
 
         .logo__image {
