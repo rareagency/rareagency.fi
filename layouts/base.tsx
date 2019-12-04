@@ -5,14 +5,14 @@ import getConfig from 'next/config';
 const { publicRuntimeConfig } = getConfig();
 
 const DESCRIPTION =
-  'Rare on luotettu teknologiakumppani ohjelmistoprojektiisi. Rakennamme webbipalveluita, mobiiliapplikaatioita sekä prototyyppejä yhdessä asiakkaidemme kanssa.';
-const TITLE =
-  'Rare Agency | Laadukas teknologiakumppani seuraavaan projektiisi';
-export const Base: React.FC = ({ children }) => {
+  '2020-luvun ohjelmistokehitystä Tampereelta. Rakennamme webbipalveluita, mobiiliapplikaatioita sekä prototyyppejä yhdessä asiakkaidemme kanssa.';
+const TITLE = 'Rare Agency - 2020-luvun ohjelmistokehitystä / Tampere';
+
+export const Base: React.FC<{ title?: string }> = ({ children, title }) => {
   return (
     <>
       <Head>
-        <title>{TITLE}</title>
+        <title>{title || TITLE}</title>
 
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico" />
