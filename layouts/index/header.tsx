@@ -11,9 +11,9 @@ export const Header: React.FC = () => (
       <section className="hero__content">
         <article className="hero__article">
           <h1 className="title">
-            Kumppani, jota
-            <br />
-            tiimisi tarvitsee.
+            2020-luvun <br />
+            ohjelmistokehitystä <br />
+            Tampereelta.
           </h1>
           <p className="description">
             Rare on tamperelainen alan huippuosaajista koostuva
