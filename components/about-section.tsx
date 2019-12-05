@@ -70,7 +70,7 @@ export const AboutSection: React.FC<Props> = ({
         margin-top: 2rem;
         margin-bottom: 2rem;
         float: right;
-        max-width: 400px;
+        max-width: 50%;
         margin-right: -20%;
       }
       .section :global(h2) {
@@ -124,13 +124,15 @@ export const AboutSection: React.FC<Props> = ({
           padding-left: 0rem;
         }
         .section :global(h3) {
-          margin-top: 2rem;
+          margin-top: 3rem;
         }
         .section__article :global(img) {
+          // float: none;
           margin-right: 0;
-          margin-left: 0;
-          float: none;
-          max-width: 100%;
+          margin-bottom: 0;
+          max-width: 40%;
+          max-height: 300px;
+          display: block;
         }
       }
       @media (max-width: 800px) {
