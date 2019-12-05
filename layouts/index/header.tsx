@@ -17,7 +17,7 @@ export const Header: React.FC = () => (
           </h1>
           <p className="description">
             Rare on tamperelainen alan huippuosaajista koostuva
-            ohjelmistoyritys. Rakennamme web- ja mobiiliapplikaatioita sekä
+            ohjelmistoyritys. Rakennamme web- ja mobiilisovelluksia sekä
             prototyyppejä yhdessä asiakkaidemme kanssa.
           </p>
         </article>

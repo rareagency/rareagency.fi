@@ -15,8 +15,8 @@ const Home = () => {
             </h2>
 
             <p>
-              Rare toimii kumppanina applikaatiokehityksessä niin startupeille
-              kuin suurillekin yrityksille.{' '}
+              Rare toimii kumppanina sovalluskehityksessä niin startupeille kuin
+              suurillekin yrityksille.{' '}
               <span className="gray">
                 Jaamme oman tietotaitomme digitaalisten tuotteiden
                 kehittämisestä ja autamme projektin ohjaamisessa aina ideasta
