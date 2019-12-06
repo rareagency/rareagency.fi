@@ -127,7 +127,6 @@ export const AboutSection: React.FC<Props> = ({
           margin-top: 3rem;
         }
         .section__article :global(img) {
-          // float: none;
           margin-right: 0;
           margin-bottom: 0;
           max-width: 40%;
@@ -142,6 +141,15 @@ export const AboutSection: React.FC<Props> = ({
         .image-container {
           height: 300px;
           width: 100%;
+        }
+      }
+      @media (max-width: 500px) {
+        .section__article :global(img) {
+          display: block;
+          float: none;
+          margin: 3rem auto 2rem auto;
+          max-width: 100%;
+          max-height: 150px;
         }
       }
     `}</style>
