@@ -196,6 +196,10 @@ export const Header: React.FC = () => (
       }
 
       @media (max-width: 650px) {
+        .title {
+          font-size: 2rem;
+        }
+
         .hero__article {
           overflow: visible;
           min-width: 100%;
