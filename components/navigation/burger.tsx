@@ -114,6 +114,9 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
           visibility: hidden;
           display: flex;
           position: relative;
+          background-color: #fff;
+          background-image: url('./static/color-lines.svg');
+          background-size: cover;
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -133,10 +136,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
           top: 0;
           right: 0;
           bottom: 0;
-          background: #fff;
           z-index: 3;
-          background-image: url('./static/color-lines.svg');
-          background-size: cover;
         }
 
         #menu {
