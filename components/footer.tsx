@@ -12,7 +12,7 @@ export const Footer: React.FC = () => (
         Lisätietoa meistä, referenssiprojekteistamme ja siitä miten voisimme
         auttaa teidän tiimiänne saat ottamalla yhteyttä <br />
         sähköpostitse osoitteeseen riku@rareagency.fi tai puhelimitse{' '}
-        <strong>+358&nbsp;50&nbsp;470&nbsp;0715</strong>. <br />
+        <a href="tel:+358504700715"><strong>+358&nbsp;50&nbsp;470&nbsp;0715</strong></a>. <br />
         Kerromme mielellämme lisää!
       </p>
     </Center>
@@ -31,7 +31,7 @@ export const Footer: React.FC = () => (
 
           <div>Rare Agency Oy</div>
           <div>3092335-9</div>
-          <div>+358&nbsp;50&nbsp;470&nbsp;0715</div>
+          <div><a href="tel:+358504700715">+358&nbsp;50&nbsp;470&nbsp;0715</a></div>
           <div>riku@rareagency.fi</div>
         </address>
       </div>

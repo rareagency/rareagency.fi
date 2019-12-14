@@ -134,6 +134,11 @@ export const Base: React.FC<{ title?: string }> = ({ children, title }) => {
           strong {
             font-weight: 500;
           }
+
+          a[href^="tel"] {
+            color: inherit;
+            text-decoration: none;
+          }
         `}
       </style>
     </>
