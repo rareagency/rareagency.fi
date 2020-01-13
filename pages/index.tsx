@@ -32,8 +32,7 @@ const Home = () => {
             <p>
               Rakennamme nopeita prototyyppejä, MVP toteutuksia ja kokonaisia
               sovelluksia aina ideasta tuotantoon saakka. Teemme tiiviisti
-              yhteistyötä asiakkaidemme kanssa niin konseptoinnissa kuin
-              toteutuksessakin.
+              yhteistyötä kanssanne niin konseptoinnissa kuin toteutuksessakin.
             </p>
 
             <h3>Rare osana tiimiänne</h3>
@@ -63,7 +62,7 @@ const Home = () => {
               Pyrimme tehokkuuteen, laatuun ja läpinäkyvyyteen myös
               toimintatavoissamme. <br />
               Luotamme ketteriin ohjelmistokehityksen menetelmiin ja tuomme ne
-              mukanamme myös asiakkaidemme luo.
+              mukanamme myös teidän luoksenne.
               <br />
               <br />
               Parhaassa tilanteessa teemme itsestämme tarpeettomia, kun tiiminne

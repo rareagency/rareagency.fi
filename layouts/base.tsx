@@ -5,7 +5,7 @@ import getConfig from 'next/config';
 const { publicRuntimeConfig } = getConfig();
 
 const DESCRIPTION =
-  'Luotettu teknologiakumppani seuraavaan projektiisi. Rakennamme webbipalveluita, mobiilisovelluksia sekä prototyyppejä yhdessä asiakkaidemme kanssa.';
+  'Luotettu teknologiakumppani seuraavaan projektiisi. Rakennamme webbipalveluita, mobiilisovelluksia sekä prototyyppejä yhdessä teidän kanssanne.';
 const TITLE = 'Rare Agency - 2020-luvun ohjelmistokehitystä / Tampere';
 
 export const Base: React.FC<{ title?: string }> = ({ children, title }) => {
