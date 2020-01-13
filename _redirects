@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://rareagency.fi"
+  to = "https://rare.fi"
+  status = 301
+  force = true
