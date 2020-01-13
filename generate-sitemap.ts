@@ -2,11 +2,12 @@
 const sitemap = require('nextjs-sitemap-generator');
 
 sitemap({
-  baseUrl: 'https://rareagency.fi',
-  pagesDirectory: __dirname + '/pages',
-  targetDirectory: 'out/',
+  baseUrl: 'https://rare.fi/',
+  pagesDirectory: __dirname + '/pages/',
+  targetDirectory: './out',
   nextConfigPath: __dirname + '/next.config.js',
-  ignoredExtensions: ['png', 'jpg']
+  ignoredExtensions: ['png', 'jpg'],
+  ignoreIndexFiles: true
 });
 
 export {};
