@@ -11,18 +11,14 @@ export const Footer: React.FC = () => (
       <p>
         Lisätietoa meistä, referenssiprojekteistamme ja siitä miten voisimme
         auttaa teidän tiimiänne saat ottamalla yhteyttä <br />
-        sähköpostitse osoitteeseen riku@rareagency.fi tai puhelimitse{' '}
+        sähköpostitse osoitteeseen riku@rare.fi tai puhelimitse{' '}
         <strong>+358&nbsp;50&nbsp;470&nbsp;0715</strong>. <br />
         Kerromme mielellämme lisää!
       </p>
     </Center>
     <Center className="contacts">
       <div className="details">
-        <img
-          src="../static/logo-black.png"
-          alt="Rare Agency"
-          className="logo"
-        />
+        <img src="../static/logo-black.png" alt="Rare" className="logo" />
         <address className="location">
           <div>Polttimonkatu 4</div>
           <div>33210&nbsp;Tampere</div>
@@ -32,7 +28,7 @@ export const Footer: React.FC = () => (
           <div>Rare Agency Oy</div>
           <div>3092335-9</div>
           <div>+358&nbsp;50&nbsp;470&nbsp;0715</div>
-          <div>riku@rareagency.fi</div>
+          <div>riku@rare.fi</div>
         </address>
       </div>
       <div className="grid">
@@ -45,7 +41,7 @@ export const Footer: React.FC = () => (
           <address>
             <strong className="name">Riku&nbsp;Rouvila</strong>
             <span>Lead&nbsp;Developer</span>
-            <span>riku@rareagency.fi</span>
+            <span>riku@rare.fi</span>
             <span className="social">
               <a href="https://www.linkedin.com/in/rikurouvila/">
                 <Linkedin />
@@ -69,7 +65,7 @@ export const Footer: React.FC = () => (
           <address>
             <strong className="name">Pyry&nbsp;Rouvila</strong>
             <span>Frontend&nbsp;Creator</span>
-            <span>pyry@rareagency.fi</span>
+            <span>pyry@rare.fi</span>
             <span className="social">
               <a href="https://www.linkedin.com/in/naf/">
                 <Linkedin />
@@ -90,7 +86,7 @@ export const Footer: React.FC = () => (
           <address>
             <strong className="name">Janne&nbsp;Kallunki</strong>
             <span>Full-stack&nbsp;Designer</span>
-            <span>janne@rareagency.fi</span>
+            <span>janne@rare.fi</span>
             <span className="social">
               <a href="https://www.linkedin.com/in/jkallunki/">
                 <Linkedin />
@@ -114,7 +110,7 @@ export const Footer: React.FC = () => (
           <address>
             <strong className="name">Cihan&nbsp;Bebek</strong>
             <span>Lead&nbsp;Developer</span>
-            <span>cihan@rareagency.fi</span>
+            <span>cihan@rare.fi</span>
             <span className="social">
               <a href="https://www.linkedin.com/in/cihan-bebek/">
                 <Linkedin />

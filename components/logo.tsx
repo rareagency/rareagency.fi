@@ -13,7 +13,7 @@ export const Logo: React.FC<{ secondary?: boolean }> = ({ secondary }) => {
         <a className="logo">
           <img
             src="../static/logo.png"
-            alt="Rare Agency"
+            alt="Rare"
             className={
               secondary ? 'logo__image logo__image--secondary' : 'logo__image'
             }
