@@ -111,7 +111,7 @@ const Page: React.FC = () => (
         <h2>Kiinnostuitko?</h2>
         <p>
           Laita sähköpostia suoraan osoitteeseen{' '}
-          <strong>riku@rareagency.fi</strong> tai soita{' '}
+          <strong>riku@rare.fi</strong> tai soita{' '}
           <a href="tel:+358504700715">
             <strong>+358&nbsp;50&nbsp;470&nbsp;0715</strong>
           </a>{' '}

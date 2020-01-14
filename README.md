@@ -1,4 +1,4 @@
-# Rareagency.fi
+# rare.fi
 
 # Installation
 

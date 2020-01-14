@@ -6,7 +6,7 @@ const { publicRuntimeConfig } = getConfig();
 
 const DESCRIPTION =
   'Luotettu teknologiakumppani seuraavaan projektiisi. Rakennamme webbipalveluita, mobiilisovelluksia sekä prototyyppejä yhdessä teidän kanssanne.';
-const TITLE = 'Rare Agency - 2020-luvun ohjelmistokehitystä / Tampere';
+const TITLE = 'Rare - 2020-luvun ohjelmistokehitystä / Tampere';
 
 export const Base: React.FC<{ title?: string }> = ({ children, title }) => {
   return (
@@ -41,21 +41,18 @@ export const Base: React.FC<{ title?: string }> = ({ children, title }) => {
         {publicRuntimeConfig.NODE_ENV !== 'development' && <GoogleTagManager />}
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://rareagency.fi" />
+        <meta property="og:url" content="https://rare.fi" />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
-        <meta
-          property="og:image"
-          content="https://rareagency.fi/static/meta.png"
-        />
+        <meta property="og:image" content="https://rare.fi/static/meta.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://rareagency.fi" />
+        <meta property="twitter:url" content="https://rare.fi" />
         <meta property="twitter:title" content={TITLE} />
         <meta property="twitter:description" content={DESCRIPTION} />
         <meta
           property="twitter:image"
-          content="https://rareagency.fi/static/meta.png"
+          content="https://rare.fi/static/meta.png"
         />
       </Head>
 

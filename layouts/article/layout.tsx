@@ -7,7 +7,7 @@ import { Center } from '../../components/center';
 export const Layout: React.FC<{
   header: React.ReactNode;
 }> = ({ header, children }) => (
-  <Base title={'Rare Agency - React / Typescript / Tampere'}>
+  <Base title={'Rare - React / Typescript / Tampere'}>
     <Header>{header}</Header>
     <main className="main">
       <Center className="article-center">{children}</Center>
