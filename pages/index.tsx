@@ -91,6 +91,11 @@ const Home = () => {
         </div>
       </Layout>
       <style jsx>{`
+        @media (max-width: 800px) {
+          h2 {
+            font-size: 1.45rem;
+          }
+        }
         .gray {
           color: #666;
         }
