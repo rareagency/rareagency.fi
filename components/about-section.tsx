@@ -12,12 +12,6 @@ export const AboutSection: React.FC<Props> = ({
     <section className="section">
       <Center>
         <div className="container">
-          {image && (
-            <div
-              className="image-container"
-              style={{ backgroundImage: `url(${image})` }}
-            ></div>
-          )}
           <article className="section__article">{children}</article>
         </div>
       </Center>
@@ -25,22 +19,11 @@ export const AboutSection: React.FC<Props> = ({
 
     <style jsx>{`
       .container {
-        ${image ? 'display: grid;' : ''}
-        grid-gap: 3rem;
-
-        ${reverse
-          ? 'grid-template-columns: 1fr 2fr;'
-          : 'grid-template-columns: 2fr 0.5fr;'}
       }
       .image-container {
         display: flex;
         align-items: flex-start;
         height: 400px;
-        grid-row: 1;
-        ${reverse ? 'grid-column: 1;' : ''}
-        ${reverse
-          ? 'justify-content: flex-start;'
-          : 'justify-content: flex-end;'}
         background-size: cover;
         background-position: 0em 1.5rem;
         background-repeat: no-repeat;
@@ -60,10 +43,8 @@ export const AboutSection: React.FC<Props> = ({
       }
       .section__article {
         display: grid;
-        grid-row: 1;
-        ${reverse ? 'grid-column: 2;' : 'grid-column: 1;'}
-        margin-right: 20%;
-        grid-template-columns: 240px auto;
+        grid-gap: 1rem;
+        grid-template-columns: auto auto auto auto;
       }
       .section__article :global(img) {
         margin-left: 2rem;
@@ -105,7 +86,6 @@ export const AboutSection: React.FC<Props> = ({
       }
       .section :global(p) {
         margin-top: 1rem;
-        padding-left: 2rem;
         grid-column: 2;
       }
       .section :global(p:last-child) {

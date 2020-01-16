@@ -45,7 +45,6 @@ export const WorkspaceSection: React.FC = () => (
         height: 50px;
         width: 100%;
         z-index: 1;
-        background: url('static/skew.svg');
         background-size: 100% 100%;
         background-repeat: no-repeat;
       }
