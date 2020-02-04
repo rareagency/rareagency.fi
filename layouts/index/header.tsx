@@ -131,6 +131,7 @@ export const Header: React.FC = () => (
       .logo {
         margin-bottom: 1rem;
         margin-right: 1.4rem;
+        opacity: 0.8;
       }
 
       .plan {
