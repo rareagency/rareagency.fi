@@ -124,6 +124,27 @@ export const Footer: React.FC = () => (
             </span>
           </address>
         </section>
+
+        <section className="face olli">
+          <img
+            className="rounded-face"
+            src="./static/faces/olli.jpg"
+            alt="Olli Jaakkola"
+          />
+          <address>
+            <strong className="name">Olli&nbsp;Jaakkola</strong>
+            <span>Full-stack&nbsp;Developer</span>
+            <span>olli@rare.fi</span>
+            <span className="social">
+              <a href="https://www.linkedin.com/in/olli-jaakkola/">
+                <Linkedin />
+              </a>
+              <a href="https://github.com/ollija">
+                <Github />
+              </a>
+            </span>
+          </address>
+        </section>
       </div>
     </Center>
 
