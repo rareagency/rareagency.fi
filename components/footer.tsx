@@ -177,7 +177,8 @@ export const Footer: React.FC = () => (
           'riku janne'
           ' pyry cihan'
           ' pyry cihan'
-          ' pyry cihan';
+          ' pyry cihan'
+          ' olli _';
         grid-gap: 2rem;
       }
 
@@ -192,6 +193,9 @@ export const Footer: React.FC = () => (
       }
       .cihan {
         grid-area: cihan;
+      }
+      .olli {
+        grid-area: olli;
       }
 
       .face {
@@ -255,7 +259,8 @@ export const Footer: React.FC = () => (
             'riku riku'
             'pyry pyry'
             'janne janne'
-            'cihan cihan';
+            'cihan cihan'
+            'olli olli';
           justify-items: center;
         }
         .logo {
@@ -271,6 +276,7 @@ export const Footer: React.FC = () => (
             'logo logo'
             'riku pyry'
             'janne cihan'
+            'olli _'
             'location details';
           justify-items: center;
         }
@@ -286,7 +292,8 @@ export const Footer: React.FC = () => (
             'riku riku'
             'pyry pyry'
             'janne janne'
-            'cihan cihan';
+            'cihan cihan'
+            'olli olli';
         }
       }
 
