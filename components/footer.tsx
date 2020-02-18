@@ -287,13 +287,10 @@ export const Footer: React.FC = () => (
 
       @media (max-width: 750px) {
         :global(.grid) {
-          grid-template-areas:
-            'logo logo'
-            'riku riku'
-            'pyry pyry'
-            'janne janne'
-            'cihan cihan'
-            'olli olli';
+          display: block;
+        }
+        .face {
+          margin-top: 2rem;
         }
       }
 
