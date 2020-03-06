@@ -18,7 +18,7 @@ export const Footer: React.FC = () => (
     </Center>
     <Center className="contacts">
       <div className="details">
-        <img src="../static/logo-black.png" alt="Rare" className="logo" />
+        <img src="/static/logo-black.png" alt="Rare" className="logo" />
         <address className="location">
           <div>Polttimonkatu 4</div>
           <div>33210&nbsp;Tampere</div>
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => (
         <section className="face riku">
           <img
             className="rounded-face"
-            src="./static/faces/riku.jpg"
+            src="/static/faces/riku.jpg"
             alt="Riku Rouvila"
           />
           <address>
@@ -59,7 +59,7 @@ export const Footer: React.FC = () => (
         <section className="face pyry">
           <img
             className="rounded-face"
-            src="./static/faces/pyry.jpg"
+            src="/static/faces/pyry.jpg"
             alt="Pyry Rouvila"
           />
           <address>
@@ -80,7 +80,7 @@ export const Footer: React.FC = () => (
         <section className="face janne">
           <img
             className="rounded-face"
-            src="./static/faces/janne.jpg"
+            src="/static/faces/janne.jpg"
             alt="Janne Kallunki"
           />
           <address>
@@ -104,7 +104,7 @@ export const Footer: React.FC = () => (
         <section className="face cihan">
           <img
             className="rounded-face"
-            src="./static/faces/cihan.jpg"
+            src="/static/faces/cihan.jpg"
             alt="Cihan Bebek"
           />
           <address>
@@ -128,7 +128,7 @@ export const Footer: React.FC = () => (
         <section className="face olli">
           <img
             className="rounded-face"
-            src="./static/faces/olli.jpg"
+            src="/static/faces/olli.jpg"
             alt="Olli Jaakkola"
           />
           <address>

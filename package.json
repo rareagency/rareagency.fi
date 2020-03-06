@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build && next export && ts-node generate-sitemap.ts",
-    "start": "next start",
+    "start": "next dev",
     "lint": "eslint \"**/*.{ts,tsx}\" --ignore-pattern .gitignore --color --quiet"
   },
   "dependencies": {
