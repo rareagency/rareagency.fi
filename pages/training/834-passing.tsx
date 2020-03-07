@@ -17,14 +17,33 @@ const Header = () => (
         koko ekosysteemin monimutkaisuus ovat tehneet erityisesti frontendin
         testaamisesta hankalaa. Vuonna 2020 tilanne on kuitenkin toinen. Tule
         tutustumaan Raren moderniin JavaScript-testaamisen työkalupakkiin ja
-        prosesseihin päivän mittaiseen workshoppiin.
+        prosesseihin päivän mittaiselle kurssille.
       </p>
+      <a
+        className="button"
+        href="https://www.eventbrite.ca/e/rare-presents-834-passing-0-failing-tests-tickets-98773517249"
+        target="_blank"
+      >
+        Ilmottaudu mukaan!
+      </a>
     </article>
     <aside className="image">
       <img src="/static/tests.svg" alt="Kuvituskuva" />
     </aside>
 
     <style jsx>{`
+      .button {
+        background: #6c4fff;
+        padding: 1rem 2.5rem;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        font-size: 18px;
+      }
+      .description {
+        margin-bottom: 3rem;
+      }
       .header-main {
         display: flex;
       }
@@ -79,16 +98,14 @@ const Page: React.FC = () => (
         <h3>Aika &amp; paikka</h3>
 
         <p>
-          Kurssi järjestetään <strong>24.4 Tampereella</strong> Raren
+          Kurssi järjestetään <strong>23.4 Tampereella</strong> Raren
           toimistolla (Polttimonkatu 4). <br /> Päivä alkaa kello 8:00
           aamupalatarjoilulla.
         </p>
 
         <h3>Hinta</h3>
-        <p>Kurssin hinta on 375€ / osallistuja (ALV 0%)</p>
         <p>
-          Kurssi on pyynnöstä mahdollista järjestää myös muuna ajankohtana ja
-          muissa tiloissa sopimuksen mukaan.
+          Kurssin hinta on <strong>375€</strong> / osallistuja (ALV 0%).
         </p>
 
         <h3>Kenelle tämä kurssi on tarkoitettu?</h3>
@@ -96,12 +113,29 @@ const Page: React.FC = () => (
           Tämä kurssi on sinulle olit sitten aloitteleva tai jo kokeneempi
           webbidevaaja. Odotamme, että osaat JavaScriptiä ja ymmärrät Reactin ja
           sitä ympäröivän ekosysteemin perusperiaatteet. Aikaisempaa kokemusta
-          testaamisesta ei tarvita.
+          testaamisesta ei tarvita. Suosittelemme kurssia erityisesti kun uutta
+          projektia ollaan alottamassa.
+        </p>
+
+        <p>
+          <strong>
+            Kurssi on pyynnöstä mahdollista järjestää myös muuna ajankohtana ja
+            muissa tiloissa sopimuksen mukaan.
+          </strong>
         </p>
 
         <hr />
         <h2>Sisältö</h2>
-
+        <p>
+          Päivää ei siis istuta luentosalissa, vaan tarkoitus on koota hyvä
+          porukka samaan huoneeseen keskustelemaan ja kyselemään aiheesta omien
+          projektienne kontekstissa. Mukana on hyvä olla oma tietokone, sillä
+          tällä kurssilla tullaan todellakin koodaamaan{' '}
+          <span role="img" aria-label="coding">
+            👩‍💻
+          </span>
+          .
+        </p>
         <ul>
           <li>Miksi koodia kannattaa testata?</li>
           <li>Sotatarinoita maailmanluokan webbiprojektien testaamisesta</li>
@@ -123,23 +157,20 @@ const Page: React.FC = () => (
             välttää
           </li>
         </ul>
-        <p>
-          Päivää ei siis istuta luentosalissa, vaan tarkoitus on koota hyvä
-          porukka samaan huoneeseen keskustelemaan ja kyselemään aiheesta omien
-          projektienne kontekstissa. Mukana on hyvä olla oma tietokone, sillä
-          tällä kurssilla tullaan todellakin koodaamaan{' '}
-          <span role="img" aria-label="coding">
-            👩‍💻
-          </span>
-          .
-        </p>
 
-        <h2>Mitä koulutuksesta jää käteen</h2>
+        <h3>Mitä koulutuksesta jää käteen?</h3>
+
+        <p>
+          Kurssilla opitaan testaamistaitoja, jotka ovat relevantteja koko urasi
+          ajan. Vaikka kurssilla keskitymmekin nykypäivän JavaScript-sovellusten
+          testaamiseen, ovat taidot siirrettävissä myös muiden alustojen
+          testaamiseen.
+        </p>
 
         <ul>
           <li>
-            Ymmärrys fronttitestaamisen periaatteista, parhaista käytännöistä ja
-            siitä mitä kannattaa testata.
+            Ymmärrys automaattitestaamisen periaatteista, parhaista käytännöistä
+            ja siitä mitä kannattaa testata erityisesti frontendin kontekstissa.
           </li>
           <li>
             Täydet valmiudet oikean React-sovelluksen funktionaaliseen
@@ -167,7 +198,7 @@ const Page: React.FC = () => (
           Rikusta löytyy{' '}
           <a href="https://www.linkedin.com/in/rikurouvila/">LinkedInistä</a>,{' '}
           <a href="https://github.com/rikukissa">Githubista</a> ja tietysti
-          podcastia kuuntelemalla!
+          webbidevaus.fi podcastia kuuntelemalla!
         </p>
 
         <h2>Miksi testaaminen on tärkeää?</h2>
@@ -186,12 +217,31 @@ const Page: React.FC = () => (
           ja vaikuttaa asiakaskokemukseen. Koodin testaaminen on oleellinen osa
           tehokkaan ohjelmistokehitystiimin työkalupakkia.
         </p>
+
+        <a
+          className="button"
+          href="https://www.eventbrite.ca/e/rare-presents-834-passing-0-failing-tests-tickets-98773517249"
+          target="_blank"
+        >
+          Ilmottaudu mukaan!
+        </a>
       </article>
     </section>
 
     <style jsx>{`
       strong {
         font-weight: 600;
+      }
+      .button {
+        background: #6c4fff;
+        padding: 1rem 2.5rem;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        font-size: 18px;
+        margin-top: 1rem;
+        display: inline-block;
       }
       h3 {
         font-family: 'Nunito Sans', sans-serif;

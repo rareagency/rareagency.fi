@@ -90,6 +90,10 @@ const Page: React.FC = () => (
               JavaScript-testaamisen työkalupakkiin ja prosesseihin päivän
               mittaiseen workshoppiin.
             </p>
+            <strong>
+              Ilmoittaudu mukaan 23.4.2020 klo 8:00 - 16:00 järjestettävälle
+              kurssille!
+            </strong>
           </li>
         </ul>
         <h2>Tilaa koulutus tiimillenne</h2>
@@ -110,6 +114,7 @@ const Page: React.FC = () => (
               tutustutaan työkaluihin ja työskentelytapoihin, joiden avulla
               tiimisi voi luoda timanttisen React-projektin vuonna 2020.
             </p>
+            <strong>Järjestetään sopimuksen mukaan.</strong>
           </li>
           <li>
             <h3>
@@ -129,6 +134,7 @@ const Page: React.FC = () => (
               JavaScript-testaamisen työkalupakkiin ja prosesseihin päivän
               mittaiseen workshoppiin.
             </p>
+            <strong>Järjestetään sopimuksen mukaan.</strong>
           </li>
         </ul>
       </article>
@@ -151,6 +157,9 @@ const Page: React.FC = () => (
       .article {
         width: 65%;
       }
+      // h3 {
+      //   margin-bottom: 0.6rem;
+      // }
 
       @media (max-width: 800px) {
         .article {
