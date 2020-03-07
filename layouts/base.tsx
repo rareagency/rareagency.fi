@@ -131,6 +131,13 @@ export const Base: React.FC<{ title?: string }> = ({ children, title }) => {
           strong {
             font-weight: 500;
           }
+
+          @media (max-width: 650px) {
+            p,
+            ul {
+              line-height: 1.75rem;
+            }
+          }
         `}
       </style>
     </>
