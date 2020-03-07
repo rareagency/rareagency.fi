@@ -5,7 +5,10 @@ const Header = () => (
   <section className="header-main">
     <article className="content">
       <h1>
-        ✅ 834 passing,
+        <span role="img" aria-label="check-mark">
+          ✅
+        </span>{' '}
+        834 passing,
         <br />0 failing tests
       </h1>
       <p className="description">
@@ -102,7 +105,13 @@ const Page: React.FC = () => (
         <ul>
           <li>Miksi koodia kannattaa testata?</li>
           <li>Sotatarinoita maailmanluokan webbiprojektien testaamisesta</li>
-          <li>Bang for the Buck 💸 – Mitä ja miten kannattaa testata?</li>
+          <li>
+            Bang for the Buck{' '}
+            <span role="img" aria-label="cash">
+              💸
+            </span>{' '}
+            – Mitä ja miten kannattaa testata?
+          </li>
           <li>
             Kädet saveen – React-sovelluksen funktionaalinen yksikkötestaus
           </li>
@@ -118,7 +127,11 @@ const Page: React.FC = () => (
           Päivää ei siis istuta luentosalissa, vaan tarkoitus on koota hyvä
           porukka samaan huoneeseen keskustelemaan ja kyselemään aiheesta omien
           projektienne kontekstissa. Mukana on hyvä olla oma tietokone, sillä
-          tällä kurssilla tullaan todellakin koodaamaan 👩‍💻.
+          tällä kurssilla tullaan todellakin koodaamaan{' '}
+          <span role="img" aria-label="coding">
+            👩‍💻
+          </span>
+          .
         </p>
 
         <h2>Mitä koulutuksesta jää käteen</h2>

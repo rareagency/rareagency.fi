@@ -75,7 +75,10 @@ const Page: React.FC = () => (
           <li>
             <h3>
               <a href="/training/834-passing">
-                ✅ 834 passing, 0 failing tests
+                <span role="img" aria-label="check-mark">
+                  ✅
+                </span>{' '}
+                834 passing, 0 failing tests
               </a>
             </h3>
             <p>
@@ -93,7 +96,12 @@ const Page: React.FC = () => (
         <ul>
           <li>
             <h3>
-              <a href="/training/react">✨ Suomen tehokkain React-kurssi</a>
+              <a href="/training/react">
+                <span role="img" aria-label="springle">
+                  ✨
+                </span>{' '}
+                Suomen tehokkain React-kurssi
+              </a>
             </h3>
             <p>
               Kokemuksemme kertoo, että hyvien ja selkeiden käytäntöjen ja
@@ -106,7 +114,10 @@ const Page: React.FC = () => (
           <li>
             <h3>
               <a href="/training/834-passing">
-                ✅ 834 passing, 0 failing tests
+                <span role="img" aria-label="check-mark">
+                  ✅
+                </span>{' '}
+                834 passing, 0 failing tests
               </a>
             </h3>
             <p>
