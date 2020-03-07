@@ -21,6 +21,7 @@ const Header = () => (
       </p>
       <a
         className="button"
+        rel="noopener noreferrer"
         href="https://www.eventbrite.ca/e/rare-presents-834-passing-0-failing-tests-tickets-98773517249"
         target="_blank"
       >
@@ -220,6 +221,7 @@ const Page: React.FC = () => (
 
         <a
           className="button"
+          rel="noopener noreferrer"
           href="https://www.eventbrite.ca/e/rare-presents-834-passing-0-failing-tests-tickets-98773517249"
           target="_blank"
         >
