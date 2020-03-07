@@ -15,9 +15,9 @@ const Header = () => (
         Koodin automaattitestaamisessa ideaalimaailma kohtaa usein
         todellisuuden. Itsestään hajoilevat oikeaa selainta ajavat työkalut ja
         koko ekosysteemin monimutkaisuus ovat tehneet erityisesti frontendin
-        testaamisesta hankalaa. Vuonna 2020 tilanne on kuitenkin toinen. Tule
-        tutustumaan Raren moderniin JavaScript-testaamisen työkalupakkiin ja
-        prosesseihin päivän mittaiselle kurssille.
+        testaamisesta hankalaa. <br /> Vuonna 2020 tilanne on kuitenkin toinen.
+        Tule tutustumaan Raren moderniin JavaScript-testaamisen työkalupakkiin
+        ja prosesseihin päivän mittaiselle kurssille.
       </p>
       <a
         className="button"
