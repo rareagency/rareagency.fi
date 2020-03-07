@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout } from '../layouts/article/layout';
+import { Layout } from '../../layouts/article/layout';
 
 const Header = () => (
   <section className="header-main">
@@ -16,7 +16,7 @@ const Header = () => (
       </p>
     </article>
     <aside className="image">
-      <img src="./static/react.svg" alt="React -logo" />
+      <img src="/static/react.svg" alt="React -logo" />
     </aside>
 
     <style jsx>{`
