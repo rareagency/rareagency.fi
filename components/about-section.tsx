@@ -83,6 +83,7 @@ export const AboutSection: React.FC<Props> = ({
         grid-column: 1 / span 2;
         font-size: 1.5rem;
         margin-bottom: 2rem;
+        line-height: 2rem;
       }
       .section :global(h2 + p:last-child) {
         margin-bottom: 0;
