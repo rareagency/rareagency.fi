@@ -187,22 +187,7 @@ const Page: React.FC = () => (
           </li>
         </ul>
 
-        <h2>Valmentaja</h2>
-
-        <p>
-          Kurssin valmentajana toimii{' '}
-          <a href="https://webbidevaus.fi/">webbidevaus.fi</a> -podcastin
-          juontaja ja viimeiset 10 vuotta ohjelmistokehityksen parissa
-          työskennellyt <strong>Riku Rouvila</strong>. Riku on ollut mukana
-          kehittämässä ja ylläpitämässä React-projekteja vuodesta 2014 yksissä
-          Suomen ja Euroopan suurimmista ohjelmistoprojekteista. Lisätietoa
-          Rikusta löytyy{' '}
-          <a href="https://www.linkedin.com/in/rikurouvila/">LinkedInistä</a>,{' '}
-          <a href="https://github.com/rikukissa">Githubista</a> ja tietysti
-          webbidevaus.fi podcastia kuuntelemalla!
-        </p>
-
-        <h2>Miksi testaaminen on tärkeää?</h2>
+        <h3>Miksi testaaminen on tärkeää?</h3>
 
         <p>
           Toimivaa koodia on mahdollista kirjoittaa myös ilman testejä. Muutos
@@ -217,6 +202,21 @@ const Page: React.FC = () => (
           koko tiimille nyt ja tulevaisuudessa. Se myös parantaa tuotteen laatua
           ja vaikuttaa asiakaskokemukseen. Koodin testaaminen on oleellinen osa
           tehokkaan ohjelmistokehitystiimin työkalupakkia.
+        </p>
+
+        <h2>Valmentaja</h2>
+
+        <p>
+          Kurssin valmentajana toimii{' '}
+          <a href="https://webbidevaus.fi/">webbidevaus.fi</a> -podcastin
+          juontaja ja viimeiset 10 vuotta ohjelmistokehityksen parissa
+          työskennellyt <strong>Riku Rouvila</strong>. Riku on ollut mukana
+          kehittämässä ja ylläpitämässä React-projekteja vuodesta 2014 yksissä
+          Suomen ja Euroopan suurimmista ohjelmistoprojekteista. Lisätietoa
+          Rikusta löytyy{' '}
+          <a href="https://www.linkedin.com/in/rikurouvila/">LinkedInistä</a>,{' '}
+          <a href="https://github.com/rikukissa">Githubista</a> ja tietysti
+          webbidevaus.fi podcastia kuuntelemalla!
         </p>
 
         <a
