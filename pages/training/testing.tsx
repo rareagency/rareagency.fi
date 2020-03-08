@@ -108,7 +108,12 @@ const Header = () => (
 );
 
 const Page: React.FC = () => (
-  <Layout header={<Header />}>
+  <Layout
+    title="Rare presents: 🧪🥽 0 testiä ja kaikki tulessa 🔥"
+    description="Koodin automaattitestaamisessa ideaalimaailma kohtaa usein todellisuuden. 
+  Vuonna 2020 tilanne on kuitenkin toinen. Tule tutustumaan Raren moderniin JavaScript-testaamisen työkalupakkiin ja prosesseihin päivän mittaiselle kurssille."
+    header={<Header />}
+  >
     <section className="content">
       <article className="article">
         <p>
