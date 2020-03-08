@@ -109,7 +109,7 @@ const Page: React.FC = () => (
 
         <h3>Hinta</h3>
         <p>
-          Kurssin hinta on <strong>375€</strong> / osallistuja (ALV 0%).
+          Kurssin hinta on <strong>375 €</strong> / osallistuja (ALV 0%).
         </p>
 
         <h3>Kenelle tämä kurssi on tarkoitettu?</h3>
