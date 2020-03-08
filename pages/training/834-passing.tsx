@@ -22,7 +22,7 @@ const Header = () => (
       <a
         className="button"
         rel="noopener noreferrer"
-        href="https://www.eventbrite.ca/e/rare-presents-834-passing-0-failing-tests-tickets-98773517249"
+        href="https://docs.google.com/forms/d/1DzkP7yitdWVHGV8MtBq3qj6kpdyY2yXETYziNs47gyo/"
         target="_blank"
       >
         Ilmottaudu mukaan!
@@ -222,7 +222,7 @@ const Page: React.FC = () => (
         <a
           className="button"
           rel="noopener noreferrer"
-          href="https://www.eventbrite.ca/e/rare-presents-834-passing-0-failing-tests-tickets-98773517249"
+          href="https://docs.google.com/forms/d/1DzkP7yitdWVHGV8MtBq3qj6kpdyY2yXETYziNs47gyo/"
           target="_blank"
         >
           Ilmottaudu mukaan!
