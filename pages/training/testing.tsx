@@ -118,8 +118,9 @@ const Page: React.FC = () => (
       <article className="article">
         <p>
           <strong>Avainsanat: </strong>
-          Cypress, React, Jest, TDD, Continuous integration, Yksikkötestaaminen,
-          Funktionaalinen testaaminen, E2E, Github Actions, Travis, Jenkins
+          Cypress, React, React Testing Library, Jest, TDD, Continuous
+          integration, Yksikkötestaaminen, Funktionaalinen testaaminen, E2E,
+          Github Actions, Travis, Jenkins
         </p>
 
         <p>
