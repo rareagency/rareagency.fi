@@ -129,7 +129,7 @@ const Page: React.FC = () => (
         <h3>Aika &amp; paikka</h3>
 
         <p>
-          Kurssi järjestetään <strong>23.4 Tampereella</strong> Raren
+          Kurssi järjestetään <strong>23.4.2020 Tampereella</strong> Raren
           toimistolla (Polttimonkatu 4). <br /> Päivä alkaa kello 8:00
           aamupalatarjoilulla.
         </p>
