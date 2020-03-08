@@ -1,6 +1,30 @@
 import React from 'react';
 import { Layout } from '../../layouts/article/layout';
 
+function EpisodeEmbed() {
+  return (
+    <>
+      <iframe
+        title="Webbidevaus.fi jakso 78"
+        src="https://webbidevaus.fi/78/embed"
+        frameBorder="0"
+      ></iframe>
+      <style jsx>{`
+        iframe {
+          margin-top: 1rem;
+          max-width: 500px;
+          width: 100%;
+        }
+        @media (max-width: 564px) {
+          iframe {
+            height: 220px;
+          }
+        }
+      `}</style>
+    </>
+  );
+}
+
 const Header = () => (
   <section className="header-main">
     <article className="content">
@@ -94,11 +118,14 @@ const Page: React.FC = () => (
         </p>
 
         <p>
-          Kuuntele tästä uunituore{' '}
-          <a href="https://webbidevaus.fi">webbidevaus.fi</a> - jakso webin
-          testaamisesta
+          <strong>
+            Kuuntele tästä uunituore{' '}
+            <a href="https://webbidevaus.fi">webbidevaus.fi</a> - jakso webin
+            testaamisesta
+          </strong>
+          <EpisodeEmbed />
         </p>
-
+        <hr />
         <h3>Aika &amp; paikka</h3>
 
         <p>
@@ -210,6 +237,11 @@ const Page: React.FC = () => (
         <h2>Valmentaja</h2>
 
         <p>
+          <img
+            className="riku"
+            src="/static/riku-koulutus.jpg"
+            alt="Riku Rouvila"
+          />
           Kurssin valmentajana toimii{' '}
           <a href="https://webbidevaus.fi/">webbidevaus.fi</a> -podcastin
           juontaja ja viimeiset 10 vuotta ohjelmistokehityksen parissa
@@ -236,6 +268,22 @@ const Page: React.FC = () => (
     <style jsx>{`
       strong {
         font-weight: 600;
+      }
+      .riku {
+        width: 400px;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        float: right;
+      }
+      @media (max-width: 600px) {
+        .riku {
+          display: block;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          margin-left: 0;
+          width: 100%;
+          float: none;
+        }
       }
       .button {
         background: #6c4fff;
@@ -269,7 +317,7 @@ const Page: React.FC = () => (
       }
 
       .article {
-        width: 65%;
+        width: 70%;
       }
 
       @media (max-width: 800px) {
