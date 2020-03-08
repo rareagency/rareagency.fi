@@ -6,10 +6,13 @@ const Header = () => (
     <article className="content">
       <h1>
         <span role="img" aria-label="check-mark">
-          ✅
+          🧪🥽
         </span>{' '}
-        834 passing,
-        <br />0 failing tests
+        0 testiä ja kaikki tulessa{' '}
+        <span role="img" aria-label="fire">
+          🔥
+        </span>
+        ?
       </h1>
       <p className="description">
         Koodin automaattitestaamisessa ideaalimaailma kohtaa usein
@@ -87,7 +90,7 @@ const Page: React.FC = () => (
         <p>
           <strong>Avainsanat: </strong>
           Cypress, React, Jest, TDD, Continuous integration, Yksikkötestaaminen,
-          Funktionaalinen testaaminen, E2E
+          Funktionaalinen testaaminen, E2E, Github Actions, Travis, Jenkins
         </p>
 
         <p>
