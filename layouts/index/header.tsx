@@ -135,20 +135,21 @@ export const Header: React.FC = () => (
       }
 
       .plan {
-        margin-bottom: 0.85rem;
+        margin-bottom: 1rem;
         margin-right: 1.75rem;
       }
 
       .sharper {
         width: 200px;
-        margin-bottom: 1.25rem;
+        margin-bottom: 1.4rem;
       }
 
       .tieto {
+        margin-bottom: 0.75rem;
       }
 
       .veracell {
-        margin-bottom: 1.05rem;
+        margin-bottom: 1.35rem;
       }
 
       @media (max-width: 1330px) {
@@ -184,14 +185,14 @@ export const Header: React.FC = () => (
           width: 80px;
         }
         .tieto {
-          width: 60px;
+          width: 95px;
         }
         .veracell {
           width: 97px;
           margin-bottom: 1rem;
         }
         .sharper {
-          width: 180px;
+          width: 170px;
           margin-bottom: 1rem;
         }
       }
