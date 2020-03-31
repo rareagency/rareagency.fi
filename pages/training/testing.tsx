@@ -135,9 +135,8 @@ const Page: React.FC = () => (
         <h3>Aika &amp; paikka</h3>
 
         <p>
-          Kurssi järjestetään <strong>23.4.2020 Tampereella</strong> Raren
-          toimistolla (Polttimonkatu 4). <br /> Päivä alkaa kello 8:00
-          aamupalatarjoilulla.
+          Kurssi järjestetään joko omissa tiloissanne tai Raren toimistolla
+          sopimuksen mukaan.
         </p>
 
         <h3>Hinta</h3>
@@ -152,13 +151,6 @@ const Page: React.FC = () => (
           sitä ympäröivän ekosysteemin perusperiaatteet. Aikaisempaa kokemusta
           testaamisesta ei tarvita. Suosittelemme kurssia erityisesti kun uutta
           projektia ollaan alottamassa.
-        </p>
-
-        <p>
-          <strong>
-            Kurssi on pyynnöstä mahdollista järjestää myös muuna ajankohtana ja
-            muissa tiloissa sopimuksen mukaan.
-          </strong>
         </p>
 
         <hr />
