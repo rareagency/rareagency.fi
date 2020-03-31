@@ -74,11 +74,15 @@ const Page: React.FC = () => (
         <ul>
           <li>
             <h3>
-              <a href="/training/834-passing">
+              <a href="/training/testing">
                 <span role="img" aria-label="check-mark">
-                  ✅
+                  🧪🥽
                 </span>{' '}
-                834 passing, 0 failing tests
+                0 testiä ja kaikki tulessa{' '}
+                <span role="img" aria-label="fire">
+                  🔥
+                </span>
+                ?
               </a>
             </h3>
             <p>
@@ -118,11 +122,15 @@ const Page: React.FC = () => (
           </li>
           <li>
             <h3>
-              <a href="/training/834-passing">
+              <a href="/training/testing">
                 <span role="img" aria-label="check-mark">
-                  ✅
+                  🧪🥽
                 </span>{' '}
-                834 passing, 0 failing tests
+                0 testiä ja kaikki tulessa{' '}
+                <span role="img" aria-label="fire">
+                  🔥
+                </span>
+                ?
               </a>
             </h3>
             <p>

@@ -8,7 +8,9 @@ const DESCRIPTION =
   'Luotettu teknologiakumppani seuraavaan projektiisi. Rakennamme webbipalveluita, mobiilisovelluksia sekä prototyyppejä yhdessä teidän kanssanne.';
 const TITLE = 'Rare - 2020-luvun ohjelmistokehitystä / Tampere';
 
-export const Base: React.FC<{ title?: string }> = ({ children, title }) => {
+export type BaseProps = { title?: string; description?: string };
+
+export const Base: React.FC<BaseProps> = ({ children, description, title }) => {
   return (
     <>
       <Head>
@@ -33,23 +35,26 @@ export const Base: React.FC<{ title?: string }> = ({ children, title }) => {
           href="https://fonts.googleapis.com/css?family=Nunito+Sans:800|Montserrat:400,500&display=swap"
           rel="stylesheet"
         />
-        <link rel="manifest" href="manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
 
-        <meta name="title" content={TITLE} />
-        <meta name="description" content={DESCRIPTION} />
+        <meta name="title" content={title || TITLE} />
+        <meta name="description" content={description || DESCRIPTION} />
 
         {publicRuntimeConfig.NODE_ENV !== 'development' && <GoogleTagManager />}
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://rare.fi" />
-        <meta property="og:title" content={TITLE} />
-        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:title" content={title || TITLE} />
+        <meta property="og:description" content={description || DESCRIPTION} />
         <meta property="og:image" content="https://rare.fi/static/meta.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://rare.fi" />
-        <meta property="twitter:title" content={TITLE} />
-        <meta property="twitter:description" content={DESCRIPTION} />
+        <meta property="twitter:title" content={title || TITLE} />
+        <meta
+          property="twitter:description"
+          content={description || DESCRIPTION}
+        />
         <meta
           property="twitter:image"
           content="https://rare.fi/static/meta.png"

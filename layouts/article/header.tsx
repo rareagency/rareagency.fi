@@ -32,7 +32,7 @@ export const Header: React.FC = ({ children }) => (
         background: red;
         width: 100%;
         z-index: 1;
-        background: url('static/skew.svg');
+        background: url('/static/skew.svg');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         transform: rotate(180deg);

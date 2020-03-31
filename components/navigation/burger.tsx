@@ -115,7 +115,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
           display: flex;
           position: relative;
           background-color: #fff;
-          background-image: url('./static/color-lines.svg');
+          background-image: url('/static/color-lines.svg');
           background-size: cover;
         }
 

@@ -1,15 +1,42 @@
 import React from 'react';
 import { Layout } from '../../layouts/article/layout';
 
+function EpisodeEmbed() {
+  return (
+    <>
+      <iframe
+        title="Webbidevaus.fi jakso 78"
+        src="https://webbidevaus.fi/78/embed"
+        frameBorder="0"
+      ></iframe>
+      <style jsx>{`
+        iframe {
+          margin-top: 1rem;
+          max-width: 500px;
+          width: 100%;
+        }
+        @media (max-width: 564px) {
+          iframe {
+            height: 220px;
+          }
+        }
+      `}</style>
+    </>
+  );
+}
+
 const Header = () => (
   <section className="header-main">
     <article className="content">
       <h1>
         <span role="img" aria-label="check-mark">
-          ✅
+          🧪🥽
         </span>{' '}
-        834 passing,
-        <br />0 failing tests
+        0 testiä ja kaikki tulessa{' '}
+        <span role="img" aria-label="fire">
+          🔥
+        </span>
+        ?
       </h1>
       <p className="description">
         Koodin automaattitestaamisessa ideaalimaailma kohtaa usein
@@ -22,7 +49,7 @@ const Header = () => (
       <a
         className="button"
         rel="noopener noreferrer"
-        href="https://www.eventbrite.ca/e/rare-presents-834-passing-0-failing-tests-tickets-98773517249"
+        href="https://docs.google.com/forms/d/1DzkP7yitdWVHGV8MtBq3qj6kpdyY2yXETYziNs47gyo/"
         target="_blank"
       >
         Ilmottaudu mukaan!
@@ -81,32 +108,40 @@ const Header = () => (
 );
 
 const Page: React.FC = () => (
-  <Layout header={<Header />}>
+  <Layout
+    title="Rare presents: 🧪🥽 0 testiä ja kaikki tulessa 🔥"
+    description="Koodin automaattitestaamisessa ideaalimaailma kohtaa usein todellisuuden. 
+  Vuonna 2020 tilanne on kuitenkin toinen. Tule tutustumaan Raren moderniin JavaScript-testaamisen työkalupakkiin ja prosesseihin päivän mittaiselle kurssille."
+    header={<Header />}
+  >
     <section className="content">
       <article className="article">
         <p>
           <strong>Avainsanat: </strong>
-          Cypress, React, Jest, TDD, Continuous integration, Yksikkötestaaminen,
-          Funktionaalinen testaaminen, E2E
+          Cypress, React, React Testing Library, Jest, TDD, Continuous
+          integration, Yksikkötestaaminen, Funktionaalinen testaaminen, E2E,
+          Github Actions, Travis, Jenkins
         </p>
 
         <p>
-          Kuuntele tästä uunituore{' '}
-          <a href="https://webbidevaus.fi">webbidevaus.fi</a> - jakso webin
-          testaamisesta
+          <strong>
+            Kuuntele tästä uunituore{' '}
+            <a href="https://webbidevaus.fi">webbidevaus.fi</a> - jakso webin
+            testaamisesta
+          </strong>
+          <EpisodeEmbed />
         </p>
-
+        <hr />
         <h3>Aika &amp; paikka</h3>
 
         <p>
-          Kurssi järjestetään <strong>23.4 Tampereella</strong> Raren
-          toimistolla (Polttimonkatu 4). <br /> Päivä alkaa kello 8:00
-          aamupalatarjoilulla.
+          Kurssi järjestetään joko omissa tiloissanne tai Raren toimistolla
+          sopimuksen mukaan.
         </p>
 
         <h3>Hinta</h3>
         <p>
-          Kurssin hinta on <strong>375€</strong> / osallistuja (ALV 0%).
+          Kurssin hinta on <strong>375 €</strong> / osallistuja (ALV 0%).
         </p>
 
         <h3>Kenelle tämä kurssi on tarkoitettu?</h3>
@@ -116,13 +151,6 @@ const Page: React.FC = () => (
           sitä ympäröivän ekosysteemin perusperiaatteet. Aikaisempaa kokemusta
           testaamisesta ei tarvita. Suosittelemme kurssia erityisesti kun uutta
           projektia ollaan alottamassa.
-        </p>
-
-        <p>
-          <strong>
-            Kurssi on pyynnöstä mahdollista järjestää myös muuna ajankohtana ja
-            muissa tiloissa sopimuksen mukaan.
-          </strong>
         </p>
 
         <hr />
@@ -187,22 +215,7 @@ const Page: React.FC = () => (
           </li>
         </ul>
 
-        <h2>Valmentaja</h2>
-
-        <p>
-          Kurssin valmentajana toimii{' '}
-          <a href="https://webbidevaus.fi/">webbidevaus.fi</a> -podcastin
-          juontaja ja viimeiset 10 vuotta ohjelmistokehityksen parissa
-          työskennellyt <strong>Riku Rouvila</strong>. Riku on ollut mukana
-          kehittämässä ja ylläpitämässä React-projekteja vuodesta 2014 yksissä
-          Suomen ja Euroopan suurimmista ohjelmistoprojekteista. Lisätietoa
-          Rikusta löytyy{' '}
-          <a href="https://www.linkedin.com/in/rikurouvila/">LinkedInistä</a>,{' '}
-          <a href="https://github.com/rikukissa">Githubista</a> ja tietysti
-          webbidevaus.fi podcastia kuuntelemalla!
-        </p>
-
-        <h2>Miksi testaaminen on tärkeää?</h2>
+        <h3>Miksi testaaminen on tärkeää?</h3>
 
         <p>
           Toimivaa koodia on mahdollista kirjoittaa myös ilman testejä. Muutos
@@ -219,10 +232,30 @@ const Page: React.FC = () => (
           tehokkaan ohjelmistokehitystiimin työkalupakkia.
         </p>
 
+        <h2>Valmentaja</h2>
+
+        <p>
+          <img
+            className="riku"
+            src="/static/riku-koulutus.jpg"
+            alt="Riku Rouvila"
+          />
+          Kurssin valmentajana toimii{' '}
+          <a href="https://webbidevaus.fi/">webbidevaus.fi</a> -podcastin
+          juontaja ja viimeiset 10 vuotta ohjelmistokehityksen parissa
+          työskennellyt <strong>Riku Rouvila</strong>. Riku on ollut mukana
+          kehittämässä ja ylläpitämässä React-projekteja vuodesta 2014 yksissä
+          Suomen ja Euroopan suurimmista ohjelmistoprojekteista. Lisätietoa
+          Rikusta löytyy{' '}
+          <a href="https://www.linkedin.com/in/rikurouvila/">LinkedInistä</a>,{' '}
+          <a href="https://github.com/rikukissa">Githubista</a> ja tietysti
+          webbidevaus.fi podcastia kuuntelemalla!
+        </p>
+
         <a
           className="button"
           rel="noopener noreferrer"
-          href="https://www.eventbrite.ca/e/rare-presents-834-passing-0-failing-tests-tickets-98773517249"
+          href="https://docs.google.com/forms/d/1DzkP7yitdWVHGV8MtBq3qj6kpdyY2yXETYziNs47gyo/"
           target="_blank"
         >
           Ilmottaudu mukaan!
@@ -233,6 +266,22 @@ const Page: React.FC = () => (
     <style jsx>{`
       strong {
         font-weight: 600;
+      }
+      .riku {
+        width: 400px;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        float: right;
+      }
+      @media (max-width: 600px) {
+        .riku {
+          display: block;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          margin-left: 0;
+          width: 100%;
+          float: none;
+        }
       }
       .button {
         background: #6c4fff;
@@ -266,7 +315,7 @@ const Page: React.FC = () => (
       }
 
       .article {
-        width: 65%;
+        width: 70%;
       }
 
       @media (max-width: 800px) {
