@@ -70,36 +70,6 @@ const Page: React.FC = () => (
   <Layout header={<Header />}>
     <section className="content">
       <article className="article">
-        <h2>Seuraavaksi luvassa</h2>
-        <ul>
-          <li>
-            <h3>
-              <a href="/training/testing">
-                <span role="img" aria-label="check-mark">
-                  🧪🥽
-                </span>{' '}
-                0 testiä ja kaikki tulessa{' '}
-                <span role="img" aria-label="fire">
-                  🔥
-                </span>
-                ?
-              </a>
-            </h3>
-            <p>
-              Koodin automaattitestaamisessa ideaalimaailma kohtaa usein
-              todellisuuden. Itsestään hajoilevat oikeaa selainta ajavat
-              työkalut ja koko ekosysteemin monimutkaisuus ovat tehneet
-              erityisesti frontendin testaamisesta hankalaa. Vuonna 2020 tilanne
-              on kuitenkin toinen. Tule tutustumaan Raren moderniin
-              JavaScript-testaamisen työkalupakkiin ja prosesseihin päivän
-              mittaiseen workshoppiin.
-            </p>
-            <strong>
-              Ilmoittaudu mukaan 23.4.2020 klo 8:00 - 16:00 järjestettävälle
-              kurssille!
-            </strong>
-          </li>
-        </ul>
         <h2>Tilaa koulutus tiimillenne</h2>
         <ul>
           <li>
