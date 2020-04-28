@@ -29,45 +29,35 @@ export const Header: React.FC = () => (
         <h3 className="description">Meihin luottavat</h3>
 
         <p className="references__images">
-          <a
-            href="https://www.tieto.com/fi/"
-            target="blank">
+          <a href="https://www.tieto.com/fi/" target="blank">
             <img
               src="../static/references/tieto.svg"
               className="logo tieto"
               alt="Tieto Oyj"
             />
           </a>
-          <a
-            href="https://www.veracell.com/"
-            target="blank">
+          <a href="https://www.veracell.com/" target="blank">
             <img
               src="../static/references/veracell.svg"
               alt="Veracell"
               className="logo veracell"
             />
           </a>
-          <a
-            href="https://plan-international.org/"
-            target="blank">
+          <a href="https://plan-international.org/" target="blank">
             <img
               src="../static/references/plan.svg"
               className="logo plan"
               alt="Plan International"
             />
           </a>
-          <a
-            href="https://sharpershape.com/"
-            target="blank">
+          <a href="https://sharpershape.com/" target="blank">
             <img
               src="../static/references/sharper-shape.svg"
               className="logo sharper"
               alt="Sharper Shape"
             />
           </a>
-          <a
-            href="https://cultsecurity.com/"
-            target="blank">
+          <a href="https://cultsecurity.com/" target="blank">
             <img
               src="../static/references/cult-black.png"
               className="logo cult"

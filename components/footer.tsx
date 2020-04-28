@@ -243,7 +243,6 @@ export const Footer: React.FC = () => (
       }
 
       .hannes {
-
       }
 
       .face {
