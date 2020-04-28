@@ -145,6 +145,45 @@ export const Footer: React.FC = () => (
             </span>
           </address>
         </section>
+
+        <section className="face kalle">
+          <img
+            className="rounded-face"
+            src="/static/faces/kalle.png"
+            alt="Kalle Hirvola"
+          />
+          <address>
+            <strong className="name">Kalle&nbsp;Hirvola</strong>
+            <span>Software&nbsp;Developer</span>
+            <span>kalle@rare.fi</span>
+            <span className="social">
+              <a href="https://github.com/eioo">
+                <Github />
+              </a>
+            </span>
+          </address>
+        </section>
+
+        <section className="face hannes">
+          <img
+            className="rounded-face"
+            src="/static/faces/hannes.png"
+            alt="Hannes Aaltonen"
+          />
+          <address>
+            <strong className="name">Hannes&nbsp;Aaltonen</strong>
+            <span>Software&nbsp;Developer</span>
+            <span>hannes@rare.fi</span>
+            <span className="social">
+              <a href="https://www.linkedin.com/in/hannes-aaltonen-9911ba121/">
+                <Linkedin />
+              </a>
+              <a href="https://github.com/haalto">
+                <Github />
+              </a>
+            </span>
+          </address>
+        </section>
       </div>
     </Center>
 
@@ -196,6 +235,15 @@ export const Footer: React.FC = () => (
       }
       .olli {
         grid-area: olli;
+      }
+
+      .kalle {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+      }
+
+      .hannes {
+
       }
 
       .face {
