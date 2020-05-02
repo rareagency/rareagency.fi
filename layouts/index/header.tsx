@@ -2,6 +2,7 @@ import React from 'react';
 import { ColorLines } from '../../components/color-lines';
 import { Nav } from '../../components/navigation/nav';
 import { Center } from '../../components/center';
+import { Button } from '../../components/button';
 
 export const Header: React.FC = () => (
   <header className="hero">
@@ -20,6 +21,7 @@ export const Header: React.FC = () => (
             ohjelmistoyritys. Rakennamme web- ja mobiilisovelluksia,
             verkkosivuja sekä prototyyppejä yhdessä teidän kanssanne.
           </p>
+          <Button href="#contact">Ota yhteyttä</Button>
         </article>
 
         <ColorLines />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Center } from './center';
 import Link from 'next/link';
+import { Button } from './button';
 
 export const WorkspaceSection: React.FC = () => (
   <>
@@ -24,7 +25,7 @@ export const WorkspaceSection: React.FC = () => (
 
           <Link href="/training">
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className="button">Lue lisää</a>
+            <Button>Lue lisää</Button>
           </Link>
         </article>
         <aside className="workspace"></aside>
@@ -79,19 +80,6 @@ export const WorkspaceSection: React.FC = () => (
         background-size: auto 105%;
       }
 
-      .button {
-        display: inline-block;
-        padding: 15px 50px;
-        border-radius: 25px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        background: #ff584d;
-        box-sizing: border-box;
-        text-align: center;
-        margin-top: 1.5rem;
-      }
-
       @media (max-width: 1000px) {
         .section {
           background-image: none;
@@ -110,7 +98,7 @@ export const WorkspaceSection: React.FC = () => (
       }
 
       @media (max-width: 450px) {
-        .button {
+        :global(.button) {
           width: 100%;
           padding-left: 0;
           padding-right: 0;

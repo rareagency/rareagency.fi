@@ -1,30 +1,8 @@
-import React, { useEffect, useRef } from 'react';
-import Vivus from 'vivus';
+import React from 'react';
+import { useVivusRef } from '../hooks/useVivus';
 
 export function ColorLines() {
-  const colorlines = useRef<SVGSVGElement>(null);
-
-  useEffect(() => {
-    if (!colorlines.current) {
-      return;
-    }
-
-    if (window.matchMedia('(prefers-reduced-motion)').matches) {
-      colorlines.current.style.visibility = 'visible';
-      return;
-    }
-
-    // Ref is actually SVGSVGElement but Vivus only accepts HTMLElement
-    new Vivus((colorlines.current as unknown) as HTMLElement, {
-      duration: 500,
-      type: 'scenario', // allows adding data-start, data-duration to individual paths
-      start: 'autostart',
-      animTimingFunction: Vivus.EASE_OUT,
-      onReady: vivus => {
-        (vivus as Vivus & { el: HTMLElement }).el.style.visibility = 'visible';
-      }
-    });
-  }, []);
+  const colorlines = useVivusRef();
 
   return (
     <svg
