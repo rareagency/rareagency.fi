@@ -19,7 +19,6 @@ function initializeVivus(selector: string | SVGSVGElement) {
   new Vivus((selector as unknown) as HTMLElement, {
     duration: 500,
     type: 'scenario', // allows adding data-start, data-duration to individual paths
-    start: 'autostart',
     animTimingFunction: Vivus.EASE_OUT,
     onReady: vivus => {
       (vivus as Vivus & { el: HTMLElement }).el.style.visibility = 'visible';
@@ -27,7 +26,7 @@ function initializeVivus(selector: string | SVGSVGElement) {
   });
 }
 
-export function useVivusRef() {
+export function useVivusRef(dependencies: unknown[] = []) {
   const vivus = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
@@ -36,7 +35,7 @@ export function useVivusRef() {
     }
 
     initializeVivus(vivus.current);
-  }, [vivus]);
+  }, [vivus, ...dependencies]);
 
   return vivus;
 }
