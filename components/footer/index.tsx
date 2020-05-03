@@ -61,7 +61,6 @@ function Teammate(details: Teammate) {
         .face {
           display: flex;
           align-items: center;
-          justify-content: center;
         }
 
         address {
@@ -71,7 +70,7 @@ function Teammate(details: Teammate) {
           line-height: 1.75rem;
         }
         :global(.rounded-face) {
-          width: 110px;
+          width: 80px;
           margin-right: 1rem;
           border-radius: 130px;
         }
@@ -96,6 +95,13 @@ function Teammate(details: Teammate) {
           }
           .face {
             margin-top: 2rem;
+            justify-content: center;
+          }
+          .face address {
+            width: 160px;
+          }
+          :global(.rounded-face) {
+            margin-right: 2rem;
           }
         }
 
