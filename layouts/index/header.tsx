@@ -10,6 +10,7 @@ export const Header: React.FC = () => (
 
     <Center className="hero__wrapper">
       <section className="hero__content">
+        <ColorLines />
         <article className="hero__article">
           <h1 className="title">
             2020-luvun <br />
@@ -23,8 +24,6 @@ export const Header: React.FC = () => (
           </p>
           <Button href="#contact">Ota yhteyttä</Button>
         </article>
-
-        <ColorLines />
       </section>
 
       <section className="references">
@@ -123,6 +122,7 @@ export const Header: React.FC = () => (
       }
 
       .hero__article {
+        z-index: 1;
       }
 
       .description {
