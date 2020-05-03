@@ -2,6 +2,7 @@ import React from 'react';
 import { ColorLines } from '../../components/color-lines';
 import { Nav } from '../../components/navigation/nav';
 import { Center } from '../../components/center';
+import { Button } from '../../components/button';
 
 export const Header: React.FC = () => (
   <header className="hero">
@@ -9,6 +10,7 @@ export const Header: React.FC = () => (
 
     <Center className="hero__wrapper">
       <section className="hero__content">
+        <ColorLines />
         <article className="hero__article">
           <h1 className="title">
             2020-luvun <br />
@@ -20,9 +22,8 @@ export const Header: React.FC = () => (
             ohjelmistoyritys. Rakennamme web- ja mobiilisovelluksia,
             verkkosivuja sekä prototyyppejä yhdessä teidän kanssanne.
           </p>
+          <Button href="#contact">Ota yhteyttä</Button>
         </article>
-
-        <ColorLines />
       </section>
 
       <section className="references">
@@ -121,6 +122,7 @@ export const Header: React.FC = () => (
       }
 
       .hero__article {
+        z-index: 1;
       }
 
       .description {

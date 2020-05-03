@@ -16,6 +16,7 @@
     "nextjs-sitemap-generator": "^0.4.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
+    "react-inlinesvg": "^1.2.0",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.2",
     "vivus": "^0.4.5"
