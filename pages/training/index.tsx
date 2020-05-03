@@ -135,9 +135,6 @@ const Page: React.FC = () => (
       .article {
         width: 65%;
       }
-      // h3 {
-      //   margin-bottom: 0.6rem;
-      // }
 
       @media (max-width: 800px) {
         .article {
