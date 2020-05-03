@@ -70,7 +70,7 @@ function Teammate(details: Teammate) {
           line-height: 1.75rem;
         }
         :global(.rounded-face) {
-          width: 80px;
+          width: 100px;
           margin-right: 1rem;
           border-radius: 130px;
         }
