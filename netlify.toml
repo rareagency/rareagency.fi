@@ -3,3 +3,8 @@
   from = "/blog/*"
   to = "https://rare-blog.netlify.app/:splat"
   status = 200
+
+[[redirects]]
+  from = "/blog/:article"
+  to = "https://rare-blog.netlify.app/blog/:article"
+  status = 200
