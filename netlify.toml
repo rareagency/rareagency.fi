@@ -1,5 +1,5 @@
 ## This rule redirects to an external API, signing requests with a secret
 [[redirects]]
-  from = "/blog"
+  from = "/blog/*"
   to = "https://rare-blog.netlify.app/"
   status = 200
