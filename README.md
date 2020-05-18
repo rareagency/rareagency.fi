@@ -7,5 +7,5 @@
 ```
 # first install yarn, then:
 yarn
-yarn dev
+yarn start
 ```
