@@ -237,8 +237,6 @@ export const Header: React.FC = () => (
           width: auto;
         }
       }
-
-    }
     `}</style>
   </header>
 );
