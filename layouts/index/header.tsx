@@ -1,8 +1,8 @@
-import React from 'react';
+import { Button } from '../../components/button';
+import { Center } from '../../components/center';
 import { ColorLines } from '../../components/color-lines';
 import { Nav } from '../../components/navigation/nav';
-import { Center } from '../../components/center';
-import { Button } from '../../components/button';
+import React from 'react';
 
 export const Header: React.FC = () => (
   <header className="hero">
@@ -169,6 +169,7 @@ export const Header: React.FC = () => (
       }
 
       .tieto {
+        width: 145px;
         margin-bottom: 0.75rem;
       }
 
