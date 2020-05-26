@@ -204,9 +204,9 @@ function Teammate(details: Teammate) {
 }
 
 function Team() {
-  const [shuffledTeam, setShuffledTeam] = useState([] as Teammate[]);
+  const [shuffledTeam, setShuffledTeam] = useState(team);
   useEffect(() => {
-    setShuffledTeam(team.sort(() => Math.random() - 0.5));
+    setShuffledTeam([...team].sort(() => Math.random() - 0.5));
   }, []);
   return (
     <div className="grid">
