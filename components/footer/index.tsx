@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Center } from '../center';
-import { Twitter } from './icons/twitter';
-import { Linkedin } from './icons/linkedin';
-import { Github } from './icons/github';
-import SVG from 'react-inlinesvg';
+import React, { useEffect, useState } from 'react';
 
+import { Center } from '../center';
+import { Github } from './icons/github';
+import { Linkedin } from './icons/linkedin';
+import SVG from 'react-inlinesvg';
+import { Twitter } from './icons/twitter';
 import { useVivusRef } from '../../hooks/useVivus';
 
 type Teammate = {
@@ -17,10 +17,85 @@ type Teammate = {
   image: string;
 };
 
+const team: Teammate[] = [
+  {
+    name: 'Riku Rouvila',
+    title: 'Lead Developer',
+    email: 'riku@rare.fi',
+    linkedin: 'https://www.linkedin.com/in/rikurouvila/',
+    github: 'https://github.com/rikukissa',
+    twitter: 'https://twitter.com/rikurouvila',
+    image: '/static/faces/riku.svg'
+  },
+  {
+    name: 'Pyry Rouvila',
+    title: 'Frontend Creator',
+    email: 'pyry@rare.fi',
+    linkedin: 'https://www.linkedin.com/in/naf/',
+    github: 'https://github.com/naftis',
+    image: '/static/faces/pyry.svg'
+  },
+  {
+    name: 'Janne Kallunki',
+    title: 'Full-stack Designer',
+    email: 'janne@rare.fi',
+    linkedin: 'https://www.linkedin.com/in/jkallunki/',
+    github: 'https://github.com/jkallunki',
+    twitter: 'https://twitter.com/kallunkj',
+    image: '/static/faces/janne.svg'
+  },
+  {
+    name: 'Cihan Bebek',
+    title: 'Lead Developer',
+    email: 'cihan@rare.fi',
+    linkedin: 'https://www.linkedin.com/in/cihan-bebek/',
+    github: 'https://github.com/keksike',
+    twitter: 'https://twitter.com/cihanbebek',
+    image: '/static/faces/cihan.svg'
+  },
+  {
+    name: 'Olli Jaakkola',
+    title: 'Full-stack Developer',
+    email: 'olli@rare.fi',
+    linkedin: 'https://www.linkedin.com/in/olli-jaakkola/',
+    github: 'https://github.com/ollija',
+    image: '/static/faces/olli.svg'
+  },
+  {
+    name: 'Kalle Hirvola',
+    // eslint-disable-next-line sonarjs/no-duplicate-string
+    title: 'Software Developer',
+    email: 'kalle@rare.fi',
+    github: 'https://github.com/eioo',
+    image: '/static/faces/kalle.svg'
+  },
+  {
+    name: 'Hannes Aaltonen',
+    title: 'Software Developer',
+    email: 'hannes@rare.fi',
+    github: 'https://github.com/haalto',
+    linkedin: 'https://www.linkedin.com/in/hannes-aaltonen-9911ba121/',
+    image: '/static/faces/hannes.svg'
+  },
+  {
+    name: 'Loviisa Hurme',
+    title: 'Software Developer',
+    email: 'loviisa@rare.fi',
+    github: 'https://github.com/TuesdayNinja',
+    linkedin: 'https://www.linkedin.com/in/loviisa-hurme/',
+    image: '/static/faces/loviisa.svg'
+  },
+  {
+    name: 'Alli Leppäniemi',
+    title: 'Office manager',
+    email: 'alli@rare.fi',
+    image: '/static/faces/alli.svg'
+  }
+];
+
 function Teammate(details: Teammate) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const vivus = useVivusRef([imageLoaded]);
-
   return (
     <>
       <section className="face">
@@ -36,17 +111,17 @@ function Teammate(details: Teammate) {
           <span>{details.email}</span>
           <span className="social">
             {details.linkedin && (
-              <a href={details.linkedin}>
+              <a href={details.linkedin} key={details.linkedin}>
                 <Linkedin />
               </a>
             )}
             {details.github && (
-              <a href={details.github}>
+              <a href={details.github} key={details.github}>
                 <Github />
               </a>
             )}
             {details.twitter && (
-              <a href={details.twitter}>
+              <a href={details.twitter} key={details.twitter}>
                 <Twitter />
               </a>
             )}
@@ -128,6 +203,30 @@ function Teammate(details: Teammate) {
   );
 }
 
+function Team() {
+  const [shuffledTeam, setShuffledTeam] = useState([] as Teammate[]);
+  useEffect(() => {
+    setShuffledTeam(team.sort(() => Math.random() - 0.5));
+  }, []);
+  return (
+    <div className="grid">
+      {' '}
+      {shuffledTeam.map(teammate => (
+        <Teammate
+          key={teammate.name}
+          name={teammate.name}
+          title={teammate.title}
+          email={teammate.email}
+          linkedin={teammate.linkedin}
+          github={teammate.github}
+          twitter={teammate.twitter}
+          image={teammate.image}
+        />
+      ))}{' '}
+    </div>
+  );
+}
+
 export const Footer: React.FC = () => {
   return (
     <footer className="footer" id="contact">
@@ -156,66 +255,7 @@ export const Footer: React.FC = () => {
             <div>riku@rare.fi</div>
           </address>
         </div>
-        <div className="grid">
-          <Teammate
-            name="Riku Rouvila"
-            title="Lead Developer"
-            email="riku@rare.fi"
-            linkedin="https://www.linkedin.com/in/rikurouvila/"
-            github="https://github.com/rikukissa"
-            twitter="https://twitter.com/rikurouvila"
-            image={'/static/faces/riku.svg'}
-          />
-          <Teammate
-            name="Pyry Rouvila"
-            title="Frontend Creator"
-            email="pyry@rare.fi"
-            linkedin="https://www.linkedin.com/in/naf/"
-            github="https://github.com/naftis"
-            image={'/static/faces/pyry.svg'}
-          />
-          <Teammate
-            name="Janne Kallunki"
-            title="Full-stack Designer"
-            email="janne@rare.fi"
-            linkedin="https://www.linkedin.com/in/jkallunki/"
-            github="https://github.com/jkallunki"
-            twitter="https://twitter.com/kallunkj"
-            image={'/static/faces/janne.svg'}
-          />
-          <Teammate
-            name="Cihan Bebek"
-            title="Lead Developer"
-            email="cihan@rare.fi"
-            linkedin="https://www.linkedin.com/in/cihan-bebek/"
-            github="https://github.com/keksike"
-            twitter="https://twitter.com/cihanbebek"
-            image={'/static/faces/cihan.svg'}
-          />
-          <Teammate
-            name="Olli Jaakkola"
-            title="Full-stack Developer"
-            email="olli@rare.fi"
-            linkedin="https://www.linkedin.com/in/olli-jaakkola/"
-            github="https://github.com/ollija"
-            image={'/static/faces/olli.svg'}
-          />
-          <Teammate
-            name="Kalle Hirvola"
-            title="Software Developer"
-            email="kalle@rare.fi"
-            github="https://github.com/eioo"
-            image={'/static/faces/kalle.svg'}
-          />
-          <Teammate
-            name="Hannes Aaltonen"
-            title="Software Developer"
-            email="hannes@rare.fi"
-            github="https://github.com/haalto"
-            linkedin="https://www.linkedin.com/in/hannes-aaltonen-9911ba121/"
-            image={'/static/faces/hannes.svg'}
-          />
-        </div>
+        <Team />
       </Center>
 
       <style jsx>{`
