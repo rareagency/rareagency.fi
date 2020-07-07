@@ -17,7 +17,7 @@ function initializeVivus(selector: string | SVGSVGElement) {
 
   // Ref is actually SVGSVGElement but Vivus only accepts HTMLElement
   new Vivus((selector as unknown) as HTMLElement, {
-    duration: 500,
+    duration: 1300,
     type: 'scenario', // allows adding data-start, data-duration to individual paths
     animTimingFunction: Vivus.EASE_OUT,
     onReady: vivus => {
