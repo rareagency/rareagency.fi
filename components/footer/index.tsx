@@ -5,7 +5,6 @@ import { Github } from './icons/github';
 import { Linkedin } from './icons/linkedin';
 import SVG from 'react-inlinesvg';
 import { Twitter } from './icons/twitter';
-import { useVivusRef } from '../../hooks/useVivus';
 
 type Teammate = {
   name: string;
