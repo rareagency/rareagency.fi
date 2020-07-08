@@ -21,8 +21,8 @@ const Header = () => (
       </p>
       <p>
         Alla näet avoimet työpaikkamme. Meillä on myös aina avoin rekry auki
-        osaaville tekijöille, joten otathan yhteyttä rekry@rare.fi jos
-        työskenteleminen Rarella kiinnostaa!
+        osaaville tekijöille, joten otathan yhteyttä{' '}
+        <strong>rekry@rare.fi</strong> jos työskenteleminen Rarella kiinnostaa!
       </p>
     </article>
 
@@ -82,13 +82,16 @@ const Page: React.FC = () => (
                 <span role="img" aria-label="springle">
                   🧙‍♀️
                 </span>{' '}
-                Kokeneempi webbikehittäjä
+                Kokeneempi web-kehittäjä
               </a>
             </h3>
             <p>
               <strong>Kenelle:</strong> Mid-senior tason modernin
               webbikehityksen taitaja, joka on valmis ottamaan vastuuta pienistä
               projekteista ja junnummista työntekijöistä
+            </p>
+            <p>
+              <strong>Sijainti:</strong> Tampere
             </p>
             <p>
               <strong>Palkka:</strong> 3,5-5,5k€
@@ -106,6 +109,12 @@ const Page: React.FC = () => (
             <p>
               <strong>Kenelle:</strong> motivoitunut Ohjelmistokehittäjä, UX
               Designer, tai muu alan osaaja
+            </p>
+            <p>
+              <strong>Sijainti:</strong> Tampere
+            </p>
+            <p>
+              <strong>Palkka:</strong> neuvotellaan sopivaksi hakijan mukaan
             </p>
           </li>
         </ul>
