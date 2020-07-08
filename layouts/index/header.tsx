@@ -145,11 +145,16 @@ export const Header: React.FC = () => (
         flex-wrap: wrap;
       }
 
+      .references a:hover .logo {
+        opacity: 1;
+      }
+
       .logo {
         margin-bottom: 1rem;
         margin-right: 1.4rem;
         opacity: 0.8;
         cursor: pointer;
+        transition: opacity 0.2s;
       }
 
       .cult {

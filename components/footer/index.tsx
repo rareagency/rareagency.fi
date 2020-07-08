@@ -5,7 +5,6 @@ import { Github } from './icons/github';
 import { Linkedin } from './icons/linkedin';
 import SVG from 'react-inlinesvg';
 import { Twitter } from './icons/twitter';
-import { useVivusRef } from '../../hooks/useVivus';
 
 type Teammate = {
   name: string;
@@ -94,17 +93,10 @@ const team: Teammate[] = [
 ];
 
 function Teammate(details: Teammate) {
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const vivus = useVivusRef([imageLoaded]);
   return (
     <>
       <section className="face">
-        <SVG
-          innerRef={vivus as any}
-          src={details.image}
-          onLoad={() => setImageLoaded(true)}
-          className="rounded-face"
-        />
+        <SVG src={details.image} className="rounded-face" />
         <address>
           <strong className="name">{details.name}</strong>
           <span>{details.title}</span>
