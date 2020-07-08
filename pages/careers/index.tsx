@@ -54,7 +54,7 @@ const Page: React.FC = () => (
                 <span role="img" aria-label="springle">
                   🧙‍♀️
                 </span>{' '}
-                import SVG from 'react-inlinesvg'; web-kehittäjä
+                Kokenut web-kehittäjä
               </a>
             </h3>
             <p>
