@@ -15,7 +15,7 @@ const Header = () => (
         tarjota työntekijöillemme parhaan mahdollisen ympäristön työskentelyyn
         sekä oppimiseen, ja uskomme, että asiakasprojektit täytyy miettiä
         tarkasti kullekin työntekijälle: projektin täytyy olla mieluisa ja tukea
-        työntekijän uraa ja kehitystä. Panostamme RARElla ketterään
+        työntekijän uraa ja kehitystä. Panostamme Rarella ketterään
         ohjelmistokehitykseen, yhdessä tekemiseen, positiiviseen asenteeseen ja
         jatkuvan kehittymisen tukemiseen.
       </p>
