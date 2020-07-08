@@ -8,7 +8,7 @@ const Header = () => (
         <span role="img" aria-label="springle">
           🧙‍♀️
         </span>{' '}
-        Kokeneempi web-kehittäjä
+        Kokenut web-kehittäjä
       </h1>
       <p>
         <strong>Kenelle:</strong> Mid tai senior -tason modernin webbikehityksen
