@@ -19,7 +19,7 @@ const Header = () => (
         <strong>Sijainti:</strong> Tampere
       </p>
       <p>
-        <strong>Palkka:</strong> 3,5-5,5k€
+        <strong>Palkka:</strong> 3500&nbsp;–&nbsp;5500€
       </p>
     </article>
 
