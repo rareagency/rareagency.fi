@@ -1,28 +1,31 @@
-import React from 'react';
 import { Layout } from '../../layouts/article/layout';
+import React from 'react';
 
 const Header = () => (
   <section className="header-main">
     <article className="content">
       <h1>Työpaikat</h1>
-      <p>Etsimme aina uusia kyvykkäitä ja innostuneita jäseniä tiimiimme.</p>
       <p>
-        Haluamme kasvattaa tiivistä yhdeksän hengen porukkaamme. Olemme viime
-        vuoden loppupuolella perustettu konsulttilafka, jonka ytimessä on kova
-        osaaminen ja työntekijälähtöinen meisinki. Uskomme ketterään
+        Etsimme uusia kyvykkäitä ja innostuneita ammattilaisia sekä vielä
+        hiomattomia timantteja tiiviiseen yhdeksän hengen tiimiimme!
+      </p>
+      <p>
+        Olemme nuori konsulttilafka, jonka ytimessä on harvinaislaatuisen kova
+        osaaminen ja potentiaali sekä into yhdessä kehittymiseen. Haluamme
+        tarjota työntekijöillemme parhaan mahdollisen ympäristön työskentelyyn
+        sekä oppimiseen, ja uskomme, että asiakasprojektit täytyy miettiä
+        tarkasti kullekin työntekijälle: projektin täytyy olla mieluisa ja tukea
+        työntekijän uraa ja kehitystä. Panostamme RARElla ketterään
         ohjelmistokehitykseen, yhdessä tekemiseen, positiiviseen asenteeseen ja
-        jatkuvaan kehittymiseen.
+        jatkuvan kehittymisen tukemiseen.
       </p>
       <p>
-        Yritämme tarjota työntekijöillemme parhaan mahdollisen ympäristön
-        työskentelyyn sekä oppimiseen, ja uskomme, että asiakasprojektit täytyy
-        miettiä tarkasti kullekin työntekijälle: projektin täytyy olla mieluisa
-        ja tukea työntekijän uraa ja kehitystä.
-      </p>
-      <p>
-        Alla näet avoimet työpaikkamme. Meillä on myös aina rekry avoinna
-        kaikenlaisille osaaville tekijöille, joten otathan yhteyttä{' '}
-        <strong>rekry@rare.fi</strong> jos työskenteleminen Rarella kiinnostaa!
+        Tutustu lisää Raren meininkiin ja tuleviin työkavereihisi{' '}
+        <a className="link" href="https://www.instagram.com/rarekoodaa/">
+          Raren instagramissa
+        </a>{' '}
+        ja kurkkaa alta avoimet työpaikkamme! Meillä on aina rekry osaaville
+        tekijöille, joten ota yhteyttä <strong>rekry@rare.fi</strong>!
       </p>
     </article>
 
@@ -32,6 +35,13 @@ const Header = () => (
       }
       .content {
         width: 60%;
+      }
+      .link {
+        text-decoration: none;
+        color: white;
+      }
+      .link:hover {
+        color: #81eeb8;
       }
       @media (max-width: 1150px) {
         .content {
