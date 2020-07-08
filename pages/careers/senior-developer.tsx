@@ -30,35 +30,8 @@ const Header = () => (
       .content {
         width: 60%;
       }
-      .image {
-        display: flex;
-        align-items: center;
-        width: 40%;
-      }
-      @keyframes animate {
-        from {
-          transform: rotate(-60deg);
-        }
-        to {
-          transform: rotate(0deg);
-        }
-      }
-      .image img {
-        width: 100%;
-        transform: rotate(-60deg);
-        animation: 2s ease-out 0s 1 animate forwards;
-      }
-
-      @media (prefers-reduced-motion) {
-        .image img {
-          animation: none;
-        }
-      }
 
       @media (max-width: 1150px) {
-        .image {
-          display: none;
-        }
         .content {
           width: auto;
         }
@@ -75,8 +48,8 @@ const Page: React.FC = () => (
           Oletko jo hieman kokemusta kartuttanut web-kehittäjä, jota kiinnostaa
           koodaamisen lisäksi myös ohjelmistokehitystyön pehmeämmät puolet?
           Nautitko projektien speksaamisesta, prosessien kehittämisestä tai työn
-          ohjaamisesta oikeaan suuntaan? Saatko kiksejä, kun pystyt auttamaan
-          ympärilläsi olevia työkavereita kehittymään?
+          ohjaamisesta oikeaan suuntaan? Tuntuuko siistiltä, kun pystyt
+          auttamaan ympärilläsi olevia työkavereita kehittymään?
         </p>
         <p>
           <strong>
@@ -93,7 +66,7 @@ const Page: React.FC = () => (
             TypeScript, Node.js, React, AWS/Azure. Juuri näiden teknologioiden
             syvä tuntemus ei kuitenkaan ole tarpeellista
           </strong>
-          , tärkeämpää on halu kehittyä ja reipas mieli.
+          , tärkeämpää on halu kehittyä ja reipas asenne.
         </p>
         <p>
           Haluamme mukaan työntekijöitä, jotka ovat innokkaita rakentamaan Rarea
@@ -113,13 +86,6 @@ const Page: React.FC = () => (
     </section>
 
     <style jsx>{`
-      ul {
-        list-style: none;
-        padding: 0;
-      }
-      li a {
-        text-decoration: none;
-      }
       .content {
         padding: 3rem 0;
         display: flex;

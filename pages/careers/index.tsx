@@ -7,7 +7,7 @@ const Header = () => (
       <h1>Työpaikat</h1>
       <p>Etsimme aina uusia kyvykkäitä ja innostuneita jäseniä tiimiimme.</p>
       <p>
-        Haluaisimme kasvattaa pientä yhdeksän hengen porukkaamme. Olemme viime
+        Haluamme kasvattaa tiivistä yhdeksän hengen porukkaamme. Olemme viime
         vuoden loppupuolella perustettu konsulttilafka, jonka ytimessä on kova
         osaaminen ja työntekijälähtöinen meisinki. Uskomme ketterään
         ohjelmistokehitykseen, yhdessä tekemiseen, positiiviseen asenteeseen ja
@@ -15,13 +15,13 @@ const Header = () => (
       </p>
       <p>
         Yritämme tarjota työntekijöillemme parhaan mahdollisen ympäristön
-        työskentelyyn ja oppimiseen, ja uskomme, että asiakasprojektit täytyy
+        työskentelyyn sekä oppimiseen, ja uskomme, että asiakasprojektit täytyy
         miettiä tarkasti kullekin työntekijälle: projektin täytyy olla mieluisa
         ja tukea työntekijän uraa ja kehitystä.
       </p>
       <p>
-        Alla näet avoimet työpaikkamme. Meillä on myös aina avoin rekry auki
-        osaaville tekijöille, joten otathan yhteyttä{' '}
+        Alla näet avoimet työpaikkamme. Meillä on myös aina rekry avoinna
+        kaikenlaisille osaaville tekijöille, joten otathan yhteyttä{' '}
         <strong>rekry@rare.fi</strong> jos työskenteleminen Rarella kiinnostaa!
       </p>
     </article>
@@ -33,35 +33,7 @@ const Header = () => (
       .content {
         width: 60%;
       }
-      .image {
-        display: flex;
-        align-items: center;
-        width: 40%;
-      }
-      @keyframes animate {
-        from {
-          transform: rotate(-60deg);
-        }
-        to {
-          transform: rotate(0deg);
-        }
-      }
-      .image img {
-        width: 100%;
-        transform: rotate(-60deg);
-        animation: 2s ease-out 0s 1 animate forwards;
-      }
-
-      @media (prefers-reduced-motion) {
-        .image img {
-          animation: none;
-        }
-      }
-
       @media (max-width: 1150px) {
-        .image {
-          display: none;
-        }
         .content {
           width: auto;
         }
