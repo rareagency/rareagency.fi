@@ -97,7 +97,7 @@ const Page: React.FC = () => (
               <strong>Palkka:</strong> 3,5-5,5k€
             </p>
           </li>
-          <li>
+          {/* <li>
             <h3>
               <a href="/careers/open-application">
                 <span role="img" aria-label="check-mark">
@@ -116,7 +116,7 @@ const Page: React.FC = () => (
             <p>
               <strong>Palkka:</strong> neuvotellaan sopivaksi hakijan mukaan
             </p>
-          </li>
+          </li> */}
         </ul>
       </article>
     </section>
