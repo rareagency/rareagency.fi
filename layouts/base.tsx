@@ -134,7 +134,7 @@ export const Base: React.FC<BaseProps> = ({ children, description, title }) => {
             line-height: 2rem;
           }
           strong {
-            font-weight: 500;
+            font-weight: 600;
           }
 
           @media (max-width: 650px) {
