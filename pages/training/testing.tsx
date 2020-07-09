@@ -264,9 +264,6 @@ const Page: React.FC = () => (
     </section>
 
     <style jsx>{`
-      strong {
-        font-weight: 600;
-      }
       .riku {
         width: 400px;
         margin-left: 2rem;
