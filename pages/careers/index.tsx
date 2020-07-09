@@ -24,8 +24,8 @@ const Header = () => (
         <a className="link" href="https://www.instagram.com/rarekoodaa/">
           Raren instagramissa
         </a>{' '}
-        ja kurkkaa alta avoimet työpaikkamme! Meillä on aina rekry osaaville
-        tekijöille, joten ota yhteyttä <strong>rekry@rare.fi</strong>!
+        ja kurkkaa alta avoimet työpaikkamme! Meillä on aina rekry avoinna
+        osaaville tekijöille, joten ota yhteyttä <strong>rekry@rare.fi</strong>!
       </p>
     </article>
 
