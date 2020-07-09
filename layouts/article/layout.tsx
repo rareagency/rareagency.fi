@@ -9,7 +9,7 @@ export const Layout: React.FC<{
 } & BaseProps> = ({ header, children, title, description }) => (
   <Base
     description={description}
-    title={title || 'Rare - React / Typescript / Tampere'}
+    title={title || 'Rare Tampere - React / Typescript'}
   >
     <Header>{header}</Header>
     <main className="main">
