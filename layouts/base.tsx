@@ -131,7 +131,7 @@ export const Base: React.FC<BaseProps> = ({ children, description, title }) => {
           p,
           ul {
             font-size: 1rem;
-            line-height: 2rem;
+            line-height: 1.9rem;
           }
           strong {
             font-weight: 600;
