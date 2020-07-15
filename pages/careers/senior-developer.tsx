@@ -1,5 +1,5 @@
-import React from 'react';
 import { Layout } from '../../layouts/article/layout';
+import React from 'react';
 
 const Header = () => (
   <section className="header-main">
@@ -8,7 +8,7 @@ const Header = () => (
         <span role="img" aria-label="springle">
           🧙‍♀️
         </span>{' '}
-        Kokenut web-kehittäjä
+        Kokenut web&#8209;kehittäjä
       </h1>
       <p>
         <strong>Kenelle:</strong> Mid tai senior -tason modernin webbikehityksen
@@ -41,7 +41,10 @@ const Header = () => (
 );
 
 const Page: React.FC = () => (
-  <Layout header={<Header />}>
+  <Layout
+    title={'Rare Tampere - Avoimet työpaikat - Kokenut web-kehittäjä'}
+    header={<Header />}
+  >
     <section className="content">
       <article className="article">
         <p>
@@ -61,26 +64,25 @@ const Page: React.FC = () => (
           saappaisiin.
         </p>
         <p>
-          Muutama tekki jota tällä hetkellä käytämme:{' '}
+          Käytämme työssämme tällä hetkellä mm. seuraavia työkaluja:{' '}
           <strong>
-            TypeScript, Node.js, React, AWS/Azure. Juuri näiden teknologioiden
-            syvä tuntemus ei kuitenkaan ole tarpeellista
+            TypeScript, Node.js, React, AWS/Azure ja Figma. Juuri näiden
+            teknologioiden syvä tuntemus ei kuitenkaan ole oleellista
           </strong>
-          , tärkeämpää on halu kehittyä ja reipas asenne.
+          ; tärkeämpää on into kehittyä ja avoin mieli uusille haasteille.
         </p>
         <p>
-          Haluamme mukaan työntekijöitä, jotka ovat innokkaita rakentamaan Rarea
-          yhdessä kanssamme. Yrityksemme on juuri niin hyvä kuin sen
-          työntekijät, ja haluammekin, että Rare on sen näköinen kuin mitä
-          työntekijämme siitä yhdessä tekevät.{' '}
+          Uskomme, että yrityksemme on juuri niin hyvä kuin sen työntekijät, ja
+          arvostammekin yrittäjähenkisyyttä ja intoa rakentaa Rarea yhdessä
+          työntekijöidemme näköiseksi.{' '}
           <strong>
-            Yrittäjähenkisyydestä on siis plussaa, ja osakkuus yrityksessämme on
-            mahdollisuus josta voimme keskustella.
+            Siksi osakkuus yrityksessämme on mahdollisuus, josta voimme
+            keskustella.
           </strong>
         </p>
         <p>
           Otathan yhteyttä <strong>rekry@rare.fi</strong>, tai puhelimitse +358
-          50 476 9925, mikäli työskenteleminen kanssamme Rarella kiinnostaa!
+          50 476 9925, niin keskustellaan tulevaisuudestasi Rarella!
         </p>
       </article>
     </section>

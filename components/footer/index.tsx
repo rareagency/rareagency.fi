@@ -78,7 +78,7 @@ const team: Teammate[] = [
   },
   {
     name: 'Loviisa Hurme',
-    title: 'Software Developer',
+    title: 'Frontend Developer',
     email: 'loviisa@rare.fi',
     github: 'https://github.com/TuesdayNinja',
     linkedin: 'https://www.linkedin.com/in/loviisa-hurme/',
