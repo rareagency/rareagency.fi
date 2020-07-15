@@ -8,7 +8,7 @@ const Header = () => (
         <span role="img" aria-label="springle">
           🧙‍♀️
         </span>{' '}
-        Kokenut web-kehittäjä
+        Kokenut web&#8209;kehittäjä
       </h1>
       <p>
         <strong>Kenelle:</strong> Mid tai senior -tason modernin webbikehityksen
@@ -41,7 +41,10 @@ const Header = () => (
 );
 
 const Page: React.FC = () => (
-  <Layout header={<Header />}>
+  <Layout
+    title={'Rare Tampere - Avoimet työpaikat - Kokenut web-kehittäjä'}
+    header={<Header />}
+  >
     <section className="content">
       <article className="article">
         <p>

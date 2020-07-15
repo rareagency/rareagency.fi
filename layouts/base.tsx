@@ -6,7 +6,7 @@ const { publicRuntimeConfig } = getConfig();
 
 const DESCRIPTION =
   'Luotettu teknologiakumppani seuraavaan projektiisi. Rakennamme webbipalveluita, mobiilisovelluksia sekä prototyyppejä yhdessä teidän kanssanne.';
-const TITLE = 'Rare - 2020-luvun ohjelmistokehitystä / Tampere';
+const TITLE = 'Rare Tampere - 2020-luvun ohjelmistokehitystä';
 
 export type BaseProps = { title?: string; description?: string };
 

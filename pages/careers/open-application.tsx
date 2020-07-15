@@ -41,7 +41,10 @@ const Header = () => (
 );
 
 const Page: React.FC = () => (
-  <Layout header={<Header />}>
+  <Layout
+    title={'Rare Tampere - Avoimet työpaikat - Avoin hakemus'}
+    header={<Header />}
+  >
     <section className="content">
       <article className="article">
         <p>
