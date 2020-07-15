@@ -80,7 +80,7 @@ const Page: React.FC = () => (
         </p>
         <p>
           Otathan yhteyttä <strong>rekry@rare.fi</strong>, tai puhelimitse +358
-          50 476 9925, niin keskustellaan mahdollisuuksistasi Rarella!
+          50 476 9925, niin keskustellaan tulevaisuudestasi Rarella!
         </p>
       </article>
     </section>
