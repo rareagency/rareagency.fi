@@ -1,5 +1,5 @@
-import React from 'react';
 import { Layout } from '../../layouts/article/layout';
+import React from 'react';
 
 const Header = () => (
   <section className="header-main">
@@ -48,42 +48,39 @@ const Page: React.FC = () => (
     <section className="content">
       <article className="article">
         <p>
-          Oletko jo hieman kokemusta kartuttanut web-kehittäjä, jota kiinnostaa
-          koodaamisen lisäksi myös ohjelmistokehitystyön pehmeämmät puolet?
-          Nautitko projektien speksaamisesta, prosessien kehittämisestä tai työn
-          ohjaamisesta oikeaan suuntaan? Saatko kiksejä, kun pystyt auttamaan
-          ympärilläsi olevia työkavereita kehittymään?
+          Onko ydinosaamistasi webbidevaus tai UX-design, tai oletko urasi
+          alussa oleva hiomaton timantti, joka on motivoitunut kehittymään
+          näillä alueilla?
         </p>
         <p>
           <strong>
-            Etsimme mid tai senior -tason kehittäjää, joka on valmis ottamaan
-            vastuuta projekteista ja ohjaamaan sekä koutsaamaan junnumpia
-            kehittäjiämme.
+            Etsimme tiimiimme kokeneita alan ammattilaisia sekä sellaiseksi
+            päättäväisesti tähtääviä junioreita, joiden intohimo on kehittyä ja
+            auttaa ympärillä olevia työkavereita kehittymään.
           </strong>{' '}
-          Voit olla myös kokenut kehittäjä, joka on valmis astumaan isompiin
-          saappaisiin.
+          Oli osaamisalueesi sitten tiukka koodaus tai timanttinen design,
+          haluamme kuulla sinusta!
         </p>
         <p>
-          Muutama tekki jota tällä hetkellä käytämme:{' '}
+          Käytämme työssämme tällä hetkellä mm. seuraavia työkaluja:{' '}
           <strong>
-            TypeScript, Node.js, React, AWS/Azure. Juuri näiden teknologioiden
-            syvä tuntemus ei kuitenkaan ole tarpeellista
+            TypeScript, Node.js, React, AWS/Azure ja Figma. Juuri näiden
+            teknologioiden syvä tuntemus ei kuitenkaan ole oleellista
           </strong>
-          , tärkeämpää on halu kehittyä ja reipas mieli.
+          ; tärkeämpää on into kehittyä ja avoin mieli uusille haasteille.
         </p>
         <p>
-          Haluamme mukaan työntekijöitä, jotka ovat innokkaita rakentamaan Rarea
-          yhdessä kanssamme. Yrityksemme on juuri niin hyvä kuin sen
-          työntekijät, ja haluammekin, että Rare on sen näköinen kuin mitä
-          työntekijämme siitä yhdessä tekevät.{' '}
+          Uskomme, että yrityksemme on juuri niin hyvä kuin sen työntekijät, ja
+          arvostammekin yrittäjähenkisyyttä ja intoa rakentaa Rarea yhdessä
+          työntekijöidemme näköiseksi.{' '}
           <strong>
-            Yrittäjähenkisyydestä on siis plussaa, ja osakkuus yrityksessämme on
-            mahdollisuus josta voimme keskustella.
+            Siksi osakkuus yrityksessämme on mahdollisuus, josta voimme
+            keskustella.
           </strong>
         </p>
         <p>
           Otathan yhteyttä <strong>rekry@rare.fi</strong>, tai puhelimitse +358
-          50 476 9925, mikäli työskenteleminen kanssamme Rarella kiinnostaa!
+          50 476 9925, niin keskustellaan tulevaisuudestasi Rarella!
         </p>
       </article>
     </section>
