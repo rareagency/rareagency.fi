@@ -5,18 +5,18 @@ import cheerio from 'cheerio';
 import Blog from './Blog';
 import { sortBy } from 'lodash';
 
-interface IBlog {
+type BlogInterface = {
   url: string;
   title: string;
   profilePic: string;
   time: string;
   name: string;
-}
+};
 
-interface Writer {
+type Writer = {
   name: string;
   username: string;
-}
+};
 
 const getBlogsByUsernames = async (writers: Writer[]) => {
   return Promise.all(
@@ -36,7 +36,7 @@ const getBlogsByUsernames = async (writers: Writer[]) => {
       const dom = cheerio.load(response.data);
       const nodes = dom('.crayons-story__body');
 
-      let blogs: IBlog[] = [];
+      const blogs: BlogInterface[] = [];
 
       for (let i = 0; i < nodes.length; i++) {
         const url =
@@ -72,13 +72,15 @@ const Page: React.FC = () => {
     { name: 'Riku Rouvila', username: 'rikurouvila' },
     { name: 'Hannes Aaltonen', username: 'haalto' }
   ];
-  const [blogs, setBlogs] = useState<IBlog[] | null>(null);
+  const [blogs, setBlogs] = useState<BlogInterface[] | null>(null);
   useEffect(() => {
     const fetchData = async () => {
-      const fetchedBlogs = (await getBlogsByUsernames(writers)) as any;
+      const fetchedBlogs = (await getBlogsByUsernames(writers)) as Blog[][];
       const sortedBlogs = sortBy(fetchedBlogs.flat(), 'time').reverse();
-      setBlogs(sortedBlogs as IBlog[]);
+      setBlogs(sortedBlogs as BlogInterface[]);
     };
+    //TODO: eslint: "83:5  error  Promises must be handled appropriately"
+    // eslint-disable-next-line
     fetchData();
   }, []);
 

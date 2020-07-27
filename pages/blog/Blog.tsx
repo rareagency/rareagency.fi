@@ -1,21 +1,21 @@
 import React from 'react';
 
-interface Blog {
+type Blog = {
   url: string;
   title: string;
   profilePic: string;
   time: string;
   name: string;
-}
+};
 
-interface BlogProps {
+type BlogProps = {
   blog: Blog;
-}
+};
 
 const Blog: React.FC<BlogProps> = ({ blog }) => {
   return (
     <div id="blog-main">
-      <img id="profile-pic" alt="profile-picture" src={blog.profilePic} />
+      <img id="profile-pic" alt="profile" src={blog.profilePic} />
       <div>
         <a id="link" href={`https://dev.to${blog.url}`}>
           {blog.title}
