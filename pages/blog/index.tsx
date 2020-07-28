@@ -2,16 +2,8 @@ import { Layout } from '../../layouts/article/layout';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import cheerio from 'cheerio';
-import Blog from './Blog';
+import Blog, { BlogType } from './Blog';
 import { sortBy } from 'lodash';
-
-type BlogInterface = {
-  url: string;
-  title: string;
-  profilePic: string;
-  date: string;
-  name: string;
-};
 
 type Writer = {
   name: string;
@@ -36,7 +28,7 @@ const getBlogsByUsernames = async (writers: Writer[]) => {
       const dom = cheerio.load(response.data);
       const nodes = dom('.crayons-story__body');
 
-      const blogs: BlogInterface[] = [];
+      const blogs: BlogType[] = [];
 
       for (let i = 0; i < nodes.length; i++) {
         const url =
@@ -72,12 +64,12 @@ const Page: React.FC = () => {
     { name: 'Riku Rouvila', username: 'rikurouvila' },
     { name: 'Hannes Aaltonen', username: 'haalto' }
   ];
-  const [blogs, setBlogs] = useState<BlogInterface[] | null>(null);
+  const [blogs, setBlogs] = useState<BlogType[] | null>(null);
   useEffect(() => {
     const fetchData = async () => {
-      const fetchedBlogs = (await getBlogsByUsernames(writers)) as Blog[][];
+      const fetchedBlogs = (await getBlogsByUsernames(writers)) as BlogType[][];
       const sortedBlogs = sortBy(fetchedBlogs.flat(), 'time').reverse();
-      setBlogs(sortedBlogs as BlogInterface[]);
+      setBlogs(sortedBlogs as BlogType[]);
     };
     //TODO: eslint: "83:5  error  Promises must be handled appropriately"
     // eslint-disable-next-line
