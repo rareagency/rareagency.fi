@@ -86,7 +86,7 @@ const Page: React.FC = () => {
 
   const renderBlogs = () => {
     if (blogs) {
-      return blogs.map((blog: any, i) => {
+      return blogs.map((blog: BlogType, i) => {
         return <Blog key={i} index={i} blog={blog} />;
       });
     }
