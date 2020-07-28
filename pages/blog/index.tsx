@@ -76,7 +76,7 @@ const Page: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       const fetchedBlogs = (await getBlogsByUsernames(writers)) as BlogType[][];
-      const sortedBlogs = sortBy(fetchedBlogs.flat(), 'time').reverse();
+      const sortedBlogs = sortBy(fetchedBlogs.flat(), 'date').reverse();
       setBlogs(sortedBlogs);
     };
     //TODO: eslint: "83:5  error  Promises must be handled appropriately"
