@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type BlogType = {
+type BlogType = {
   url: string;
   title: string;
   profilePic: string;

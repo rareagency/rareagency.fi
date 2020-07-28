@@ -2,8 +2,16 @@ import { Layout } from '../../layouts/article/layout';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import cheerio from 'cheerio';
-import Blog, { BlogType } from './Blog';
+import Blog from './Blog';
 import { sortBy } from 'lodash';
+
+type BlogType = {
+  url: string;
+  title: string;
+  profilePic: string;
+  date: string;
+  name: string;
+};
 
 type Writer = {
   name: string;
@@ -69,7 +77,7 @@ const Page: React.FC = () => {
     const fetchData = async () => {
       const fetchedBlogs = (await getBlogsByUsernames(writers)) as BlogType[][];
       const sortedBlogs = sortBy(fetchedBlogs.flat(), 'time').reverse();
-      setBlogs(sortedBlogs as BlogType[]);
+      setBlogs(sortedBlogs);
     };
     //TODO: eslint: "83:5  error  Promises must be handled appropriately"
     // eslint-disable-next-line
