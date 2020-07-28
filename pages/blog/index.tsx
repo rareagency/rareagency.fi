@@ -2,7 +2,7 @@ import { Layout } from '../../layouts/article/layout';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import cheerio from 'cheerio';
-import Blog from './Blog';
+import { Blog } from '../../components/blog';
 import { sortBy } from 'lodash';
 
 type BlogType = {

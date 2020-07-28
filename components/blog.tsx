@@ -13,7 +13,7 @@ type BlogProps = {
   index: number;
 };
 
-const Blog: React.FC<BlogProps> = ({ blog, index }) => {
+export const Blog: React.FC<BlogProps> = ({ blog, index }) => {
   return (
     <div id="blog-main" style={{ animationDelay: `${200 * index}ms` }}>
       <img id="profile-pic" alt="profile" src={blog.profilePic} />
@@ -117,5 +117,3 @@ const Blog: React.FC<BlogProps> = ({ blog, index }) => {
     </div>
   );
 };
-
-export default Blog;
