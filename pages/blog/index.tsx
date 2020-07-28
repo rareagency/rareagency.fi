@@ -9,7 +9,7 @@ type BlogInterface = {
   url: string;
   title: string;
   profilePic: string;
-  time: string;
+  date: string;
   name: string;
 };
 
@@ -41,7 +41,7 @@ const getBlogsByUsernames = async (writers: Writer[]) => {
       for (let i = 0; i < nodes.length; i++) {
         const url =
           nodes[i].children[2].next.children[1].children[1].attribs.href;
-        const time =
+        const date =
           nodes[i].children[0].next.children[0].next.children[1].next.next
             .children[2].next.children[0].attribs.datetime;
         const profilePic =
@@ -54,7 +54,7 @@ const getBlogsByUsernames = async (writers: Writer[]) => {
           title = title.trim();
         }
 
-        blogs.push({ url, time, profilePic, title, name: writer.name });
+        blogs.push({ url, date, profilePic, title, name: writer.name });
       }
       return blogs;
     })
@@ -87,7 +87,7 @@ const Page: React.FC = () => {
   const renderBlogs = () => {
     if (blogs) {
       return blogs.map((blog: any, i) => {
-        return <Blog key={i} blog={blog} />;
+        return <Blog key={i} index={i} blog={blog} />;
       });
     }
   };
@@ -99,17 +99,11 @@ const Page: React.FC = () => {
       </section>
 
       <style jsx>{`
-        ul {
-          list-style: none;
-          padding: 0;
-        }
-        li a {
-          text-decoration: none;
-        }
         .content {
           padding: 3rem 0;
           display: flex;
           justify-content: space-between;
+          min-height: 60vh;
         }
 
         .article {
