@@ -32,6 +32,8 @@ export const Blog: React.FC<BlogProps> = ({ blog, index }) => {
           align-items: center;
           margin-bottom: 4rem;
           opacity: 0;
+          text-align: left;
+
           -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
           -moz-animation: fadein 1.5s; /* Firefox < 16 */
           -ms-animation: fadein 1.5s; /* Internet Explorer */
@@ -44,6 +46,7 @@ export const Blog: React.FC<BlogProps> = ({ blog, index }) => {
           border-radius: 50%;
           margin-right: 1rem;
           height: 3rem;
+          margin-right: 2rem;
         }
 
         #info {
@@ -51,7 +54,6 @@ export const Blog: React.FC<BlogProps> = ({ blog, index }) => {
           align-items: center;
           color: grey;
           margin-top: 0.4rem;
-          margin-left: 1rem;
         }
 
         #date {
@@ -62,7 +64,6 @@ export const Blog: React.FC<BlogProps> = ({ blog, index }) => {
           font-weight: 600;
           color: black;
           text-decoration: none;
-          margin-left: 1rem;
         }
 
         @keyframes fadein {

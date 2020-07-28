@@ -807,6 +807,13 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@types/axios@^0.14.0":
+  version "0.14.0"
+  resolved "https://botbuilder.myget.org/F/botframework-cli/npm/@types/axios/-/@types/axios-0.14.0.tgz#ec2300fbe7d7dddd7eb9d3abf87999964cafce46"
+  integrity sha1-7CMA++fX3d1+udOr+HmZlkyvzkY=
+  dependencies:
+    axios "*"
+
 "@types/cheerio@^0.22.21":
   version "0.22.21"
   resolved "https://botbuilder.myget.org/F/botframework-cli/npm/@types/cheerio/-/@types/cheerio-0.22.21.tgz#5e37887de309ba11b2e19a6e14cad7874b31a8a3"
@@ -1331,7 +1338,7 @@ autoprefixer@^9.6.1:
     postcss "^7.0.21"
     postcss-value-parser "^4.0.2"
 
-axios@^0.19.2:
+axios@*, axios@^0.19.2:
   version "0.19.2"
   resolved "https://botbuilder.myget.org/F/botframework-cli/npm/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
   integrity sha1-PqNsXYgY0NX4qKl6bTa4bNwAyyc=

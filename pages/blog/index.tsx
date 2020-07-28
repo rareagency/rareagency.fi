@@ -1,7 +1,7 @@
 import { Layout } from '../../layouts/article/layout';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import cheerio from 'cheerio';
+import { load } from 'cheerio';
 import { Blog } from '../../components/blog';
 import { sortBy } from 'lodash';
 
@@ -33,7 +33,7 @@ const getBlogsByUsernames = async (writers: Writer[]) => {
         return;
       }
 
-      const dom = cheerio.load(response.data);
+      const dom = load(response.data);
       const nodes = dom('.crayons-story__body');
 
       const blogs: BlogType[] = [];
