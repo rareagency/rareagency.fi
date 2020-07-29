@@ -73,18 +73,17 @@ const Page: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       const fetchedBlogs = (await getBlogsByUsernames(writers)) as BlogType[][];
-      const sortedBlogs = sortBy(fetchedBlogs.flat(), 'date').reverse();
-      return sortedBlogs;
+      return sortBy(fetchedBlogs.flat(), 'date').reverse();
     };
     fetchData()
       .then(data => setBlogs(data))
-      .catch(e => console.error(e.message))
-      .finally(() => setIsLoading(false));
+      .catch(e => console.error(e.message));
+    setIsLoading(false);
   }, []);
 
   const renderBlogs = () => {
     if (!blogs) {
-      return <h3>No blogs available'</h3>;
+      return <h3>No blogs available</h3>;
     }
     return blogs.map((blog: BlogType, i) => {
       return <Blog key={i} index={i} blog={blog} />;
