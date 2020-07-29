@@ -1,9 +1,8 @@
 import { Layout } from '../../layouts/article/layout';
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { load } from 'cheerio';
 import { Blog } from '../../components/blog';
-import { sortBy } from 'lodash';
+import sortBy from 'lodash/sortBy';
 
 type BlogType = {
   url: string;
@@ -22,18 +21,15 @@ const getBlogsByUsernames = async (writers: Writer[]) => {
   return Promise.all(
     writers.map(async writer => {
       const baseUrl = 'https://dev.to';
-      let response;
-      try {
-        response = await axios.get(`${baseUrl}/${writer.username}`);
-      } catch (e) {
-        console.log(e.message);
-      }
 
-      if (!response || response.data === undefined) {
+      const response = await fetch(`${baseUrl}/${writer.username}`);
+      const data = await response.text();
+
+      if (!data) {
         return;
       }
 
-      const dom = load(response.data);
+      const dom = load(data);
       const nodes = dom('.crayons-story__body');
 
       const blogs: BlogType[] = [];
@@ -73,29 +69,36 @@ const Page: React.FC = () => {
     { name: 'Hannes Aaltonen', username: 'haalto' }
   ];
   const [blogs, setBlogs] = useState<BlogType[] | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   useEffect(() => {
     const fetchData = async () => {
       const fetchedBlogs = (await getBlogsByUsernames(writers)) as BlogType[][];
       const sortedBlogs = sortBy(fetchedBlogs.flat(), 'date').reverse();
-      setBlogs(sortedBlogs);
+      return sortedBlogs;
     };
-    //TODO: eslint: "83:5  error  Promises must be handled appropriately"
-    // eslint-disable-next-line
-    fetchData();
+    fetchData()
+      .then(data => setBlogs(data))
+      .catch(e => console.error(e.message))
+      .finally(() => setIsLoading(false));
   }, []);
 
   const renderBlogs = () => {
-    if (blogs) {
-      return blogs.map((blog: BlogType, i) => {
-        return <Blog key={i} index={i} blog={blog} />;
-      });
+    if (!blogs) {
+      return <h3>No blogs available'</h3>;
     }
+    return blogs.map((blog: BlogType, i) => {
+      return <Blog key={i} index={i} blog={blog} />;
+    });
   };
 
   return (
-    <Layout title={'Rare Tampere - Avoimet työpaikat'} header={<Header />}>
+    <Layout title={'Rare Tampere - Blogi'} header={<Header />}>
       <section className="content">
-        <article className="article">{renderBlogs()}</article>
+        {isLoading ? (
+          <h3>Loading</h3>
+        ) : (
+          <article className="article">{renderBlogs()}</article>
+        )}
       </section>
 
       <style jsx>{`
