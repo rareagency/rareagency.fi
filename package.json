@@ -16,7 +16,7 @@
     "@types/vivus": "^0.4.0",
     "cheerio": "^1.0.0-rc.3",
     "lodash": "^4.17.19",
-    "next": "9.1.2",
+    "next": "9.3.2",
     "nextjs-sitemap-generator": "^0.4.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
