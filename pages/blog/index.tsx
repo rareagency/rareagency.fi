@@ -73,18 +73,23 @@ const Page: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       const fetchedBlogs = (await getBlogsByUsernames(writers)) as BlogType[][];
+      setIsLoading(false);
       return sortBy(fetchedBlogs.flat(), 'date').reverse();
     };
     fetchData()
       .then(data => setBlogs(data))
       .catch(e => console.error(e.message));
-    setIsLoading(false);
   }, []);
 
   const renderBlogs = () => {
+    if (isLoading) {
+      return <h3>Loading</h3>;
+    }
+
     if (!blogs) {
       return <h3>No blogs available</h3>;
     }
+
     return blogs.map((blog: BlogType, i) => {
       return <Blog key={i} index={i} blog={blog} />;
     });
@@ -93,11 +98,7 @@ const Page: React.FC = () => {
   return (
     <Layout title={'Rare Tampere - Blogi'} header={<Header />}>
       <section className="content">
-        {isLoading ? (
-          <h3>Loading</h3>
-        ) : (
-          <article className="article">{renderBlogs()}</article>
-        )}
+        <article className="article">{renderBlogs()}</article>´
       </section>
 
       <style jsx>{`
