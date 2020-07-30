@@ -8,10 +8,14 @@
     "lint": "eslint \"**/*.{ts,tsx}\" --ignore-pattern .gitignore --color --quiet"
   },
   "dependencies": {
+    "@types/cheerio": "^0.22.21",
+    "@types/lodash": "^4.14.158",
     "@types/node": "^12.12.5",
     "@types/react": "^16.9.11",
     "@types/styled-jsx": "^2.2.8",
     "@types/vivus": "^0.4.0",
+    "cheerio": "^1.0.0-rc.3",
+    "lodash": "^4.17.19",
     "next": "9.1.2",
     "nextjs-sitemap-generator": "^0.4.2",
     "react": "16.11.0",

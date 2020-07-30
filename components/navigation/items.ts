@@ -12,6 +12,10 @@ export const items = [
     text: 'Työpaikat'
   },
   {
+    url: '/blog',
+    text: 'Blogi'
+  },
+  {
     text: 'Ota yhteyttä',
     url: '#contact',
     onClick: (event?: React.MouseEvent) => {
