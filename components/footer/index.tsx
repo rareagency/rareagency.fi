@@ -83,12 +83,6 @@ const team: Teammate[] = [
     github: 'https://github.com/TuesdayNinja',
     linkedin: 'https://www.linkedin.com/in/loviisa-hurme/',
     image: '/static/faces/loviisa.svg'
-  },
-  {
-    name: 'Alli Leppäniemi',
-    title: 'Office manager',
-    email: 'alli@rare.fi',
-    image: '/static/faces/alli.svg'
   }
 ];
 
