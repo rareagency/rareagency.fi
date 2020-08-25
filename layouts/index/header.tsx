@@ -65,6 +65,13 @@ export const Header: React.FC = () => (
               alt="Cult Security"
             />
           </a>
+          <a href="https://www.simucu.be/" target="blank">
+            <img
+              src="../static/references/simucube.svg"
+              className="logo simucube"
+              alt="Simucube"
+            />
+          </a>
         </p>
       </section>
     </Center>
@@ -143,6 +150,7 @@ export const Header: React.FC = () => (
         display: flex;
         align-items: flex-end;
         flex-wrap: wrap;
+        width: 50%;
       }
 
       .references a:hover .logo {
@@ -180,6 +188,12 @@ export const Header: React.FC = () => (
 
       .veracell {
         margin-bottom: 1.35rem;
+      }
+
+      .simucube {
+        width: 190px;
+        filter: invert(1);
+        margin-bottom: 1.3rem;
       }
 
       @media (max-width: 1330px) {
