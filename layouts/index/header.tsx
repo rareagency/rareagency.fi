@@ -150,7 +150,6 @@ export const Header: React.FC = () => (
         display: flex;
         align-items: flex-end;
         flex-wrap: wrap;
-        width: 50%;
       }
 
       .references a:hover .logo {
@@ -226,22 +225,28 @@ export const Header: React.FC = () => (
 
       @media (max-width: 800px) {
         .plan {
-          width: 80px;
+          width: 100px;
+          margin-bottom: 0.8rem;
         }
         .tieto {
-          width: 95px;
+          width: 120px;
         }
         .veracell {
           width: 97px;
-          margin-bottom: 1rem;
+          margin-bottom: 1.2rem;
         }
         .sharper {
           width: 170px;
-          margin-bottom: 1rem;
+        }
+        .simucube {
+          width: 150px;
+        }
+        .cult {
+          width: 80px;
         }
       }
 
-      @media (max-width: 650px) {
+      @media (max-width: 450px) {
         .title {
           font-size: 2rem;
         }
@@ -254,6 +259,15 @@ export const Header: React.FC = () => (
         .description {
           font-size: 1rem;
           width: auto;
+        }
+
+        .references h3 {
+          text-align: center;
+        }
+
+        .references__images {
+          justify-content: center;
+          align-items: center;
         }
       }
     `}</style>
