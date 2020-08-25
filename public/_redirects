@@ -6,3 +6,6 @@ https://rareagency.fi/* https://rare.fi/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://rare.netlify.com/* https://rare.fi/:splat 301!
+
+# Common paths
+/rekry /careers
