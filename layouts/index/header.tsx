@@ -65,6 +65,13 @@ export const Header: React.FC = () => (
               alt="Cult Security"
             />
           </a>
+          <a href="https://www.simucu.be/" target="blank">
+            <img
+              src="../static/references/simucube.svg"
+              className="logo simucube"
+              alt="Simucube"
+            />
+          </a>
         </p>
       </section>
     </Center>
@@ -182,6 +189,12 @@ export const Header: React.FC = () => (
         margin-bottom: 1.35rem;
       }
 
+      .simucube {
+        width: 190px;
+        filter: invert(1);
+        margin-bottom: 1.3rem;
+      }
+
       @media (max-width: 1330px) {
         .description {
           width: 40%;
@@ -212,22 +225,28 @@ export const Header: React.FC = () => (
 
       @media (max-width: 800px) {
         .plan {
-          width: 80px;
+          width: 100px;
+          margin-bottom: 0.8rem;
         }
         .tieto {
-          width: 95px;
+          width: 120px;
         }
         .veracell {
           width: 97px;
-          margin-bottom: 1rem;
+          margin-bottom: 1.2rem;
         }
         .sharper {
           width: 170px;
-          margin-bottom: 1rem;
+        }
+        .simucube {
+          width: 150px;
+        }
+        .cult {
+          width: 80px;
         }
       }
 
-      @media (max-width: 650px) {
+      @media (max-width: 450px) {
         .title {
           font-size: 2rem;
         }
@@ -240,6 +259,15 @@ export const Header: React.FC = () => (
         .description {
           font-size: 1rem;
           width: auto;
+        }
+
+        .references h3 {
+          text-align: center;
+        }
+
+        .references__images {
+          justify-content: center;
+          align-items: center;
         }
       }
     `}</style>
