@@ -67,7 +67,8 @@ const Page: React.FC = () => {
   const writers = [
     { name: 'Riku Rouvila', username: 'rikurouvila' },
     { name: 'Hannes Aaltonen', username: 'haalto' },
-    { name: 'Kalle Hirvola', username: 'eioo' }
+    { name: 'Kalle Hirvola', username: 'eioo' },
+    { name: 'Cihan Bebek', username: 'keksike' }
   ];
   const [blogs, setBlogs] = useState<BlogType[] | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
