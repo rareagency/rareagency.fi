@@ -19,7 +19,9 @@ export const Header: React.FC = () => (
           </h1>
           <p className="description">
             Rare on tamperelainen web- ja käyttöliittymäkehitykseen erikoistunut
-            ohjelmistoyritys. Suunnittelemme & rakennamme sovelluksia, prototyyppejä, verkkosivuja ja verkkokauppoja yhdessä asiakkaidemme kanssa.
+            ohjelmistoyritys. Suunnittelemme & rakennamme sovelluksia,
+            prototyyppejä, verkkosivuja ja verkkokauppoja yhdessä asiakkaidemme
+            kanssa.
           </p>
           <Button href="#contact">Ota yhteyttä</Button>
         </article>
