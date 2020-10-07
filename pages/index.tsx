@@ -82,10 +82,16 @@ const Home = () => {
               alan kehitystä aktiivisena osana yhteisöä. Viime aikoina olemme
               suosineet projekteissamme muun muassa seuraavia teknologioita:
               <br />
-              <b>
-                TypeScript, React, React Native, Node.js, GraphQL, AWS, Azure,
-                Terraform, Serverless Framework, Docker.
-              </b>
+              <strong>
+                <ul>
+                  <li>TypeScript, JavaScript</li>
+                  <li>Vue, React, Angular</li>
+                  <li>React Native, Flutter</li>
+                  <li>Node.js, GraphQL, PostgreSQL, Serverless Framework</li>
+                  <li>AWS, Azure, Docker, Terraform</li>
+                  <li>Shopify</li>
+                </ul>
+              </strong>
             </p>
           </AboutSection>
         </div>
