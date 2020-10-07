@@ -10,7 +10,7 @@ const Home = () => {
         <div>
           <AboutSection>
             <h2>
-              Webin erikoisosaajat
+              Web-kehityksen erikoisosaajat
               <br /> seuraavaan projektiinne
             </h2>
 
