@@ -10,13 +10,13 @@ const Home = () => {
         <div>
           <AboutSection>
             <h2>
-              Luotettu teknologiakumppani
-              <br /> seuraavaan projektiisi
+              Web-kehityksen erikoisosaajat
+              <br /> seuraavaan projektiinne
             </h2>
 
             <p>
-              Rare toimii kumppanina sovelluskehityksessä niin startupeille kuin
-              suurillekin yrityksille.{' '}
+              Rare on erikoistunut frontend- ja backend-, API ja
+              pilvikehitykseen.{' '}
               <span className="gray">
                 Jaamme oman tietotaitomme digitaalisten tuotteiden
                 kehittämisestä ja autamme projektin ohjaamisessa aina ideasta
