@@ -9,3 +9,6 @@ https://rare.netlify.com/* https://rare.fi/:splat 301!
 
 # Common paths
 /rekry /careers
+
+# Review campaign form
+/review https://docs.google.com/forms/d/e/1FAIpQLSdfDk7wiKeyrsh6VnKMPwzOLurCbmfFqluyaLy3WuAb172xsQ/viewform?usp=sf_link
