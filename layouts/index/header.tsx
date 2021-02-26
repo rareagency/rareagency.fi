@@ -38,11 +38,25 @@ export const Header: React.FC = () => (
               alt="Tieto Oyj"
             />
           </a>
-          <a href="https://www.veracell.com/" target="blank">
+          <a href="https://linnunrata.fi" target="blank">
             <img
-              src="../static/references/veracell.svg"
-              alt="Veracell"
-              className="logo veracell"
+              src="../static/references/linnunrata.svg"
+              className="logo linnunrata"
+              alt="Linnunrata"
+            />
+          </a>
+          <a href="https://www.simucu.be/" target="blank">
+            <img
+              src="../static/references/simucube.svg"
+              className="logo simucube"
+              alt="Simucube"
+            />
+          </a>
+          <a href="https://instagrid.co" target="blank">
+            <img
+              src="../static/references/instagrid.svg"
+              className="logo instagrid"
+              alt="Instagrid"
             />
           </a>
           <a href="https://plan-international.org/" target="blank">
@@ -66,11 +80,11 @@ export const Header: React.FC = () => (
               alt="Cult Security"
             />
           </a>
-          <a href="https://www.simucu.be/" target="blank">
+          <a href="https://www.veracell.com/" target="blank">
             <img
-              src="../static/references/simucube.svg"
-              className="logo simucube"
-              alt="Simucube"
+              src="../static/references/veracell.svg"
+              alt="Veracell"
+              className="logo veracell"
             />
           </a>
         </p>
@@ -159,7 +173,7 @@ export const Header: React.FC = () => (
 
       .logo {
         margin-bottom: 1rem;
-        margin-right: 1.4rem;
+        margin-right: 1.6rem;
         opacity: 0.8;
         cursor: pointer;
         transition: opacity 0.2s;
@@ -169,6 +183,18 @@ export const Header: React.FC = () => (
         width: 90px;
         filter: invert(1);
         margin-bottom: 1.3rem;
+      }
+
+      .linnunrata {
+        width: 160px;
+        filter: invert(1);
+        margin-bottom: 1.25rem;
+      }
+
+      .instagrid {
+        width: 170px;
+        margin-bottom: 0.9rem;
+        filter: invert(1);
       }
 
       .plan {
