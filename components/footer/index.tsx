@@ -66,6 +66,7 @@ const team: Teammate[] = [
     title: 'Software Developer',
     email: 'kalle@rare.fi',
     github: 'https://github.com/eioo',
+    linkedin: 'https://www.linkedin.com/in/kalle-hirvola-9583b4202/',
     image: '/static/faces/kalle.svg'
   },
   {
