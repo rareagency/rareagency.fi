@@ -92,6 +92,14 @@ const team: Teammate[] = [
     github: 'https://github.com/joelbman',
     linkedin: 'https://www.linkedin.com/in/joel-bergman-6358b3a8/',
     image: '/static/faces/joel.svg'
+  },
+  {
+    name: 'Oskari Kuikka',
+    title: 'Software Developer',
+    email: 'oskari@rare.fi',
+    github: 'https://github.com/borsas',
+    linkedin: 'https://www.linkedin.com/in/oskari-kuikka/',
+    image: '/static/faces/oskari.svg'
   }
 ];
 
