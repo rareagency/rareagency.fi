@@ -247,8 +247,8 @@ export const Footer: React.FC = () => {
         <div className="company-info">
           <img src="/static/logo-black.png" alt="Rare" className="logo" />
           <address className="location">
-            <div>Polttimonkatu 4</div>
-            <div>33210&nbsp;Tampere</div>
+            <div>Kyttälänkatu 1, 2. kerros</div>
+            <div>33100&nbsp;Tampere</div>
             <div>Finland</div>
             <br />
 
