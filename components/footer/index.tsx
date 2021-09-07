@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-
+import SVG from 'react-inlinesvg';
 import { Center } from '../center';
 import { Github } from './icons/github';
 import { Linkedin } from './icons/linkedin';
-import SVG from 'react-inlinesvg';
 import { Twitter } from './icons/twitter';
 
 type Teammate = {
@@ -100,6 +99,14 @@ const team: Teammate[] = [
     github: 'https://github.com/borsas',
     linkedin: 'https://www.linkedin.com/in/oskari-kuikka/',
     image: '/static/faces/oskari.svg'
+  },
+  {
+    name: 'Marko Leinikka',
+    title: 'Software Developer',
+    email: 'marko@rare.fi',
+    github: 'https://github.com/Luukuton',
+    linkedin: 'https://www.linkedin.com/in/marko-leinikka/',
+    image: '/static/faces/marko.svg'
   }
 ];
 
